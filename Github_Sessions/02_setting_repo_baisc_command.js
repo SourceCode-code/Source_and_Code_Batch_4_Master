@@ -29,3 +29,8 @@ git push -u origin main -- this pushes your changes to github to main branch
 // git add . --> git adds all the files in which the changes have made
 // git commit -m "adding commands to push changes "
 // git push origin main --> this command push your changes to github
+
+// using this commands shows your effenicy code 
+
+// git clone "url" --> this command will clone your repo  
+
