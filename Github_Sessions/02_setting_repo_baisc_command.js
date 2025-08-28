@@ -21,3 +21,9 @@ git push -u origin main -- this pushes your changes to github to main branch
 
 
 // how to add new changes to you repo 
+
+//how to push only recently or changes made
+
+// you have to enter 3 commands 
+
+// git add . --> git adds all the files in which the changes have made
