@@ -7,6 +7,7 @@
 
 // go on profile --> click + button --> select new repo 
 
+
 /*
 git init -->   this code initalize your git in your folder
 git add . -->  all the files are added to the stagging area  --> meaning( git add all)
