@@ -7,3 +7,5 @@
 // git pull orgin main 
 
 // git diff --> shows you the differenece between last commit and present changes 
+
+// git checkout filepath --> this restores your file to last commit 
