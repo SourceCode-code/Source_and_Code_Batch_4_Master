@@ -1,18 +1,46 @@
-// git terminal commands
+// ===============================
+// Git Terminal Commands - Notes
+// ===============================
 
-// git pull origin branchname --> this commands gets the lastest changes in your  repo is downloaded to your local
+// --- Pulling Latest Changes ---
+ // git pull origin branchname
+ // -> Downloads the latest changes from remote repo into your local
 
-// best practices -->
-// always before srtaring the work hit in terminal
-// git pull orgin main
+ // Best Practice:
+ // Always pull before starting work
+ // git pull origin main
 
-// git diff --> shows you the differenece between last commit and present changes
-// git checkout filepath --> this restores your file to last commit
-// git checkout -f --> restores all the files to the last commit
-//git status --> shows you the current status of your working directory
-//git log --> shows you the logs of the commits
-//git log -p --> shows you only recentcommit and its details
-//git log --oneline -> shows you the complied graph recent logs
-//git stash  --> tempoaraliy removes the changes to allow you to work in a different file
-//git stash apply  --> brings thoses changes back 
 
+// --- Checking Differences ---
+ // git diff
+ // -> Shows the difference between the last commit and your current changes
+
+
+// --- Restoring Files ---
+ // git checkout <filepath>
+ // -> Restores a specific file to the last commit
+
+ // git checkout -f
+ // -> Restores ALL files to the last commit
+
+
+// --- Status and History ---
+ // git status
+ // -> Shows the current status of your working directory
+
+ // git log
+ // -> Shows the commit history (detailed logs)
+
+ // git log -p
+ // -> Shows the most recent commit with details
+
+ // git log --oneline
+ // -> Shows a compact version of the commit history
+
+
+// --- Stashing Changes ---
+ // git stash
+ // -> Temporarily saves your changes (without committing)
+
+ // git stash apply
+ // -> Restores the stashed changes
