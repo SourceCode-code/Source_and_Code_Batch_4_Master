@@ -14,5 +14,5 @@
 // git log --> shows you the logs of the commits 
 //git log -p --> shows you only recentcommit and its details 
 //git log --oneline -> shows you the complied graph recent logs 
-
-
+// git stash  --> tempoaraliy removes the changes to allow you to work in a different file 
+// git stash apply  --> brings thoses changes back 
