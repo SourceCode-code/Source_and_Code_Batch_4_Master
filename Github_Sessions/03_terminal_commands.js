@@ -10,5 +10,9 @@
 
 // git checkout filepath --> this restores your file to last commit 
 // git checkout -f --> restores all the files to the last commit 
-//git status --> shows you the current status 
-// git log 
+//git status --> shows you the current status of your working directory
+// git log --> shows you the logs of the commits 
+//git log -p --> shows you only recentcommit and its details 
+//git log --oneline -> shows you the complied graph recent logs 
+
+
