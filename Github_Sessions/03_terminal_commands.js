@@ -16,3 +16,4 @@
 //git log --oneline -> shows you the complied graph recent logs 
 // git stash  --> tempoaraliy removes the changes to allow you to work in a different file 
 // git stash apply  --> brings thoses changes back 
+
