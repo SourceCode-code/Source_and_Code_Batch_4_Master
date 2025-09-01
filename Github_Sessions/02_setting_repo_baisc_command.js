@@ -43,3 +43,5 @@ git push -u origin main -- this pushes your changes to github to main branch
 
 // commands
 //12345
+
+//example of git pull origin 
