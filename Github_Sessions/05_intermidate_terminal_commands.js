@@ -9,9 +9,10 @@
 //3 git reset --> this command will unstage the  all file without discarding the changes 
 
 /**
- * git checkout -f  -->
- * git stash        -->
- * git reset        -->
+ * difference -->
+ * git checkout -f  --> restore file to last (latest) commit
+ * git stash        -->temperoly removes the changes to allow to work on other file (you can again bring back the changes )
+ * git reset        -->will not make any chnage in the file just will remove ths from stagging to local
  * 
  */
 
