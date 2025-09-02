@@ -17,3 +17,4 @@
  */
 
 
+//4 git reset --hard <commit> -- this command will restore your branch to a specific commit 
