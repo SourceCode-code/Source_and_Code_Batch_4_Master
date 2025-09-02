@@ -40,7 +40,7 @@
 
 // --- Stashing Changes ---
  // git stash
- // -> Temporarily saves your changes (without committing)
+ // -> Temporarily removes your changes and saves it (without committing)  to allow you to work on another file 
 
  // git stash apply
  // -> Restores the stashed changes
