@@ -18,4 +18,6 @@
 
 //4 git reset --hard <commit id> --> this command will restore your file to a the specific commit 
 
+// git revert <commit id >      --> this command will restore your file to a the specific commit and restore commit will become  your last commit
+
 
