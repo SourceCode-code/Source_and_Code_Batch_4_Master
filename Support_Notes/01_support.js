@@ -11,5 +11,5 @@
 //  git status :- to track the files 
 // git commit -m "message": to commit yourr chnages to stagging area
 // git push origin main : - to push your changes 
-// to check the status 
 
+// for check git statsh 
