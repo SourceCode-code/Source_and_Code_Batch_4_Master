@@ -44,3 +44,9 @@
 
  // git stash apply
  // -> Restores the stashed changes
+
+ // garbage file 
+
+ sadfukadgfkjsgilfusdjhkfhhdjhfklsgadkfjavjhbvk,addEventListener
+ aefdgaguiaifgai
+ 
