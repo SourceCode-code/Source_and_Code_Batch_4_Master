@@ -19,4 +19,5 @@
 //4 git reset --hard <commit id> --> this command will restore your file to a the specific commit 
 //4 git reset --hard <commit> -- this command will restore your branch to a specific commit 
 
-// hello world 
+// goodbye
+
