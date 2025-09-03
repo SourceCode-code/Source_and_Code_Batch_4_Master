@@ -24,3 +24,4 @@
 
 // 6 git blame filepath --> shows you who made changes in the files 
 //7 git show <commit id> --> give you a detail information about the commit
+
