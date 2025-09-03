@@ -22,5 +22,5 @@
 
 //5 git revert --> reverts a commit by creating new commit that over rides a orignal commit 
 
-// goodbye
-
+// 6 git blame filepath --> shows you who made changes in the files 
+//7 git show <commit id> --> give you a detail information about the commit
