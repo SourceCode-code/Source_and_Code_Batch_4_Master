@@ -35,3 +35,4 @@
 // git pull origin main  --> downlaods all the updates to the local
 // git fetch             --> this gets the lastest data of all the branches this doesnt physciall downlaod 
 
+// some confilcts changes 
