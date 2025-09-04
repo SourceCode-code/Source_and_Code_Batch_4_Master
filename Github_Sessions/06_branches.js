@@ -28,3 +28,9 @@
 //git branch  --> show the current branch 
 //git branch -a --> shows all the branches 
 
+// conditions to create a new branch 
+// 1 all your master code must be updated --> git pull origin main 
+// 2 now you can create a new branch 
+
+// git pull origin main  --> downlaods all the updates to the local
+// git fetch             --> this gets the lastest data of all the branches 
