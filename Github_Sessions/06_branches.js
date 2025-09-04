@@ -13,3 +13,18 @@
 // conflict --> confilct is the problem arised when merging changes 
 // merging --> process of adding the branch change to master
 // review -> the process of checking the changes  added in the pull request 
+
+// branches -->
+
+// how to create a new  branch 
+
+// git checkout -b branchname 
+
+// how to see all the branches already created 
+
+// 1 ui way  
+// 2 terminal way  
+// to check current branch 
+//git branch  --> show the current branch 
+//git branch -a --> shows all the branches 
+
