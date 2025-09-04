@@ -40,12 +40,6 @@
 git add .
 git commit -m "message"
 git push origin Siddhant_Admin
-*/
-
-// while creating a branch name should be specfic --> Aakash_Source
-
-//how to push in branch 
-/*
 git add .
 git commit -m "message"
 git push origin Siddhant_Admin
