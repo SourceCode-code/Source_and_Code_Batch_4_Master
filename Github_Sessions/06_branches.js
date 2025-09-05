@@ -52,3 +52,6 @@ git push origin Siddhant_Admin
 */
 
 // while creating a branch name should be specfic --> Aakash_Source
+
+// how to visit your already created branch 
+// git checkout branch name 
