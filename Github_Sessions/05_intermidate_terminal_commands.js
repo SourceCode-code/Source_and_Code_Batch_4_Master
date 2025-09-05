@@ -13,8 +13,15 @@
  * git checkout -f               --> restore file to last (latest) commit
  * git stash                    -->temperoly removes the changes to allow to work on other file (you can again bring back the changes )
  * git reset                    -->will not make any chnage in the file just will remove ths from stagging to local
- 
+   git reset --hard <commit> -- this command will restore your branch to a specific commit 
  */
 
 //4 git reset --hard <commit id> --> this command will restore your file to a the specific commit 
-//4 git reset --hard <commit> -- this command will restore your branch to a specific commit 
+
+
+
+//5 git revert --> reverts a commit by creating new commit that over rides a orignal commit 
+
+// 6 git blame filepath --> shows you who made changes in the files 
+//7 git show <commit id> --> give you a detail information about the commit
+
