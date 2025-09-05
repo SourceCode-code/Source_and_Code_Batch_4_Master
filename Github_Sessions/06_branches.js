@@ -55,3 +55,5 @@ git push origin Siddhant_Admin
 
 // how to visit your already created branch 
 // git checkout branch name 
+
+//now we have the code or chages we want them to merge with main
