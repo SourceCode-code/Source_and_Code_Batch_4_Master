@@ -57,3 +57,5 @@ git push origin Siddhant_Admin
 // git checkout branch name 
 
 //now we have the code or chages we want them to merge with main
+
+// pull request -> (PR) its a request to merge your changes with master branch 
