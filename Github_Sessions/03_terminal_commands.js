@@ -35,7 +35,7 @@
  // -> Shows the most recent commit with details
 
  // git log --oneline
- // -> Shows a compact version of the commit history
+ // -> Shows a compact version of the commit history 
 
 
 // --- Stashing Changes ---
