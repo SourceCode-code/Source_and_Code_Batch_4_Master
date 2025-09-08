@@ -50,7 +50,7 @@ console.log(str8[7])
 
 console.log(str8[str8.length-1])
 
-//String concantions --> combine 2  or more string 
+//String concatenation:
 
 let firstName = "siddhant"
 let midddleName = "Arjun"
