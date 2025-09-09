@@ -35,4 +35,23 @@
 // git pull origin main  --> downlaods all the updates to the local
 // git fetch             --> this gets the lastest data of all the branches this doesnt physciall downlaod 
 
-// some confilcts changes 
+//how to push in branch 
+/*
+git add .
+git commit -m "message"
+git push origin Siddhant_Admin
+git add .
+git commit -m "message"
+git push origin Siddhant_Admin
+*/
+
+// while creating a branch name should be specfic --> Aakash_Source
+
+// how to visit your already created branch 
+// git checkout branch name 
+
+//now we have the code or chages we want them to merge with main
+
+// pull request -> (PR) its a request to merge your changes with master branch 
+
+// review changes 
