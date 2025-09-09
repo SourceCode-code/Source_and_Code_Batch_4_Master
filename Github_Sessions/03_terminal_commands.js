@@ -35,7 +35,7 @@
  // -> Shows the most recent commit with details
 
  // git log --oneline
- // -> Shows a compact version of the commit history
+ // -> Shows a compact version of the commit history 
 
 
 // --- Stashing Changes ---
@@ -45,3 +45,10 @@
  // git stash apply
  // -> Restores the stashed changes
 
+<<<<<<< HEAD
+ // garbage file 
+
+ sadfukadgfkjsgilfusdjhkfhhdjhfklsgadkfjavjhbvk,addEventListener
+ aefdgaguiaifgai 
+=======
+>>>>>>> 1f5cb0fb69b9e99db5365546793c340782bcb0b8
