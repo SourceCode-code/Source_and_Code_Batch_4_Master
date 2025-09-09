@@ -55,3 +55,5 @@ let num="qwertyuiopasdfghjklzxcvbnm" // we get a number here
 //(max value-minvamlue)+minvalue // 45-90
 
 //todays attendace = rishi akash swapnil chaitanya adesh ghanshyam
+
+let str  = ["Amol"]
