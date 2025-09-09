@@ -25,6 +25,7 @@ console.log(`${firstName} ${middleName} ${lastName}`)
 
 // 5. Given a string `language = 'JavaScript'`, log the character at the 4th index in the string.
 let language = 'JavaScript'
+console.log(language[4])
 // Need help in this question.
 
 
