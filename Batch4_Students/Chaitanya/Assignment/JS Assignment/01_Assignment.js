@@ -59,5 +59,15 @@ console.log (chaitanyaAge);
 console.log (siddhantAge);
 
 // Create a variable.js file and declare variables and assign string, boolean, undefined and null data types
+let a1 ="string"
+let a2 = false;
+let a3;
+let a4 = null;
+console.log(typeof a1)
+console.log(typeof a2)
+console.log(typeof a3)
+
 
 // Create datatypes.js file and use the JavaScript typeof operator to check different data types. Check the data type of each variable
+
+// completed in the above question.
