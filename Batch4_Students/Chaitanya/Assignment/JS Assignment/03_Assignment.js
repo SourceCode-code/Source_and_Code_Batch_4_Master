@@ -18,7 +18,8 @@ let middleName = "Bhausaheb";
 let lastName = "Kute";
 
 console.log(firstName + " " + middleName + " " + lastName)
-
+let fullname =`${firstName} ${middleName} ${lastName}`;
+console.log(fullname);
 
 // 5. Given a string `language = 'JavaScript'`, log the character at the 4th index in the string.
 let language = 'JavaScript';
@@ -39,7 +40,7 @@ console.log(Math.round(amount));
 // 8. Create a string `quote = "Learning JavaScript is awesome!"`. Use the `.length` property to find the length of the string and the index of the character 'J'.
 let quote = "Learning JavaScript is awesome";
 console.log(quote.length);
-
+console.log(quote.indexOf("J"));
 
 // 9. Given two variables, `str1 = 'abc'` and `str2 = 'def'`, write a program to concatenate these two strings using both the `+` operator and template literals. Log both results.
 let str1 = 'abc';
@@ -96,6 +97,7 @@ console.log(ec3)
 // 14. Create a string `quote = "Learning JavaScript is awesome!"`. Use the `.length` property to find the length of the string and the index of the character 'J'.
 let quote1 = "Learning JS is awesome"
 console.log(quote1.length);
+console.log(quote1.indexOf("J"));
 
 
 // 15. Create a string variable `strhw = 'Hello, World!'` and use an escape character to insert a tab between the words "Hello," and "World!" and log the result.
