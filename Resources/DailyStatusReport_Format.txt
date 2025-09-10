@@ -1,7 +1,7 @@
 To:siddhantsourceandcode@gmail.com
 CC: vaibhavsourceandcode@gmail.com , ashutosh.vishwanath.more@gmail.com , jadhavamol.j2@gmail.com
 
-Subject :-Date: [Insert Date] Daily Status Report
+Subject :-Daily Status Report date.month.year
 
 Project Name: [Insert Project Name]
 
