@@ -29,6 +29,21 @@
 
 // Advanced Session Assignments:
 
+// 7. Create a long literal string that spans multiple lines and log it.
+let str1 = "ADVDGTSEROIFDHN\DBGFDT\
+HGHEHFYDUDF\
+VBGHUDKSLJFHDJDVG\
+ICGFHYCJDTXCHCGDFU\
+DFHDGCHFCXGFFHD"
+
+console.log(str1)// ADVDGTSEROIFDHNDBGFDTHGHEHFYDUDFVBGHUDKSLJFHDJDVGICGFHYCJDTXCHCGDFUDFHDGCHFCXGFFHD
+
+// 8. Write a program that uses escape characters to display the following:
+//    I am learning JavaScript.
+//    It's "fun" to learn JavaScript!
+let myWork = "I am learning JavaScript\.\nIt's \"fun\" to learn JavaScript\!"
+console.log(myWork)
+
 // 9. Write a program that declares a variable `amount = 45.85`, then uses `Math.floor()`, `Math.ceil()`, and `Math.round()` on this value and logs each result.
 // let amount = 45.85
 // console.log(Math.floor(amount)) // 45
@@ -54,3 +69,35 @@
 
 // let num = Math.ceil(Math.random()*45+15)*2+1
 // console.log(num)
+
+
+
+
+
+
+//1) new line - (\n) -- this allows you to print your output in multiline in terminal 
+// let str10= "siddhant\narjun\ngadakh"
+
+// console.log(str10) // siddhant
+                   // arjun
+                   // gadakh
+
+//2 (\t) -- this indicates tab key (8 spaces )
+
+// let str11= "siddhant \t gadakh"
+// console.log(str11)
+
+//siddhant         arjun   gadakh
+//siddhant        arjun   gadakh
+
+//3) (\') -- adding single quotes in a string declared  by single quotes 
+
+// let str12 = 'my name is \'Siddhant arjun gadakh\''
+
+// console.log(str12) // my name is 'Siddhant arjun gadakh'
+
+//3) (\") -- adding single quotes in a double declared  by double quotes 
+
+// let str13 = "my name is \"Siddhant arjun gadakh\""
+
+// console.log(str13)// my name is "Siddhant arjun gadakh"
