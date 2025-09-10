@@ -31,6 +31,21 @@ console.log(language)
 // 6. Write a program to generate an even random number between 0-20 using `Math.random()`, then log the number.
 console.log(Math.round(Math.random()*10)*2)
 
+// 7. Create a long literal string that spans multiple lines and log it.
+let str11 = "akash\
+manik\
+jadhav"
+console.log(str11)
+
+// 8. Write a program that uses escape characters to display the following:
+//    I am learning JavaScript.
+//    It's "fun" to learn JavaScript!
+
+let str12 = "I am learning \"JavaScript\""
+console.log(str12)
+let str13 = " Its\'s \"fun\" to learn JavaScript !"
+console.log(str13) 
+
 /*9. Write a program that declares a variable `amount = 45.85`,
  then uses `Math.floor()`, `Math.ceil()`, and `Math.round()` on this value and logs each result.*/
  let amount = 45.85
@@ -44,6 +59,12 @@ let quote = "Learning JavaScript is awesome!"
 console.log(quote.length)
 
 
+// 12. Create a string variable `str = 'Hello, World!'` and use an
+//  escape character to insert a tab between the words "Hello," and "World!" and 
+// log the result.
+let str14 = "\"Hello\", \t \"World\""
+console.log(str14)
+
 // 13. Given two variables, `str1 = 'abc'` and `str2 = 'def'`, write a program to concatenate these two strings using both the `+` operator and template literals. Log both results.
 let str1 = 'abc';
 let str2 = 'def';
@@ -53,10 +74,14 @@ console.log(`${str1} ${str2}`)
 /* 14. Write a program to pick a random element from 
 string "qwertyuiopasdfghjklzxcvbnm" and log the selected element.*/
 let str3 = "qwertyuiopasdfghjklzxcvbnm"
+console.log(str3.length)
+let num1 = Math.floor(Math.random()*str3.length)
+console.log(num1)
 // need more explaination on this 
 
 //15 write a program to generate a random odd number form 15-150
 let minNumber = 15
 let maxNumner = 150
-console.log(Math.round(Math.random()*135)+15)
+console.log(Math.round(Math.random()*135)+15)/2+1
 //need more explaination on this 
+
