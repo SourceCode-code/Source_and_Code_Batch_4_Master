@@ -45,4 +45,7 @@ let str2 = 'def';
 
 // 14. Write a program to pick a random element from string "qwertyuiopasdfghjklzxcvbnm" and log the selected element.
 
+
+
 //15 write a program to generate a random odd number form 15-150
+
