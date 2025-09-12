@@ -33,6 +33,7 @@ let num = 5.7;
 let randomVal = Math.random();
 console.log(Math.floor(randomVal * 10) + 5);
 
+
 //0.9*10 --> 9    6--->  14
 // write the output and reason in commnets 
 
