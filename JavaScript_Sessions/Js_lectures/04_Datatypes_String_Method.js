@@ -8,7 +8,7 @@ let str = "Siddhant Arjun Gadakh"
 // nameofstring/varaible.methodname(parameter)
 
 console.log(str.toUpperCase()) //SIDDHANT ARJUN GADAKH
-let str1 =str.toUpperCase()
+let str1 = str.toUpperCase()
 
 // .toLowercase() --this method is used to convert string into lower case 
 console.log(str1.toLowerCase()) //siddhant arjun gadakh
@@ -22,7 +22,7 @@ console.log(str1.toLowerCase()) //siddhant arjun gadakh
 
 let str3 = "hello my name is Siddhant aNd my aGe is 26"
 console.log(str3.length)
-console.log(typeof(str3.length))
+console.log(typeof (str3.length))
 
 // let methodconcat = str3.toUpperCase().toLowerCase().toUpperCase().length.toLowerCase() //
 // 42
