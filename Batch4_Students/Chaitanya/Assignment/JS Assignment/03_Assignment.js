@@ -18,7 +18,7 @@ let middleName = "Bhausaheb";
 let lastName = "Kute";
 
 console.log(firstName + " " + middleName + " " + lastName)
-let fullname =`${firstName} ${middleName} ${lastName}`;
+let fullname = `${firstName} ${middleName} ${lastName}`;
 console.log(fullname);
 
 // 5. Given a string `language = 'JavaScript'`, log the character at the 4th index in the string.
@@ -26,7 +26,7 @@ let language = 'JavaScript';
 console.log(language[4]);
 
 // 6. Write a program to generate an even random number between 0-20 using `Math.random()`, then log the number.
-let num1 = Math.floor(Math.random()*20+1)*2;
+let num1 = Math.floor(Math.random() * 20 + 1) * 2;
 console.log(num1);
 
 // Advanced Session Assignments:
@@ -52,17 +52,10 @@ console.log(str);
 
 // 10. Write a program to pick a random element from string "qwertyuiopasdfghjklzxcvbnm" and log the selected element.
 let num = "qwertyuiopasdfghjklzxcvbnm";
-let check = Math.floor(Math.random()*num.length)
+let check = Math.floor(Math.random() * num.length)
 console.log(num[check])
 
 // 11 write a program to generate a random odd number form 15-150
-
-
-
-
-
-
-
 
 
 // 12. Create a long literal string that spans multiple lines and log it.
