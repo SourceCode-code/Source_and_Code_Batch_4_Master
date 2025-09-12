@@ -157,7 +157,15 @@ console.log(string[0]); // index starts from o
 console.log(string[20]); // here last index = lemgth-1 as length = 21 so last index =20.
 
 
-// Q21. Write a program to print "Siddhant\nArjun\nGadakh" using escape characters.
+// Q21. Write a program to print "Siddhant Arjun Gadakh" using escape characters.
+let ec1 = "Siddhant\nArjun\nGadakh"
+let ec2 = "Siddhant Arjun \t Gadakh"  
+let ec3 =  "\"Siddhant\" Arjun Gadakh"
+let ec4 =  '\'Siddhant Arjun\' Gadakh'
+console.log(ec1)
+console.log(ec2)
+console.log(ec3)
+console.log(ec4)
 
 // Q22. Create a string: "my name is 'Siddhant'". Print it using escape characters properly.
 
