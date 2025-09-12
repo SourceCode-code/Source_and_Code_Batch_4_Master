@@ -30,6 +30,19 @@ console.log(Randomeven);
 
 // Advanced Session Assignments:
 
+7// Create a long literal string that spans multiple lines and log it.
+let multpleline= "my name is adesh vyankat devkar i am from karla ta tuljapur dist\
+Dharashiv"
+ "I learning javascript"
+ console.log(multpleline );
+
+// 8. Write a program that uses escape characters to display the following:
+//    I am learning JavaScript.
+//    It's "fun" to learn JavaScript!
+let text = "I am learning JavaScript.\nIt's \"fun\" to learn JavaScript!";
+console.log(text);
+
+
 // 9. Write a program that declares a variable `amount = 45.85`, then uses `Math.floor()`, `Math.ceil()`, and `Math.round()` on this value and logs each result.
 let amount = 45.85;
 
@@ -56,5 +69,8 @@ console.log(`${str1}${str2}`);
 
 // 14. Write a program to pick a random element from string "qwertyuiopasdfghjklzxcvbnm" and log the selected element.
 
+let element= "qwertyuiopasdfghjklzxcvbnm";
+let ele1 =Math.floor(Math.random()*element.length);
+console.log(element[ele1]);
 
 //15 write a program to generate a random odd number form 15-150
