@@ -168,40 +168,93 @@ console.log(ec3)
 console.log(ec4)
 
 // Q22. Create a string: "my name is 'Siddhant'". Print it using escape characters properly.
+let str1 = "my\nname\nis\n'Siddhant'"
+console.log(str1);
+let str2 = "my name is \t 'Siddhant'"
+console.log(str2);
+let str3 = "my name is \"'Siddhant'\""
+console.log(str3)
+let str4 =  "my name is \''Siddhant'\'"
+console.log(str4)
 
 // Q23. Convert "javascript" into UPPERCASE using string method.
+let uc = "javascript";
+console.log(uc.toUpperCase())
 
 // Q24. Convert "HELLO WORLD" into lowercase using string method.
+let lc = "HELLLO WORLD";
+console.log(lc.toLowerCase());
+
 
 // Q25. Use method chaining: Convert "hello world" to uppercase, then back to lowercase, and print the length.
 
+let mchaining = "hello world";
+console.log(mchaining.toUpperCase().toLowerCase().length);
+
+
 // Q26. Extract "Siddhant" from "Siddhant Arjun Gadakh" using substr() method.
+let extract = "Siddhant";
+console.log(extract.length);
+console.log(extract.substring(0,8));
+console.log(extract.substr(0,8));
+
 
 // Q27. Extract "Arjun" from "Siddhant Arjun Gadakh" using substring() method.
+let Q27 = "Siddhant Arjun Gadakh"
+console.log(Q27.indexOf("A"));
+console.log(Q27.substring(9,14))
+
+// here ending index will not be included hence ending index + 1.
 
 // Q28. Split the string "I love JavaScript" into an array by spaces.
+let Q28 = "I love JavaScript"
+console.log(Q28.split(" "));
 
 // Q29. Split the string "banana" into parts wherever "a" occurs.
+let Q29 = "banana";
+console.log(Q29.split("a"));
+
 
 // Q30. Write a program that prints your full name in camelCase variable name.
 // Example: let siddhantArjunGadakh = "Your Name";
-
+let chaitanyaBhausahebKute = "Chaitanya Bhausaheb Kute"
+console.log(chaitanyaBhausahebKute);
 
 
 // Q31. Generate a random integer between 50 and 100.
+let Q31 = Math.floor(Math.random() * (100 - 50 + 1))+50;
+console.log(Q31);
 
 // Q32. Generate a random integer between -20 and -10.
+let Q32 =(Math.floor(Math.random() * ( 20 - 10 + 1 )) )+(-10);
+console.log(Q32);
 
 // Q33. Write a function that simulates tossing a coin (should print either "Heads" or "Tails").
 
+// Didnt Understand the Question.
+
 // Q34. Generate a random integer between 100 and 999 (3-digit number).
+let Q34 = Math.floor(Math.random() * ( 999 - 100 + 1)) + 100;
+console.log(Q34);
 
 // Q36. Generate a random number between 1 and 100 and check if it is even or odd.
+let Q36 = Math.floor(Math.random() * ( 100 - 1 + 1 )) + 1;
+console.log(Q36);
 
 // Q37. Generate 5 random numbers between 1 and 10 
+let Q37 = Math.floor(Math.random() * ( 11 - 1 )) + 1;
+console.log(Q37);
+
 
 // Q38. Create a random password of 8 characters using letters and numbers (hint: use Math.random and string methods).
 
 
 
 
+
+/*
+Isuues in Question
+38
+33
+10
+*/
