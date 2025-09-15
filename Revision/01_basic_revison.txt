@@ -1,0 +1,23 @@
+// git 
+// js 
+
+//working in the industry is always a team work 
+
+// you can not the traditional sources of sharing data 
+
+
+
+// GIT   -- git is software which is version control software 
+//GITHUB -- github website which used to host your code (storing code ) it is hosting platform 
+
+// bitbucket , gitlab , azure repo 
+
+// GIT --> 
+
+// for better management git has layers (enviornments)
+
+// local --> work done on you personally computer
+
+// stagging  --> area between local and production ( this a aera where we can check our chaanges )
+
+// production
