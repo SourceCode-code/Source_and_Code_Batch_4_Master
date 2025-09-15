@@ -20,4 +20,10 @@
 
 // stagging  --> area between local and production ( this a aera where we can check our chaanges )
 
-// production
+// production --> this is a github  website env where you can see your changes 
+
+//------------------------
+// what is git
+// what is github 
+// why git/github
+//what are the different 
