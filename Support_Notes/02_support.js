@@ -57,3 +57,5 @@ let num="qwertyuiopasdfghjklzxcvbnm" // we get a number here
 //todays attendace = rishi akash swapnil chaitanya adesh ghanshyam
 
 let str  = ["Amol"]
+// tODAYS ATTENDANCE 15-08-2025
+//SWAPNIL AKASH RUSHI ANKITA GHANSHAYM ADESH 
