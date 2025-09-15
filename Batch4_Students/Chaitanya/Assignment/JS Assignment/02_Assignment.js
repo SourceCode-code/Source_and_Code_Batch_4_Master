@@ -76,7 +76,7 @@ Math.floor() → round down to whole number.
 
 // 8 generate a random number between 5.5-9.3
 //Example: randomFloat(5.5, 9.3) should generate a random float between 5.5 and 9.3.
- let num2 = Math.floor(Math.random() * (9.3 - 5.5 + 1)) + 5.5;
+ let num2 = Math.random() * (9.3 - 5.5) + 5.5;
  console.log(num2);
 //(error) output exceed 9.3
 
