@@ -24,7 +24,6 @@ but we are able to enter number as well as symbol
   not checking every scernior for the test 
 
 
-
 // failure --> failure is when your software or product stop working 
 
 // example --> your website is not loading --> End -user 
