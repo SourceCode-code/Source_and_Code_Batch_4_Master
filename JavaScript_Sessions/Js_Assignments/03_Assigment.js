@@ -41,8 +41,6 @@
 let str1 = 'abc';
 let str2 = 'def';
 
-
-
 // 14. Write a program to pick a random element from string "qwertyuiopasdfghjklzxcvbnm" and log the selected element.
 
 
