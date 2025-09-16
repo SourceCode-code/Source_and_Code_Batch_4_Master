@@ -74,3 +74,16 @@ console.log(str4.split(" ")) //[ 'Siddhant', 'Arjun', 'Gadakh' ]
 console.log(str.split("a")) //[ 'Siddh', 'nt Arjun G', 'd', 'kh' ]
 
 //
+
+
+// generate a radom head or tails 
+
+
+let str7="HT"
+
+// console.log(str7[0]) //H
+// console.log(str7[1]) // T
+
+let num =Math.round(Math.random()) 
+
+console.log(str7[num])
