@@ -27,3 +27,44 @@
 // what is github 
 // why git/github
 //what are the different 
+
+//----------------------------
+
+ // how create create a github account 
+ // you have create your github with your work email 
+ 
+ // what is repositorty and how to create it 
+
+ what is repo -->
+ repo a placer or a unique location where we can store our code 
+ example - its simlair to storing your code in to a proper
+
+
+ // note repo cannot be created using terminal command you have to do it by ui
+
+// how to create a repositorty
+
+// step go to your github account at top right corner click on + button 
+// step2 select new reporsitory option 
+// step3  you will a info form 
+// enter the detials 
+
+
+
+ // how clone a repositorty--> 
+ clone -> to get a copy of that  reporsitory into your local
+
+// how to clone your repo 
+
+to clone a repo you have to use a command
+
+git clone " clone url"
+
+
+
+// task --> 
+// 1 create your github account with your work email 
+//2 create your own repo  send the link on the group 
+//3 clone the source code batch4 into pc 
+
+
