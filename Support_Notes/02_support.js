@@ -54,7 +54,10 @@ let num="qwertyuiopasdfghjklzxcvbnm" // we get a number here
 //15 write a program to generate a random odd number form 15-150
 //(max value-minvamlue)+minvalue // 45-90
 
-//todays attendace = rishi akash swapnil chaitanya adesh ghanshyam
+// tODAYS ATTENDANCE 15-08-2025
+//SWAPNIL AKASH RUSHI ANKITA GHANSHAYM ADESH 
+
+//todays attendace 16/08/2025= rishi akash swapnil chaitanya adesh ghanshyam
 
 let str  = ["Amol"]
 
@@ -75,3 +78,9 @@ console.log(rounded*5)
 
 
 // Q33. Write a function that simulates tossing a coin (should print either "Heads" or "Tails").
+let check ="Heads Tails"
+let check2 = check.split(" ")// [ 'Heads', 'Tails' ]
+let randomcheck = Math.floor(Math.random()*2)
+console.log(check2[randomcheck])
+
+
