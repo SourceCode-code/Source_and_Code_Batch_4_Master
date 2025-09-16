@@ -83,4 +83,3 @@ let check2 = check.split(" ")// [ 'Heads', 'Tails' ]
 let randomcheck = Math.floor(Math.random()*2)
 console.log(check2[randomcheck])
 
-

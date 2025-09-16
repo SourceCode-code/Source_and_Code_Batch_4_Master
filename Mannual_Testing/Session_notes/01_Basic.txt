@@ -1,0 +1,53 @@
+// what is SDLC (Software development lifecyle ) and STLC (Software Testing lifecyle)?
+
+SDLC is complete process step by step  by which we can create software
+
+Phases in SLDC -->
+
+1 Requirement Analysis :- In this phase we collect the data form the client/Stakeholder
+
+2 Planning             :- in this pahse we do a feasbility (study , cost , timeline resources ) decison
+
+3 Design               :-  this process is divded in to parts 
+
+1 high level design  :- archecture , tech stacks  , documents 
+
+2 low level desgin  :-  ui , database , services 
+
+4 Development  (coding)--> in this phase the actual developement of the product starts   (coding )
+ this phase is done developers 
+
+5 Testing            :- in this phase we check the developed product is as per requirment  
+
+6 Deployment        :- Realse this software ( ready to use ) 
+ the product is given to the end user 
+
+7 Maintance phase   :- fix issues  // any new update
+
+
+//  STLC (Software Testing lifecyle) -->
+STLC  is part of SDLC 
+this is step by step process followed during the testing pahse of SLDC
+STLC focus only Testing part 
+
+1  Requirement Analysis :- Understand what is to be test 
+
+2  Test Planning        :- under this process we create a plan ( we create documents )--> they called test plan document
+
+( this document answer 4 major question )
+1 what to test 
+2 how to test 
+3 when to test 
+4 who will test it
+
+3 Tescase design -->  in this phase we design testcase   ( step by step instruction how to test)  -- testcase document
+
+4 enviornments Setup phase --> in the phase a qa enviornments 
+
+5 Exceution --> the testing start  with the testcase 
+
+6 defect reporting --> in this we communictae the to the deveoplr the issues or bugs in the software 
+
+7 test closure --> summary  we give a go / no go signal 
+
+

@@ -2,41 +2,38 @@
 // comments can make code readable
 
 // Write another single comment which says, Welcome to 30DaysOfJavaScript
-//Welcome to 30DaysOfJavaScript
+// Welcome to 30DaysOfJavaScript
 
 // Write a multiline comment which says, comments can make code readable, easy to reuse and informative
-/* comments can make code readable
-easy to reuse 
-and informative
-*/
+/* comments can make code readable, 
+   easy to reuse and Informative */
 
 // Declare four variables without assigning values
-let str 
-var str1
-let str2
-let str3
+let name
+let education
+let weight 
+let age 
+
 // Declare four variables with assigned values
-let str4 = "1234"
-var str5 = "#$%^&"
-let str6 = "ABCD"
-let str7 = 1234
+let country = 'India'
+let Countryname = 'Japan'
+let grade = 'A+'
+let height = '170cm'
 
 // Declare variables to store your first name, last name, marital status, country and age in multiple lines
-// let firstName = "rushikesh"
-// let lastName = "jadhav"
-// let maritalStatus = "Unmaraid"
-// let country = "India"
-// let age = 25
-
+let firstname = 'Swapnil'
+let Lastname = 'Gaikwad'
+let Marital_status ='Single'
+let Country = 'India'
+let Myage = '29'
 
 // Declare variables to store your first name, last name, marital status, country and age in a single line
-let firstName = "rushikesh",  lastName = "jadhav",  maritalStatus = "Unmaraid" ,  country = "India" ,  age = 25
+let firstname_ = 'Swapnil', Lastname_ = 'Gaikwad', Marital_status_ ='Single', Country_ = 'India', Myage = '29'
 
 // Declare two variables myAge and yourAge and assign them initial values and log to the console.
-let myAge = 25
-let yourAge = 30
-console.log(myAge)// 25
-console.log(yourAge)// 30
+const myWeight = '65'
+const YourWeight ='78'
+
 
 // Create a variable.js file and declare variables and assign string, boolean, undefined and null data types
 
