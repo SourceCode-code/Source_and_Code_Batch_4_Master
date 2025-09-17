@@ -68,3 +68,35 @@ git clone " clone url"
 //3 clone the source code batch4 into pc 
 
 
+
+// -----------------------------------> 
+to add files to  new repo 
+
+
+echo "# Demo_12" >> README.md
+git init                                                                 -- this initalizes your repostiory 
+git add .                                                                  -- this command will add your files to the stagging area
+git commit -m "first commit"                                                -- this command will make your files ready to show on github
+git branch -M main                                                           -- this command creates a  main or master
+git remote add origin https://github.com/SourceCode-code/Demo_12.git           -- this commands bind your ;local with the github repo url
+git push -u origin main                                                         -- this command will push your changes to github
+
+
+
+how to push the update changes 
+
+
+git add .                           -- this command will add your files to the stagging area
+git commit -m "message"             -- this command will make your files ready to show on github
+git push origin main                --this command will push your changes to github
+
+
+
+
+// task --
+
+//1 the repo you have created add file  named as - hello 
+and add some changes and push to repo 
+
+// 2 create new name second -> introdutrcion 
+push this intro to the same repo
