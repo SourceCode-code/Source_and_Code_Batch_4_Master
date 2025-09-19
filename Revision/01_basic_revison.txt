@@ -153,3 +153,6 @@ imagine if you have 4 members --> qa
 // git pull origin main --> we will acutally get the update code to our local
 //  git checkout -b branchname   --> this will  create a new  branch 
 
+// if you want to switch to another barnch you will need to enter command 
+
+git checkout branchname
