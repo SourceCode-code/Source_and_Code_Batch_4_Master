@@ -150,6 +150,6 @@ imagine if you have 4 members --> qa
 
 // ensure before creating branch you hit 2 commands 
 //  git fetch  -> only sync the newly create data with your local git ( not download)  
-//  git pull orgin main --> we will acutally get the update code to our local
+// git pull origin main --> we will acutally get the update code to our local
 //  git checkout -b branchname   --> this will  create a new  branch 
 
