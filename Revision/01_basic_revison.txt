@@ -100,3 +100,56 @@ and add some changes and push to repo
 
 // 2 create new name second -> introdutrcion 
 push this intro to the same repo
+
+
+
+
+
+// send me your github email  and github user name -->
+
+
+//Branching and pr 
+
+// what actual work flow --> 
+
+imagine if you have 4 members --> qa 
+
+---------------------main ---------------------------------------
+
+
+
+// rushi  ----- testcase 
+//sid --- testcase
+//vaibhav -- testcase
+
+
+
+---------------------main ---------------------------------------
+             |                 |           |
+//--------------------Reviewing or pr ------------------
+          |    |           |    |     |     |          
+        siddhant          vaibhav     rushi 
+
+
+
+// the use of braching startgety 
+
+// your main branch is always at a optimal condition
+// you will any any confilcts or iisues in main branch 
+// this also give you a chance to you work 
+
+
+// in acutal this consist of steps as 
+
+1 create a branch  -->
+2 make your changes and push the changes to the branch -->
+3 you have raise a pr  (peer review )
+
+
+// step 1 create a branch 
+
+// ensure before creating branch you hit 2 commands 
+//  git fetch  -> only sync the newly create data with your local git ( not download)  
+//  git pull orgin main --> we will acutally get the update code to our local
+//  git checkout -b branchname   --> this will  create a new  branch 
+
