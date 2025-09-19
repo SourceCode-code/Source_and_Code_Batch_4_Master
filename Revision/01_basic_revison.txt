@@ -161,3 +161,12 @@ imagine if you have 4 members --> qa
 // if you want to switch to another barnch you will need to enter command 
 
 git checkout branchname
+
+
+// task 
+
+1 you have to send me the github email and user -->
+
+2 in repo create a banrch named like - uday_source
+
+3 make small chnage and push
