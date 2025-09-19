@@ -156,5 +156,5 @@ imagine if you have 4 members --> qa
 // example -- of demo branch 
 
 
-// now to raise a pull request you have to do it on the github ui 
+// now to raise a pull request you have to do it on the github ui. 
 
