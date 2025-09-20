@@ -23,5 +23,6 @@ console.log(a/b.toFixed(5))
 let score =87 
 let score1= 92
 
+console.log()
 
 
