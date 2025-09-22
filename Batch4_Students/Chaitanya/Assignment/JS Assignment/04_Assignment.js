@@ -94,8 +94,8 @@ let num3 = (2*2);
 console.log(num3);
 let num4 = (10/2);
 console.log(num4);
-
-//           problem in % 
+let num5 = (100%3);
+console.log(num5);
 
 
 // Q11. Round the number 10.99 down to nearest integer using Math.floor.
@@ -231,15 +231,20 @@ console.log(Q32);
 
 // Q33. Write a function that simulates tossing a coin (should print either "Heads" or "Tails").
 
-// Didnt Understand the Question.
+let coin = "heads tails";
+let coin1 = coin.split(" ");
+let coinToss = Math.floor(Math.random()*2);
+console.log(coin1 [coinToss]);
+
+
 
 // Q34. Generate a random integer between 100 and 999 (3-digit number).
 let Q34 = Math.floor(Math.random() * ( 999 - 100 + 1)) + 100;
 console.log(Q34);
 
 // Q36. Generate a random number between 1 and 100 and check if it is even or odd.
-let Q36 = Math.floor(Math.random() * ( 100 - 1 + 1 )) + 1;
-console.log(Q36);
+
+
 
 // Q37. Generate 5 random numbers between 1 and 10 
 let Q37 = Math.floor(Math.random() * ( 11 - 1 )) + 1;
@@ -247,14 +252,16 @@ console.log(Q37);
 
 
 // Q38. Create a random password of 8 characters using letters and numbers (hint: use Math.random and string methods).
-
-
+let Str1 = 'Abcdefghijklmnopqrstu'
+let spChar = '!@#$%^&*'
+let spNew = spChar[Math.round(Math.random() * spChar.length)]
+let strNew = Str1.substr(Math.random()* str1.length-6,4);
+let num = Math.round(Math.random() * 999)
+console.log(strNew + spNew + num);
 
 
 
 /*
 Isuues in Question
-38
-33
-10
+36
 */
