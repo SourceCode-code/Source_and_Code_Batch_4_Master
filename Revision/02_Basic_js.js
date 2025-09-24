@@ -266,12 +266,11 @@ console.log(Math.round(numbb4))     //11
 // decimal point upto given number in parameter 
 
 
-
 let xx= 10.985423496523652054
 
 console.log(xx.toFixed(1))
-console.log(xx.toFixed(2))
-console.log(xx.toFixed(5))
+console.log(xx.toFixed(2)) // 10.99
+console.log(xx.toFixed(5)) // 10.98542
 
 
 // 5 Math.random()---> will generate a random number between 0  and 0.99999 everything you take output
