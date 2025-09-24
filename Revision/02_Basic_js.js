@@ -88,11 +88,16 @@ console.log(num)/100
 num =1000
 console.log(num)//1000
 
+num = "hello"
+console.log(num)//1000
+
 //const --> constant --> if we delcare a varaible with const we cannot update or change value 
 //block is scope variable 
 const pi =3.143
 console.log(pi)
 
+// pi = "sdkjfwsd"
+// console.log(pi)
 // pi = 5
 // console.log(pi)
 
@@ -166,6 +171,7 @@ let num11
 console.log( typeof num11)
 
 // non primitive datatypes  -->are dtatypes which are complex and can there value and property changes 
+
 // non primitive datattypes inculdes 
 // arrays 
 // object
@@ -174,5 +180,145 @@ console.log( typeof num11)
 // how to check datatype of a data
 
 // typeof
+
+//------------------------24-09-2025---
+console.log("---------------------------------------------------------------------------------------")
+// NUMBER --> number datatype represents all the number that includes floating point number as well intergers 
+// (-infity  ---> +infinty)  ---> (-infity.infity          -->infity.infity)
+
+// example 
+let numm1 = 1
+let numm2 = -100
+let numm3 = -100.2567
+let numm4 = 100000000000
+
+console.log(typeof numm1)
+
+console.log(typeof numm2)
+
+console.log(typeof numm3)
+
+console.log(typeof numm4)
+
+// now number are used in programing to perfome mathimatical operation 
+
+// arthematic operaton (+ ,-,*,/,% ,**)
+let numb1 =10
+let numb2 = 20
+
+console.log("addtion",numb1+numb2)
+console.log("substraction",numb1-numb2)
+console.log(numb1*numb2)
+console.log(numb1/numb2)
+console.log(numb1%numb2)
+console.log(numb1**numb2)
+
+
+//------------------------------------------------
+
+// every dataype will have some proptery and methods asscotied with it
+
+// methods --> used to perform operation on data type
+//properties --> are used to access infromation about the datatype 
+
+// because we are learning number datatype --> 
+
+// any opertion perform on numbers will be consider as Math
+// thats we add a prefix to methods in number called Math
+
+
+// ---------------------------------------------------------------
+
+// methods for numbers --> 
+// conversion methods for floating number to interger 
+
+//1 Math.floor()  --> this method will rounds down your floating number to the base vale or nearest lower interger 
+
+// example 
+
+let numbe1 = 10.1111111111111111111
+//10
+console.log(Math.floor(numbe1)) //10
+
+//2 Math.ceil() --> this method will rounds up your floating number to the next value or nearest higher interger 
+
+console.log(Math.ceil(numbe1)) // 11
+
+
+//3 Math.round() --> this method will round down if floating decimal number is 0<=0.4  and if 
+//  floating decimal number is 0.5=> 0.9999 it will round up 
+
+
+let numbb=10.123
+let numbb2=0.09
+let numbb3=10.999999
+let numbb4 = 10.5555
+
+console.log("----------------------------")
+console.log(Math.round(numbb))    //10
+console.log(Math.round(numbb2))   // 0
+console.log(Math.round(numbb3))     // 11
+console.log(Math.round(numbb4))     //11
+
+
+
+// 4 number.toFixed(number) -->  this method will only work floating point number and is used to fix the 
+// decimal point upto given number in parameter 
+
+
+
+let xx= 10.985423496523652054
+
+console.log(xx.toFixed(1))
+console.log(xx.toFixed(2))
+console.log(xx.toFixed(5))
+
+
+// 5 Math.random()---> will generate a random number between 0  and 0.99999 everything you take output
+// where is this method used --> to genrate random testdata in the testscript 
+console.log("---------------------------------------------")
+console.log(Math.random())
+
+
+// genrate a random number between 0 - 100
+
+//Math.random() -- > 0 --0.9999
+//Math.random()*100 --> lowest 0.00000 --> highest number 100.9999999 --> 101
+
+console.log(Math.floor(Math.random()*100))
+
+
+// generate a random dice roll 
+
+// 1-6 
+ // generate a random number between 1 -6
+ 
+ //Math.random() -- > 0 --> 0.99
+//(Math.random()*6) --> 0 -->5.9999
+// (Math.random()*6)+1)  --> 1.45313 --> 6.65436
+
+ 
+ console.log((Math.floor(Math.random()*6)+1))
+
+ let diceroll = (Math.random()*6)+1
+
+ let final  = console.log(Math.floor(diceroll))
+
+
+ // --------------------------------------------------------
+
+ //20-30
+
+
+// the general forluma is 
+
+// Math.floor((Math.random()*(max -min)+min))
+
+
+// incusley  -->29
+// Math.floor((Math.random()*(max -min)+min))
+console.log( Math.floor((Math.random()*(30 -20)+20)))
+// exculsive --> 30
+// Math.floor((Math.random()*((max -min+1)+min))
 
 
