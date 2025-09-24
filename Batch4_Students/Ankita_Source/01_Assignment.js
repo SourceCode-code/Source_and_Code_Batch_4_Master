@@ -39,7 +39,7 @@ let country1 = "India";
 let age1 = "23";
 console.log (fName);
 console.log (lName);
-console.log (maStatus);
+console.log (mStatus);
 console.log (country1);
 console.log (age1);
 
