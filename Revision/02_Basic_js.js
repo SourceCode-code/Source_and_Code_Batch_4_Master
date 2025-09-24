@@ -83,11 +83,10 @@ console.log(x)
 // let --> used when the value can be  changed or upadated
 //block is scope variable 
 
-let num = 100 
-
-console.log(num)
+let num = 100
+console.log(num)/100
 num =1000
-console.log(num)
+console.log(num)//1000
 
 //const --> constant --> if we delcare a varaible with const we cannot update or change value 
 //block is scope variable 
@@ -107,6 +106,8 @@ console.log(num2)
 num2 = 500
 console.log(num2)
 
+var num2=100
+console.log(num2)//100
 // rules to define a variable
 
 //1 VaRAIBLE name should begin with a number 
@@ -132,7 +133,7 @@ let num_1 = "" // correct
 
 let fullName ="siddhant gadakh"
 
-let myNameIs ="kjs"
+let myNameIsThe="s"
 
 
 // ------------------------------------------------------------------------
@@ -173,3 +174,5 @@ console.log( typeof num11)
 // how to check datatype of a data
 
 // typeof
+
+
