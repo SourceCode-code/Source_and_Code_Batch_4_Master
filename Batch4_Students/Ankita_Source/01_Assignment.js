@@ -11,61 +11,68 @@ easy to reuse and informative
 */
 
 // Declare four variables without assigning values
-let m;
+let a;
 let n;
-let o;
-let p;
-console.log (m);
+let k;
+let i;
+console.log (a);
 console.log (n);
-console.log (o);
-console.log (p);
+console.log (k);
+console.log (i);
 
 // Declare four variables with assigned values
-let a = 10;
-let b = 20;
-const pie = 3.14;
-const pakistan = "yedigand"
-console.log (a);
+let f = 15;
+let b = "Hii";
+let c = true;
+let d = 2.24;
+console.log (f);
 console.log (b);
-console.log (pie);
-console.log (pakistan);
+console.log (c);
+console.log (d);
 
 
 // Declare variables to store your first name, last name, marital status, country and age in multiple lines
-let firstname = "chaitanya";
-let lastname = "kute";
-let maritalStatus = "unmarried";
-let country = "India";
-let age = "26";
-console.log (firstname);
-console.log (lastname);
-console.log (maritalStatus);
-console.log (country);
-console.log (age);
+let fName = "Ankita";
+let lName = "Fartade";
+let mStatus = "Single";
+let country1 = "India";
+let age1 = "23";
+console.log (fName);
+console.log (lName);
+console.log (mStatus);
+console.log (country1);
+console.log (age1);
 
 
 // Declare variables to store your first name, last name, marital status, country and age in a single line
-let Fname = "chaitanya", Lname = "kute", Mstatus = "single", mAge ="26", Country="India";
-console.log (Fname);
-console.log (Lname);
-console.log (Mstatus);
-console.log (mAge);
-console.log (Country);
+let firstName = "Ankita", lastName="Fartade", maritalStatus="Single", age="23` ", country="India";
+console.log (firstName);
+console.log (lastName);
+console.log (maritalStatus);
+console.log (age);
+console.log (country);
 
 // Declare two variables myAge and yourAge and assign them initial values and log to the console.
-let chaitanyaAge = "26";
-let siddhantAge = "26";
-console.log (chaitanyaAge);
-console.log (siddhantAge);
+let myAge = "23";
+let yourAge = "26";
+console.log (myAge);
+console.log (yourAge);
 
 // Create a variable.js file and declare variables and assign string, boolean, undefined and null data types
-let a1 ="string"
-let a2 = false;
-let a3;
-let a4 = null;
-console.log(typeof a1)
-console.log(typeof a2)
-console.log(typeof a3)
+//variable.js
+
+//string
+let myName="Ankita";
+
+//boolaen
+let isStudent= true;
+
+//undefined
+let=notAssigned
+
+//null
+let x= null;
+
 
 
 // Create datatypes.js file and use the JavaScript typeof operator to check different data types. Check the data type of each variable
