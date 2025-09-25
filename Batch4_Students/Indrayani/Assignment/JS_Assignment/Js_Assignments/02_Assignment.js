@@ -1,6 +1,6 @@
 // assignment.js
 
-// JavaScript Number Data Type - Assignment
+// JavaScript Number Data     Type - Assignment
 
 // Simple Questions:
 
