@@ -32,8 +32,6 @@ let num = 5.7;
 // 6. What will be the result of the following code? Explain why.
 let randomVal = Math.random();
 console.log(Math.floor(randomVal * 10) + 5);
-
-//0.9*10 --> 9    6--->  14
 // write the output and reason in commnets 
 
 // Hint: Understand how the number is being generated and what range it falls in.
@@ -55,11 +53,6 @@ let number = 1234.56789;
 // 10. Write a program  that rounds any given number to the nearest multiple of 5.
 // Example:if 28 is given  should return 30, 32 should return 30.
 
-let numToRound = 94;
-let roundedNum =Math.round(numToRound/5)
-// 94 /5 = 18.8 --> 19 -->18
-console.log(Math.round(numToRound/5)) //19*5 =95
 
-console.log(roundedNum*5) 
 
 

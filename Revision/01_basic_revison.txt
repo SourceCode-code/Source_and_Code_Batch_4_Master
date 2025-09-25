@@ -100,3 +100,81 @@ and add some changes and push to repo
 
 // 2 create new name second -> introdutrcion 
 push this intro to the same repo
+
+
+
+
+
+// send me your github email  and github user name -->
+
+
+//Branching and pr 
+
+// what actual work flow --> 
+
+imagine if you have 4 members --> qa 
+
+---------------------main ---------------------------------------
+
+
+
+// rushi  ----- testcase 
+//sid --- testcase
+//vaibhav -- testcase
+
+
+
+---------------------main ---------------------------------------
+             |                 |           |
+//--------------------Reviewing or pr ------------------
+          |    |           |    |     |     |          
+        siddhant          vaibhav     rushi 
+
+
+
+// the use of braching startgety 
+
+// your main branch is always at a optimal condition
+// you will any any confilcts or iisues in main branch 
+// this also give you a chance to you work 
+
+
+// in acutal this consist of steps as 
+
+1 create a branch  -->
+2 make your changes and push the changes to the branch -->
+3 you have raise a pr  ( pull request )
+
+
+// step 1 create a branch 
+
+// ensure before creating branch you hit 2 commands 
+//  git fetch  -> only sync the newly create data with your local git ( not download)  
+// git pull origin main --> we will acutally get the update code to our local
+//  git checkout -b branchname   --> this will  create a new  branch 
+
+// example -- of demo branch 
+
+
+// now to raise a pull request you have to do it on the github ui. 
+
+// if you want to switch to another barnch you will need to enter command 
+
+git checkout branchname
+
+
+// task 
+
+1 you have to send me the github email and user -->
+
+2 in repo create a banrch named like - uday_source
+
+3 make small chnage and push
+
+4 create a pr 
+
+// for old students --> 
+
+assignment number 5 --> slove 5 problem  on each to topics covered on js 
+
+
