@@ -12,11 +12,7 @@
 // 4. Write a program that concatenates three string variables `firstName`, `middleName`, and `lastName` using both the `+` operator and template literals, then log the full name.
 
 
-
 // 5. Given a string `language = 'JavaScript'`, log the character at the 4th index in the string.
-
-
-// 6. Write a program to generate an even random number between 0-20 using `Math.random()`, then log the number.
 
 
 // Advanced Session Assignments:
@@ -43,7 +39,4 @@ let str2 = 'def';
 
 // 14. Write a program to pick a random element from string "qwertyuiopasdfghjklzxcvbnm" and log the selected element.
 
-
-
-//15 write a program to generate a random odd number form 15-150
 
