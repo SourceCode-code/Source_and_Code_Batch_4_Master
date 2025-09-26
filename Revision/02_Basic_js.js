@@ -368,7 +368,7 @@ console.log(mobnum)
 // example 
 
 let str1="            " // empty string
-let str2 = '1234567852'
+let str2 = "1234567852"
 let str3 = ` true `
 let str4 = "null"
 let str5 = ""
@@ -443,8 +443,9 @@ console.log(full)
 
 //1 long literal string --> if we want to define string in more than one line we use (\)
 
-let longstring = "trfyhgcjvhkuydtjxgchkmv,lbh.igufkydjtgxfchmvkgufiydtshxfgncjmvk,gfydgthxfbsdgdfnsgsdfsdfsdfsdfgsdfgsdfgsdfgsdfgsdfggsdfgsdfgsd\
-fgsdfgdfgdfdfdfdfgdfdfdfdfdfdfdfdfdfdf"
+let longstring = "trfyhgcjvhkuydtjxgchkmv,lbh.igufkydjtgxfchmvkgufiydtshxfgncjmvk,\
+gfydgthxfbsdg\nsgsdfsdfsdfsdfgsdfgsdfgsdfgsdfgsdfggsdfgsdfgsdfgsdfgdfgdfdfdfdfgdfddhfa9s\
+hugfonNGON0SDJGNOfdfdfdfdfdfdfdfdf"
 
 console.log(longstring)
 
@@ -453,13 +454,19 @@ console.log(longstring)
 let ss = "siddhant\n arjun\n gadakh"
 
 console.log(ss)
+//siddhant
+//arjun
+//gadakh
 
 // 3 \' --> if you want to add a single quotes in a string defined by single quotes 
 
-let qq = 'Siddhant \'arjun\' gadakh'
+let qq = '\"Siddhant\" \'arjun\' gadakh'
 console.log(qq)
 
 // 4 \" --> if you want to add a double quotes in a string defined by double quotes 
 
 let qqq = "Siddhant \"arjun\" gadakh"
 console.log(qqq) //Siddhant "arjun" gadakh
+
+let er = "i am learning js.\nit's \"fun\" to learn js"
+console.log(er)
