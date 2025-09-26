@@ -152,7 +152,7 @@ console.log(a+A)
 // JavaScript has two main types of data types 
 
 // 1. Primitive Data Types
-// these are simple data types that are immutable (cannot be changed)
+// these are simple data types that are immutable (cannot be changed) 
 // They include:        
 //2 . Non-Primitive Data Types  
 // these are complex data types which can be manipulated and changed

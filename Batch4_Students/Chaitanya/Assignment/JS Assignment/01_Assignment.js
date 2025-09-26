@@ -70,3 +70,13 @@ console.log(typeof a3)
 
 // Create datatypes.js file and use the JavaScript typeof operator to check different data types. Check the data type of each variable
 // completed in the above question.
+
+
+console.log("-------------------------------------------------------------------------------------------")
+
+
+// 3. Generate a random number between 1 and 10 (inclusive) and print it. (51 -100)
+let otot = Math.floor(Math.random()* (10 - 1 +1))+1;
+console.log(otot);
+
+
