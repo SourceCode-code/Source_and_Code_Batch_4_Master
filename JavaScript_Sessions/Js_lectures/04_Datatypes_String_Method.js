@@ -87,3 +87,31 @@ let str7="HT"
 let num =Math.round(Math.random()) 
 
 console.log(str7[num])
+
+//--------------------------------- interview logical 
+
+// JavaScript Data Type
+
+// // delecxrae 4 varioabnles in one line 
+
+let x = 1 ,y=2,z=3,a=8
+
+
+// console.log((2 + 2));  4   
+// console.log(2 + "2"));  22 
+// console.log(("2" + "2")); //22
+// console.log((2 - "2"));   
+// console.log(("5" * 2));       
+// console.log(("10" - 5));    
+// console.log("10" + 5)); //105
+
+// get anytwo character randmoly in output
+let strqqq ="qwertyuioplkjhgfdsazxcvbnm"
+
+let random=Math.floor(Math.random()*(strqqq.length)) // 9
+let random2=Math.floor(Math.random()*(strqqq.length))
+console.log(strqqq[random] ,strqqq[random2] )
+
+
+
+
