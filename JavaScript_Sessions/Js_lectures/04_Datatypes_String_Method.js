@@ -73,45 +73,75 @@ console.log(str4.split(" ")) //[ 'Siddhant', 'Arjun', 'Gadakh' ]
 
 console.log(str.split("a")) //[ 'Siddh', 'nt Arjun G', 'd', 'kh' ]
 
-//
 
 
-// generate a radom head or tails 
+// trim()  [trimStart(),trimEnd()]--> this method is used to remove the extra spaces form the string 
+
+// trim()--> this method will remove the extra spaces form both sides of the string i.e starting and ending of string
 
 
-let str7="HT"
+let str5 = " Sidd hant "
+console.log(str5.length)
 
-// console.log(str7[0]) //H
-// console.log(str7[1]) // T
+console.log(str5.trim())
+console.log(str5.trim().length)
 
-let num =Math.round(Math.random()) 
+// trimStart()--> this method will remove the extra spaces form the starting of the string 
+console.log(str5.trimStart())
+console.log(str5.trimStart().length)
 
-console.log(str7[num])
+// trimEnd()--> this method will remove the extra spaces form the Ending of the string 
+console.log(str5.trimEnd())
+console.log(str5.trimEnd().length)
 
-//--------------------------------- interview logical 
+//note trim methods will not remove the spaces in between strings 
 
-// JavaScript Data Type
+// includes()--> this method is used to check whether a string contains a particular substring or not 
+let str6 ="Hello I am Learning Javascript"
 
-// // delecxrae 4 varioabnles in one line 
+console.log(str6.includes("javascript")) // here the return type is boolean
+//js is case sensitive that is why you have to give input as a proper character
 
-let x = 1 ,y=2,z=3,a=8
-
-
-// console.log((2 + 2));  4   
-// console.log(2 + "2"));  22 
-// console.log(("2" + "2")); //22
-// console.log((2 - "2"));   
-// console.log(("5" * 2));       
-// console.log(("10" - 5));    
-// console.log("10" + 5)); //105
-
-// get anytwo character randmoly in output
-let strqqq ="qwertyuioplkjhgfdsazxcvbnm"
-
-let random=Math.floor(Math.random()*(strqqq.length)) // 9
-let random2=Math.floor(Math.random()*(strqqq.length))
-console.log(strqqq[random] ,strqqq[random2] )
+// note ->  when we use any method we get two things 
+//1 output --> this is what we see on console --> exmaple in case of split() --> muiltple string
+//2 return type --> the datatype of the output --> in case of split the return type is array 
 
 
+// replace(word to replace , word to replace with)--> this method is used to replace only first occurance particular character or word in string  with another
 
+let str7 ="hello i am learning javascript and javascript is a web development language"
+
+let newstr4 = str7.replace("javascript","python")
+console.log(newstr4)
+
+// replaceAll()-->(word to replace , word to replace with)--> this method is used to replace all occurance particular character or word in string  with another
+
+let newstr5 = str7.replaceAll("javascript","python")
+console.log(newstr5)
+
+//note -> both replace and replaceAll method are case sensitive 
+
+// indexOf()--> this method is used to find the index of particular character  (first occurance)
+
+let str8 ="qwertyuiopasdfghjklzxcvbnmp"
+
+console.log(str8.indexOf("p"))
+console.log(str8[9])
+
+// lastIndexOf()-->this method is used to find the index of particular character  (last occurance)
+console.log(str8.lastIndexOf("p"))
+console.log(str8[26])
+
+// concat()--> this method is used to join two or more strings
+
+let str9 = "hello"
+let str10="world"
+let str11 ="thisisjarvis"
+
+// +operator
+// `${}` --> template literals
+
+console.log(str9.concat(str10,str11))
+
+console.log(str11.concat(str9,str10))
 
