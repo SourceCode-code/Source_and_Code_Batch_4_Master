@@ -178,6 +178,7 @@ comments
 
 // Q37. Generate 5 random numbers between 1 and 10 
 
+
 // Q38. Create a random password of 8 characters using letters and numbers (hint: use Math.random and string methods).
 
 
