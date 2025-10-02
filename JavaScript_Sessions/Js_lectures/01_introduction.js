@@ -31,7 +31,7 @@
  // comments etiquette --(rules for writing comments)
 
  // 1. Use comments to explain complex logic or algorithms.
- // 2. Avoid obvious comments that do not add value.
+ // 2. Avoid abnoxious comments that do not add value.
  // 3. Keep comments up to date with code changes.
  // 4. commnets should be clear and concise.
 
