@@ -23,4 +23,10 @@
 // -, *, /, % always mean numeric operations → they force type conversion to numbers.
 
 // write a program to get any 2 letters  Randomly form the string 
-//let str ="qwertyuIOplkjhgfdsazxcvbnm"
+// let str ="qwertyuIOplkjhgfdsazxcvbnm"
+// let random1 = str[Math.floor(Math.random() * str.length)];
+// let random2 = str[Math.floor(Math.random() * str.length)];
+
+// console.log(random1);
+
+// In This Interview I got 3.5/5 ---->  practice on communication , problem solving and explanetion 
