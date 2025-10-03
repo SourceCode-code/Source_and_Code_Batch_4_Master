@@ -140,3 +140,41 @@ console.log(str9.concat(str10,str11))
 
 console.log(str11.concat(str9,str10))
 
+
+// -------------------------------------------
+// StartsWith()--> this method is used to check whether a string starts with a particular substring or string
+
+let str12 = "hello my name is siddhant"
+
+console.log(str12.startsWith("hello"))// the output and return type both are boolean
+
+
+
+// EndsWith()--> this method is used to check whether a string ends with a particular substring or string
+console.log(str12.endsWith("siddhant"))
+
+// Repeat()--> this mehod is used to reapeat a string mutliple time 
+
+console.log(str12.repeat(10)) //hello my name is siddhanthello my name is siddhant
+
+//match()--> this method is used to match a string against a regular expression and return a array
+
+let str13 = "the rain in mumbai stays mainly during monsoon"
+
+let result = str13.match("mumbai")
+
+console.log(result)  //return a array
+
+
+
+//  Write a program to count how many characters (excluding spaces) are in a string.
+
+let str14 =" siddhant "
+console.log(str14.trim().length) //8
+
+//Split the string "red,green,blue,yellow" into an array and print each color separately.
+
+let str15 ="red,green,blue,yellow"
+
+let color = str15.split(",")
+console.log(color)
