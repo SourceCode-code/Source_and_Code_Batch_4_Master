@@ -81,8 +81,8 @@ console.log(str.split("a")) //[ 'Siddh', 'nt Arjun G', 'd', 'kh' ]
 
 let str7="HT"
 
-// console.log(str7[0]) //H
-// console.log(str7[1]) // T
+console.log(str7[0]) //H
+console.log(str7[1]) // T
 
 let num =Math.round(Math.random()) 
 
