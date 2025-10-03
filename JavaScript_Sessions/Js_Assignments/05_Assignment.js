@@ -121,3 +121,4 @@ let str13 = " HELLOworld ";
 // 14. Replace the first occurrence of "test" with "exam" 
 //     in the string "test your code with a test case".
 let str14 = "test your code with a test case";
+

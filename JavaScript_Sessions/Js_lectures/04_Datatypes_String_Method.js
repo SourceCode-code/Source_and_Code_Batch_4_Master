@@ -178,3 +178,8 @@ let str15 ="red,green,blue,yellow"
 
 let color = str15.split(",")
 console.log(color)
+
+let str21 = "Write a program to count how many characters (excluding spaces) are in a string."
+let strlen = str21.replaceAll(" ","")
+console.log(strlen)
+console.log(strlen.length)
