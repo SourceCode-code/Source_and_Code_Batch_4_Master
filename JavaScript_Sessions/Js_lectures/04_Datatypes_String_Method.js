@@ -68,15 +68,75 @@ console.log(str4.split(" ")) //[ 'Siddhant', 'Arjun', 'Gadakh' ]
 
 console.log(str.split("a")) //[ 'Siddh', 'nt Arjun G', 'd', 'kh' ]
 
-//
 
-// generate a radom head or tails 
 
-let str7="HT"
+// trim()  [trimStart(),trimEnd()]--> this method is used to remove the extra spaces form the string 
 
-// console.log(str7[0]) //H
-// console.log(str7[1]) // T
+// trim()--> this method will remove the extra spaces form both sides of the string i.e starting and ending of string
 
-let num =Math.round(Math.random()) 
 
-console.log(str7[num])
+let str5 = " Sidd hant "
+console.log(str5.length)
+
+console.log(str5.trim())
+console.log(str5.trim().length)
+
+// trimStart()--> this method will remove the extra spaces form the starting of the string 
+console.log(str5.trimStart())
+console.log(str5.trimStart().length)
+
+// trimEnd()--> this method will remove the extra spaces form the Ending of the string 
+console.log(str5.trimEnd())
+console.log(str5.trimEnd().length)
+
+//note trim methods will not remove the spaces in between strings 
+
+// includes()--> this method is used to check whether a string contains a particular substring or not 
+let str6 ="Hello I am Learning Javascript"
+
+console.log(str6.includes("javascript")) // here the return type is boolean
+//js is case sensitive that is why you have to give input as a proper character
+
+// note ->  when we use any method we get two things 
+//1 output --> this is what we see on console --> exmaple in case of split() --> muiltple string
+//2 return type --> the datatype of the output --> in case of split the return type is array 
+
+
+// replace(word to replace , word to replace with)--> this method is used to replace only first occurance particular character or word in string  with another
+
+let str7 ="hello i am learning javascript and javascript is a web development language"
+
+let newstr4 = str7.replace("javascript","python")
+console.log(newstr4)
+
+// replaceAll()-->(word to replace , word to replace with)--> this method is used to replace all occurance particular character or word in string  with another
+
+let newstr5 = str7.replaceAll("javascript","python")
+console.log(newstr5)
+
+//note -> both replace and replaceAll method are case sensitive 
+
+// indexOf()--> this method is used to find the index of particular character  (first occurance)
+
+let str8 ="qwertyuiopasdfghjklzxcvbnmp"
+
+console.log(str8.indexOf("p"))
+console.log(str8[9])
+
+// lastIndexOf()-->this method is used to find the index of particular character  (last occurance)
+console.log(str8.lastIndexOf("p"))
+console.log(str8[26])
+
+// concat()--> this method is used to join two or more strings
+
+let str9 = "hello"
+let str10="world"
+let str11 ="thisisjarvis"
+
+// +operator
+// `${}` --> template literals
+
+console.log(str9.concat(str10,str11))
+
+console.log(str11.concat(str9,str10))
+
