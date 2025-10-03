@@ -206,7 +206,6 @@ let num40= (Math.round(Math.random()*(9)+1))
 let num50= (Math.round(Math.random()*(9)+1))
 console.log(num111 ,num200, num30, num40,num50)
 // Q38. Create a random password of 8 charalet num1= (Math.round(Math.random()*(9)+1))cters using letters and numbers (hint: use Math.random and string methods).
-let str18 = 
 
 
 
