@@ -171,17 +171,11 @@ let randomNum4 = Math.floor(Math.random()*(maxNum4- minNum4)+minNum4)
 console.log(randomNum4)
 // Q33. Write a function that simulates tossing a coin (should print either "Heads" or "Tails").
 let coin0 = "Heads,Tails"
-let coin11 = coin0.substring(0,5)
-let coin12 = coin0.substring(6,11)
-let tossedcoin1 = Math.round(Math.random()*coin11)
-console.log(coin0[tossedcoin1])
-let tossResult = Math.random();
-if ( toss< 0.5) {
-    console.log("Heads");
-}else
-{
-    console.log("Tails")
-}
+let tosscoin = coin0.split(",")
+let coin1 = tosscoin.length
+console.log(coin1)
+let tossed = tosscoin[Math.floor(Math.random()*tosscoin.length)]
+console.log("ans 33", tossed)
 
 
 // Q34. Generate a random integer between 100 and 999 (3-digit number).
@@ -193,8 +187,9 @@ console.log(randomNum5)
 
 // Q36. Generate a random number between 1 and 100 and check if it is even or odd.
 let randomNum50 = Math.floor(Math.random()*99 + 1)
-let result11=  ((randomNum50)/2 * 2)
-console.log(result11,)
+let result11=  Math.floor(Math.random()*50)*2 +1
+let result22 = Math.floor((randomNum50)/2 * 2 + 1)
+console.log("ans of 36",result11,result22)
 
 
 
@@ -205,7 +200,12 @@ let num30= (Math.round(Math.random()*(9)+1))
 let num40= (Math.round(Math.random()*(9)+1))
 let num50= (Math.round(Math.random()*(9)+1))
 console.log(num111 ,num200, num30, num40,num50)
-// Q38. Create a random password of 8 charalet num1= (Math.round(Math.random()*(9)+1))cters using letters and numbers (hint: use Math.random and string methods).
-
-
+// Q38. Create a random password of 8 characters
+// using letters and numbers (hint: use Math.random and string methods).
+let randomPass = "qwertyuiopoijhg"
+let randomPass1 = "!@#$%^&*"
+let pass1 = randomPass1[Math.round(Math.random()* randomPass1.length)]
+let pass2 = randomPass.substr(Math.random()*randomPass.length-5,4)
+let passNum = Math.round(Math.random()*999)
+console.log(pass1 + pass2 + passNum)
 
