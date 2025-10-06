@@ -4,7 +4,6 @@
 
 //1 git commit -a -m "message" --> this command is a mixture of git add . and git commit -m "meassge" this will directly 
 // add the changes to the stagging area 
-
 //2 git reset filepath --> this command will unstage the file without discarding the changes 
 //3 git reset --> this command will unstage the  all file without discarding the changes 
 
@@ -25,3 +24,4 @@
 // 6 git blame filepath --> shows you who made changes in the files 
 //7 git show <commit id> --> give you a detail information about the commit
 
+//jhadyigfgfiyasgfiafiag

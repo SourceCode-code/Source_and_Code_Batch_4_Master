@@ -211,7 +211,7 @@ let n4 = Math.floor(Math.random() * (9999 - 1000 + 1 ) + 1000);
 console.log(n1  ,  n2  ,  n3  ,  n4);
 
 // generate a random mobile number 
-let mobno = Math.floor(Math.random()* (1234567890 - 0 + 1 ));
+let mobno = Math.ceil(Math.random()* (9999999999 - 0 + 1 ));
 console.log(mobno);
 
 //31.Create a random 10-character password using uppercase letters, lowercase letters, numbers, and special symbols.

@@ -314,10 +314,240 @@ console.log(Math.floor(Math.random()*100))
 // Math.floor((Math.random()*(max -min)+min))
 
 
-// incusley  -->29
+// incusley  -->
 // Math.floor((Math.random()*(max -min)+min))
 console.log( Math.floor((Math.random()*(30 -20)+20)))
-// exculsive --> 30
+// exculsive --> 
 // Math.floor((Math.random()*((max -min+1)+min))
 
+
+
+
+//-----------------------------------------------------------------------------
+
+
+// incusley  --> from zero to hunderd --> 0-100
+// Math.floor((Math.random()*((max -min+1)+min))
+
+// exculsive --> > from 0 to 99--> 0-99
+// Math.floor((Math.random()*(max -min)+min))
+
+
+
+// generate a random between 0-100    --->1--99 // 0-100
+// genarte a random number form 0-100 --->0-100
+
+
+// genrate a random adhar number 
+
+// generate a raNDOM 12 didgit 
+
+let digit1 = Math.floor(Math.random()*(9999-1000)+1000)
+let digit2 =Math.floor(Math.random()*(9999-1000)+1000)
+let digit3 =Math.floor(Math.random()*(9999-1000)+1000)
+let digit4 =Math.floor(Math.random()*(9999-1000)+1000)
+console.log(digit1 , digit2 ,digit3 ,digit4)
+
+
+// generate a random moblie number 
+// 
+let mobnum = Math.floor(Math.random()*(9999999999-100000000)+100000000) //735943614 //6914172218
+console.log(mobnum)
+
+
+
+// 10 digit  -- > 1000000000 ---> 9999999999
+//12345678910
+
+
+
+//----------------------------String --------------------------------------
+
+// String --> any data (squence of character ) wrapped in 'single quotes ' , "double quotes " or `backticks ` is define as string
+
+// example 
+
+let str1="            " // empty string
+let str2 = "1234567852"
+let str3 = ` true `
+let str4 = "null"
+let str5 = ""
+
+console.log(typeof str1)
+console.log(typeof str2)
+console.log(typeof str3)
+console.log(typeof str4)
+console.log(typeof str5)
+
+
+// everydata type will have its methods and properties 
+
+// in relations of number --> method --> floor , ceil , random 
+
+
+// so string also have method and properties 
+
+//string has property called as length
+// string has many method 
+
+// note :- string are immutable  (cannot changed)
+
+
+// length --->  string has property called as length 
+
+let str6 = "siddhant"
+
+console.log(str6.length) //8
+// it will inculde every character including space 
+ 
+// every charcter in string is stored in indexes 
+
+
+// s  i  d  d  h  a  n  t  
+// 0  1  2  3  4  5  6  7 
+
+console.log(str6[0]) // s
+console.log(str6[1]) //i
+
+// the last character is always  length - 1
+
+
+console.log(str6[str6.length-1])
+
+
+// String concatenations -- when we merge or combine 2 or more string that called as string concatenations
+
+
+// examples 
+
+let firstname = "siddhant"
+let middlename = "arjun"
+let lastname ="gadakh"
+
+
+// there are 2 ways 
+
+// 1 using + operator 
+let fullname = firstname+ " "+middlename+" "+lastname
+
+console.log(fullname)
+
+//2 ES6 Class --> ` back ticks `-- string literal or template literal 
+
+let full = `${firstname} ${middlename} ${lastname}`
+
+console.log(full)
+
+
+// Escape character --> there are some properties of string --> we can by pass them for our conviceing using escape character 
+
+//1 long literal string --> if we want to define string in more than one line we use (\)
+
+let longstring = "trfyhgcjvhkuydtjxgchkmv,lbh.igufkydjtgxfchmvkgufiydtshxfgncjmvk,\
+gfydgthxfbsdg\nsgsdfsdfsdfsdfgsdfgsdfgsdfgsdfgsdfggsdfgsdfgsdfgsdfgdfgdfdfdfdfgdfddhfa9s\
+hugfonNGON0SDJGNOfdfdfdfdfdfdfdfdf"
+
+console.log(longstring)
+
+//2 newline (\n) --> 
+
+let ss = "siddhant\n arjun\n gadakh"
+
+console.log(ss)
+//siddhant
+//arjun
+//gadakh
+
+// 3 \' --> if you want to add a single quotes in a string defined by single quotes 
+
+let qq = '\"Siddhant\" \'arjun\' gadakh'
+console.log(qq)
+
+// 4 \" --> if you want to add a double quotes in a string defined by double quotes 
+
+let qqq = "Siddhant \"arjun\" gadakh"
+console.log(qqq) //Siddhant "arjun" gadakh
+
+let er = "i am learning js.\nit's \"fun\" to learn js"
+console.log(er)
+
+
+
+//-----------------------26-09-2025---------------------------------------
+
+
+// Methods of string -->
+
+//1 toUppercase()--> this method will return a aplhabatical string in uppercase (capital)
+
+let str7 = "Learning string methods"
+
+console.log(str7.toUpperCase()) //LEARNING STRING METHODS
+
+//2 .toLowerCase() -->this method will return a aplhabatical string in Lower case (small)
+
+let str8 ='LEARNING STRING METHODS 51365163'
+
+console.log(str8.toLowerCase()) //learning string methods 51365163
+
+
+let str9 = "Learning string methods conact"
+console.log(str9.length)
+console.log(typeof str9.length)
+console.log(str9.toUpperCase().toLowerCase())  //LEARNING STRING METHODS CONACT //learning string methods conact
+////LEARNING STRING METHODS CONACT.tolwercase() -->learning string methods conact
+
+
+// method concatination -> when we apply 2 or more methods simulatenously where the output of first method is valid  input 
+//  to second
+
+                                                    //         30  .tolowercase()
+//console.log(str9.toUpperCase().toLowerCase().toUpperCase().length.toUppercase().substr(0,8))
+//
+
+
+//28 
+
+//error 
+
+
+// note when we use any method we get 2 things output 2 is a return type 
+
+//LEARNING STRING METHODS CONACT  --> string
+
+
+//3 Substr() --> substr is method which is used to get a part of string  (starting index , number of charcter )
+let str10 = "Learning string methods conact"
+//                     (starting index, number character)
+let newsub= str10.substr(5,8) //Learning
+
+console.log(newsub)
+
+
+//4 Substring()-->  subString is method which used to get a part of a string (starting index , ending index) // it wil not inculde the  ending 
+// index in the output
+
+// // 0-10 
+// 0 ---9
+
+console.log(str10[7])
+let newsubstr =str10.substring(0,7)
+console.log(newsubstr)
+
+
+
+//5 spilt() --> this  is used to convert one string into many new strings   --> this has a return type of array 
+
+let str11 = " hello my name is siddhant "
+ 
+console.log(str11.split(" ")) //[ '', 'hello', 'my', 'name', 'is', 'siddhant', '' ]
+
+console.log(str11.split("e")) 
+
+console.log(str11.split(""))
+
+
+let str12 = "12582685265"
+
+console.log(str12.split(""))
 
