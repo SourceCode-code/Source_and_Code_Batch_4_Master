@@ -7,7 +7,7 @@ let num1 =123
 let num2 ="456"
 let num3 ="789"
 
-console.log( (num1+num2+num3)) //123456789
+console.log( (num1+num2+num3)) //123456789 `${}`,+
 
 
 // conversion of number to string 
@@ -38,7 +38,7 @@ console.log(typeof num5)
 
 //b using method parseFloat()--> convert string into floating number 
 
-let str4 = "456.123"
+let str4 = "456.5842"
 
 let num6 = parseFloat(str4)
 console.log(num6)
