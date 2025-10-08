@@ -6,10 +6,11 @@ console.log(typeof myNumber)
 
 //Q2. Declare a string variable "Hello" and print its type.
 
-let myName = "AKASH"
+let myName = "AKASHH"
 console.log(typeof myName)
 
 //Q3. Declare a boolean variable true and print its type.
+
 
 let isTeacher= true
 console.log(typeof isTeacher)
