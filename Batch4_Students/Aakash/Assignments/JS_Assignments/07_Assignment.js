@@ -1,5 +1,5 @@
 /** 
- * ASSIGNMENT 6 & 7 QUESTIONS 
+ * ASSIGNMENT 6 and 7 QUESTIONS 
  */
 
 // 1. Check if the type of '10' is exactly equal to 10. If not, convert '10' to a number and check again.
@@ -81,28 +81,53 @@ console.log("ans of 11", lengthOfstr3!==lengthOfstr4)
 
 // 12. Evaluate the following expressions and confirm with `console.log()`:
 //write the output in the comments 
-console.log(4 > 3 && 10 < 12);   
-console.log(4 > 3 && 10 > 12);   
-console.log(4 > 3 || 10 < 12);   
-console.log(4 > 3 || 10 > 12);   
-console.log(!(4 > 3));          
-console.log(!(4 < 3));           
-console.log(!(false));           
-console.log(!(4 > 3 && 10 < 12)); 
-console.log(!(4 > 3 && 10 > 12)); 
-console.log(!(4 === '4'));        
+console.log("ans 12", 4 > 3 && 10 < 12);  //true 
+console.log(4 > 3 && 10 > 12); //false  
+console.log(4 > 3 || 10 < 12); //true  
+console.log(4 > 3 || 10 > 12);  //true 
+console.log(!(4 > 3)); //false         
+console.log(!(4 < 3)); //true          
+console.log(!(false)); //true          
+console.log(!(4 > 3 && 10 < 12)); //false
+console.log(!(4 > 3 && 10 > 12)); //true
+console.log(!(4 === '4')); //true       
 
 // 13. Check if there is no 'on' in both 'dragon' and 'python'.
-let dragon = 'dragon';
+let dragon = 'dragon'
+let jargon = 'jargon'
+
+let result = !dragon.includes("on") && !jargon.includes("on")
+console.log("ans 13", result)
+
 
 // 14. Write a script  the user to enter the base and height of a triangle, then calculate its area.
+let base = 10
+let height = 20
+let area = base*height
+console.log(area)
+
 
 // 15. Write a script that the user to enter sides a, b, and c of a triangle, then calculate its perimeter.
 
+let a = 10
+let b = 20
+let c = 30
+let primeter = a+b+c
+console.log(primeter)
 // 16. Calculate the area and perimeter of a rectangle, prompting for length and width.
+let length1 = 10
+let width1 = 20
+let area1 = length1*width1
+let perimeter = 2*(length1+width1)
+console.log(area1)
+console.log(perimeter)
 
 // 17. Get the radius   calculate the area and circumference of a circle.
-
+let radius = 8
+let area2 = 3.14*3.14**2
+console.log(area2)
+let circum = 2*3.14*radius
+console.log(circum)
 // 18. Calculate the slope, x-intercept, and y-intercept of y = 2x - 2.
 
 // 19. Compare the slope between two points (2, 2) and (6, 10).
@@ -112,9 +137,46 @@ let dragon = 'dragon';
 // 21. Calculate the value of y (y = x^2 + 6x + 9) for different x values and figure out when y equals 0.
 
 // 22. Compare the length of your first name and your family name.
+let firstName1 = "akash"
+let lastName1 = "jadhav"
+let lenDiff = firstName.length<lastName.length
+ 
+console.log("ans of 22", lenDiff)
+
+/**
+ * > (greater than) 
+ * <  (less than)
+ * >= (greater than or equal to) 
+ * <= (less than or equal to)
+ * == (equal value)
+ * === (equal value and equal datatype)
+ * != (not equal)
+ * !==(not equal value nor datatype are same)
+ */
 
 // 23. Declare two variables `myAge` and `yourAge`, then calculate the age difference.
+let myAge = 26
+let yourAge = 27
+let ageDiff = yourAge-myAge
+console.log(ageDiff)
+
 
 // 24. Using ternary opertor, when birth year and calculate if they are old enough to drive.
 
+
+let birthyear = 2020
+let currentyear = 2025
+let currentAge = currentyear-birthyear
+console.log(currentAge)
+let ageToDrive = 18
+let canDrive = (currentAge >=ageToDrive)? "yes you can drive" : "no you cannot drive "
+console.log(canDrive)
+
 //25  using ternary opertor check number is even or odd
+
+let oddNum = 55
+
+let oddevenNum = (oddNum%2)? "odd" : "even"
+console.log(oddevenNum)
+
+
