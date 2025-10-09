@@ -1,0 +1,32 @@
+// Interviwe Counduct By Sidd 28-09-25 
+
+// 1- Self Into 
+// 2- Manual Testing 
+// what is Bug , What is smoke and sanity , what is SDLC-STLC , what is Re and Regreshion testing 
+// What is Types Of Testing , what is white box - black box testing 
+
+// 3 - JavaScript Data Type
+// declare 4 varaibles in a single line 
+//let st1 = 12345 , str2 = 'rushi' , str3 = 'jadhav' , myAge = 26
+
+// console.log((2 + 2));// 4      
+// console.log(2 + "2"); // 22  
+// console.log(("2" + "2"));// 22
+// console.log((2 - "2")); // 0
+// console.log(("5" * 2));  //10     
+// console.log(("10" - 5)); //5   
+// console.log("10" + 5) //105
+
+// Tip on that 
+// + can mean addition or string concatenation.
+
+// -, *, /, % always mean numeric operations → they force type conversion to numbers.
+
+// write a program to get any 2 letters  Randomly form the string 
+// let str ="qwertyuIOplkjhgfdsazxcvbnm"
+// let random1 = str[Math.floor(Math.random() * str.length)];
+// let random2 = str[Math.floor(Math.random() * str.length)];
+
+// console.log(random1);
+
+// In This Interview I got 3.5/5 ---->  practice on communication , problem solving and explanetion 

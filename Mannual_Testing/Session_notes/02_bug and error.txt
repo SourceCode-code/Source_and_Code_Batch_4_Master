@@ -1,0 +1,31 @@
+ what is a bug/defect
+
+ defination -> bug is the flaw in the software that is caused by the difference in the expected Requirement and the actual result 
+
+example 
+
+in the contact us form in the first name 
+there should only letters 
+but we are able to enter number as well as symbol
+
+
+// bug is report by --> testor  
+
+
+ what is error 
+ defination --> error is mistake caused by the human (developer or testor )
+ // example 
+
+ let a = 10
+
+ console.log(c)
+
+ // what is error for testor 
+  not checking every scernior for the test 
+
+
+// failure --> failure is when your software or product stop working 
+
+// example --> your website is not loading --> End -user 
+
+
