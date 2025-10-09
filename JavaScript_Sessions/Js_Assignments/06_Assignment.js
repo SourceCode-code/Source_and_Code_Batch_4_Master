@@ -70,19 +70,12 @@ let dragon = 'dragon';
 
 // 14. Write a script  the user to enter the base and height of a triangle, then calculate its area.
 
+
 // 15. Write a script that the user to enter sides a, b, and c of a triangle, then calculate its perimeter.
 
 // 16. Calculate the area and perimeter of a rectangle, prompting for length and width.
 
 // 17. Get the radius   calculate the area and circumference of a circle.
-
-// 18. Calculate the slope, x-intercept, and y-intercept of y = 2x - 2.
-
-// 19. Compare the slope between two points (2, 2) and (6, 10).
-
-// 20. Compare the slope of the two questions above.
-
-// 21. Calculate the value of y (y = x^2 + 6x + 9) for different x values and figure out when y equals 0.
 
 // 22. Compare the length of your first name and your family name.
 
