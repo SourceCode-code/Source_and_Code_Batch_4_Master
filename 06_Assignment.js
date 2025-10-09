@@ -11,9 +11,8 @@ console.log(typeof myName)
 
 //Q3. Declare a boolean variable true and print its type.
 
-
-let isTeacher= true
-console.log(typeof isTeacher)
+let isTeacherr= true
+console.log(typeof isTeacherr)
 
 //Q4. Declare null in a variable and print its type.
 
