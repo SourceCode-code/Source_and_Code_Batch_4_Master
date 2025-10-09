@@ -5,18 +5,26 @@
 // 1. Check if the type of '10' is exactly equal to 10. If not, convert '10' to a number and check again.
 let strTen = '10';
 let numTen = 10;
-
+console.log(typeof strTen === typeof numTen); // false
+let num10 = parseInt(strTen)
+console.log("Question 1 Answer is:",typeof num10 === typeof numTen);
 
 // 2. Check if parseFloat('9.8') is equal to 10. If not, round it to make it equal to 10.
-
+let num9_8 = parseFloat('9.8');
+console.log(num9_8 === 10);
+let roundNum = Math.round(num9_8);
+console.log("Question 2 Answer is :",roundNum === 10);
 
 // 3. Check if 'on' is found in both 'python' and 'jargon'.
 let word1 = 'python';
-let word2 = 'jargon';
+let wor1 = 'jargon';
+console.log(word1.includes('on') , wor1.includes('on'));
+
 
 
 // 4. Check if the word 'jargon' is found in the sentence: "I hope this course is not full of jargon."
 let sentence = "I hope this course is not full of jargon.";
+console.log("Question 4 Answer is :",sentence.includes("jargon"));
 
 
 // 5. Use `substr` to slice out the phrase 'because because because' from the following sentence:
@@ -85,9 +93,27 @@ let dragon = 'dragon';
 // 21. Calculate the value of y (y = x^2 + 6x + 9) for different x values and figure out when y equals 0.
 
 // 22. Compare the length of your first name and your family name.
+let firstName = "Swapnil"
+let lastName = "Gaikwad"
+let comparison = firstName.length >= lastName.length ? "Your first name characters are higher or equal than your last name" : "Your last name characters are higher than your first name"
+console.log(comparison)
 
 // 23. Declare two variables `myAge` and `yourAge`, then calculate the age difference.
+let myAge = 35
+let yourAge = 20    
+let ageDiff = myAge >= yourAge ? "I am older than you" :"I am elder than you"
+console.log(ageDiff)
 
 // 24. Using ternary opertor, when birth year and calculate if they are old enough to drive.
+let birthYear = 2001
+let currentYear  = 2025
+let ageToDrive = 18
+let drive = currentYear - birthYear
+let canDrive = drive >= ageToDrive ? "Yess You are ready to drive" : "You have to learn driving untill your age turns 18+"
+console.log(canDrive)
 
 //25  using ternary opertor check number is even or odd
+let num100 = 21
+let numCheck = num100 % 2 === 0 ? "even" : "odd"
+console.log(numCheck)    
+
