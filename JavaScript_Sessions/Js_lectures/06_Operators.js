@@ -1,4 +1,4 @@
-//Operators -->  Symbol are the that used to perform operations
+//Operators -->  Symbol that are used to perform operations
 
 // 1 Arithmetic Operators --> used to perform mathematical operations 
 // 2 Assignment Operators --> used to assign values to variables 

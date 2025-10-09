@@ -1,0 +1,30 @@
+/*1.  math.floor
+2. math.ceil
+3 math .random
+4 math.toFixed()
+5. Math.random()
+6 + operator
+7 template literal
+8 long literal striing
+9 escape characters \n, \t, \', \"
+10 .toUpperCase()
+11 .tolowercase
+12 method concatenation 
+13 substr
+14 substring 
+15 split()
+16 trim()
+17 trimStart()
+18 trimEnd()
+19 includes()
+20 replace()
+21 replaceAll()
+22 indexof()
+23 lastIndexOf()
+24 concat()
+25 startswith()
+26 endsWith()
+27 repeat()
+28 match ()
+*/
+
