@@ -162,7 +162,9 @@ console.log("ans of 22", lenDiff)
  * != (not equal)
  * !==(not equal value nor datatype are same)
  */
-// this is for push
+// this is for        uisehfuiawuiwryhi
+
+
 // 23. Declare two variables `myAge` and `yourAge`, then calculate the age difference.
 let myAge = 26
 let yourAge = 27
