@@ -40,8 +40,14 @@ let country = "INDIA"
 let city = "Sangamner"
 let age = 26
 let isMarried = true
-let year = 1999
-console.log(typeof (firstName),typeof(lastName),typeof(country),typeof(city),typeof(age),typeof(isMarried),typeof(year) )
+let year1 = 1999
+console.log(typeof (firstName))
+console.log(typeof(lastName))
+console.log(typeof(country))
+console.log(typeof (city))
+console.log(typeof(age))
+console.log(typeof(isMarried))
+console.log(typeof(year1) )
 
 // 7. Check if the type of '10' is equal to 10 using `parseInt`.
 let str2 = "10"
@@ -129,6 +135,9 @@ console.log(area2)
 let circum = 2*3.14*radius
 console.log(circum)
 // 18. Calculate the slope, x-intercept, and y-intercept of y = 2x - 2.
+let slope = 2
+let yintercept = -2
+
 
 // 19. Compare the slope between two points (2, 2) and (6, 10).
 
@@ -179,4 +188,87 @@ let oddNum = 55
 let oddevenNum = (oddNum%2)? "odd" : "even"
 console.log(oddevenNum)
 
+
+
+
+// Date keywords/ object shows you the time and date of your system
+
+//Get the currrent date and time 
+let date = new Date()
+
+console.log(date) //2025-10-10T10:01:09.472Z
+
+
+// getFullYear()--> returns the current year in 4 digits 
+let year = date.getFullYear()
+console.log(year) //2025
+
+let year2 = date.getFullYear()
+console.log(year2)//2025
+
+
+// getMonth() --> it will return the current month but (0-11) 0 is for jan and 11 is for dec
+// if you want your month shown in number format
+let month = date.getMonth()+1
+console.log(month) //10
+
+let month1 = date.getMonth()+1
+console.log(month1)//10
+
+// short form of month 
+let shortmonth = date.toLocaleString("en-gb",{month:"short"})
+console.log(shortmonth) //Oct
+
+let shortmonth1 = date.toLocaleString("en-gb",{month:"short"})
+console.log(shortmonth1) //Oct
+// long form of month
+const longmonth = date.toLocaleString("en-gb",{month:"long"})
+console.log(longmonth) //October
+
+let longmonth1 =  date.toLocaleString("en-gb",{month:"long"})
+console.log(longmonth1) //October
+
+// getDate() --> it will return the current date (1-31)
+let currentdate =date.getDate()
+console.log(currentdate)
+
+let currentdate1 = date.getDate()
+console.log(currentdate1)
+
+
+
+// human format date 
+let humanDateformat = `${currentdate}/${month}/${year}`
+console.log(humanDateformat)
+let humanDateformat1 = `${currentdate1}/${month1}/${year1}`
+console.log(humanDateformat1)
+// FOR TIME 
+
+// by default the system time is in 24 hours format
+
+// getHours() --> it will return the current hour (0-23) 
+
+let hours = date.getHours()
+console.log(hours)
+
+let hours1 = date.getHours()
+console.log(hours1)
+
+// getMinutes() --> it will return the current minute (0-59)
+let min = date.getMinutes()
+console.log(min)
+let min1 = date.getMinutes()
+console.log(min1)
+// getseconds() --> it will return the current seconds (0-59)
+let sec = date.getSeconds()
+console.log(sec)
+let sec1 = date.getSeconds()
+console.log(sec1)
+
+// time in hh:MM:SS format
+let currenttime = `${hours}:${min}:${sec}`
+console.log(currenttime)
+
+let currenttime1 = `${hours1}:${min1}:${sec1}`
+console.log(currenttime1)
 
