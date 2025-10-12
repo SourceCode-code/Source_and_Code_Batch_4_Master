@@ -76,7 +76,7 @@ console.log(fullname);
  
 let city1 = "Mumbai";
 let _city = "Shirdi";
-let $city = "Pune";
+let $city = "Nashik";
  
 console.log(city1);
 console.log(_city);
