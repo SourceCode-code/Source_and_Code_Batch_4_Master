@@ -1,1 +1,182 @@
-hello
+
+%  assignment of Introduction Questions 
+
+
+% Agile Methodology- created in February 2001 by 17 software developers
+
+
+% What is Agile Methodology?
+
+% * Agile is a project management and software development approach that focuses on:
+% * Flexibility and adaptability
+% * Continuous improvement
+% * Customer collaboration
+% * Delivering small, working pieces of software frequently
+
+% * Instead of building an entire project in one long phase (like in the Waterfall model), Agile divides the work into small, manageable parts called iterations or sprints (usually 1–4 weeks each).
+% * After each sprint, the team:
+% * Delivers a working version of the product,
+% * Gets feedback from clients or users,
+% * Improves the product in the next sprint.
+% * How Agile Is Used in IT Companies:
+
+
+% Agile is mainly used in software development, product design, and IT project management.
+
+% Here’s how it’s typically implemented:
+
+% 1\. Scrum Framework (Most Common)
+
+% Work is divided into Sprints (1–4 weeks).
+
+% Team roles include:
+
+% Product Owner – manages the product backlog and priorities
+
+% Scrum Master – facilitates the process, removes blockers
+
+% Development Team – builds the product
+
+% Daily short meetings (daily stand-ups) keep everyone aligned.
+
+% 2\. Kanban
+% Uses a visual board with columns like To Do, In Progress, Done.
+% Focuses on continuous flow and limiting work-in-progress.
+
+% ...................................................................................................................................................
+
+% * What Is Jira?
+% * Jira is a project management and issue-tracking tool developed by Atlassian, widely used in IT companies to implement the Agile methodology.
+% * Originally, Jira was built for bug tracking in software development.
+% ...................................................................................................................................................
+% -- What is GitHub?
+
+% GitHub is a web-based platform for version control and collaboration built on Git, a system created by Linus Torvalds (the creator of Linux).
+
+% It allows developers to store, manage, and track changes in code, and collaborate on software projects efficiently.
+% ...................................................................................................................................................
+% -- What is Postman?
+
+% Postman is a collaboration and API testing platform used by developers, testers, and DevOps teams to design, build, test, and document APIs (Application Programming Interfaces).
+% In simpler terms:
+
+% -- It helps teams send requests to APIs and analyze responses — without writing code manually each time.
+% ...................................................................................................................................................
+
+
+% -- API = Application Programming Interface
+
+% An API is like a messenger between two software programs.
+
+% It helps them talk to each other and share information.
+
+% ...................................................................................................................................................
+% -- What is Mocha?
+
+% Mocha is a JavaScript testing framework used by developers to test their code — especially for Node.js applications.
+
+% In simple words:
+
+% -- Mocha helps you check if your code is working correctly before you release it.
+
+% It doesn’t test your app automatically — instead, you write small test scripts using Mocha to verify that your functions, APIs, or logic produce the expected results.
+% ...................................................................................................................................................
+
+%  What is Page Object Model (POM)?
+
+% Page Object Model (POM) is a design pattern used in test automation — especially for UI testing (like websites or web apps).
+
+% In simple words 
+
+%  -- POM means keeping your test code separate from the page structure,
+
+% so your tests become cleaner, reusable, and easier to maintain.
+
+% It’s commonly used with tools like Selenium, Cypress, or Playwright.
+
+
+%   When Was It Developed?
+
+% POM is not a tool — it’s a design approach that became popular in the early 2010s,
+
+% as automation tools (like Selenium WebDriver) evolved and teams needed structured test frameworks.
+
+
+%  How It’s Used in IT Companies
+% In automation testing, you need to interact with web pages — click buttons, enter text, verify results, etc.
+% Without POM, your test scripts can become messy because you repeat the same locators (like button IDs, field names) everywhere.
+% So instead, POM organizes your project like this:
+% ...................................................................................................................................................
+
+%  What is BDD (Behavior Driven Development)?
+
+% BDD stands for Behavior-Driven Development.
+
+% It’s a software development and testing approach that focuses on how the application should behave from the user’s point of view — not just how it’s coded.
+
+
+
+% In simple words 
+
+%  BDD makes developers, testers, and business people speak the same language when writing tests.
+
+% It helps everyone understand what’s being built and how it should behave.
+
+% ...................................................................................................................................................
+
+%  What is Cucumber?
+
+% Cucumber is a testing tool that supports BDD.
+
+% It understands and executes those human-readable test cases written in a format called Gherkin.
+
+% Gherkin is the language used for writing BDD scenarios.
+
+% Cucumber connects those written steps to actual code (in JavaScript, Java, Python, etc.) and executes them.
+% ...................................................................................................................................................
+
+%  What is Gherkin?
+
+% Gherkin is a plain-text language used to write test cases in Behavior-Driven Development (BDD).
+
+% It’s the language that Cucumber understands.
+
+% ...................................................................................................................................................
+
+%  What is CI/CD Pipeline?
+
+% CI/CD stands for Continuous Integration and Continuous Delivery/Deployment.
+
+% It’s a process that automates the building, testing, and deployment of software — so that developers can deliver updates faster and more reliably.
+
+% ..................................................................................................................................................
+
+
+%  What is Jenkins?
+
+% Jenkins is an open-source automation tool used to build, test, and deploy software automatically.
+
+% It is one of the most popular tools for setting up a CI/CD pipeline.
+
+% ...................................................................................................................................................
+% Cypress
+
+% What it is:
+
+% Cypress is a tool used to test websites and web applications automatically. It checks if everything on a website works like it should, just like a user would test it manually, but much faster.
+
+% ...................................................................................................................................................
+% Playwright
+
+% What it is:
+
+% Playwright is a tool for automated testing of web applications. It can test websites across different browsers (Chrome, Firefox, Safari, and Edge) and even mobile devices, making sure everything works as expected.
+
+
+% ...................................................................................................................................................
+
+
+% Cypress: Released 2015, mainly for fast end-to-end web testing in Chrome/Edge/Firefox with great debugging tools.
+
+% Playwright: Released 2019 by Microsoft, used for cross-browser and device testing, supports Chrome, Firefox, Safari, Edge, and multiple languages.
+
