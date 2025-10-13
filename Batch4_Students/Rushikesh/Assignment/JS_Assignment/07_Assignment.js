@@ -158,3 +158,7 @@
 
 
 // Not Understand 14 - 22
+
+
+let new1 = new Date()
+console.log(new1)
