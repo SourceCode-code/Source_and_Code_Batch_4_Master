@@ -33,7 +33,20 @@ let longSentence = 'You cannot end a sentence with because because because is a 
 
 
 // 6. Declare variables (firstName, lastName, country, city, age, isMarried, year) and use the `typeof` operator to check different data types.
-
+let firstName = "Swapnil"
+let LastName = "Gaikwad"
+let country = "India"
+let city = "Sangamner"
+let age = 29
+let maritalStatus ="not married"
+let year = 2025
+console.log(typeof(firstName))
+console.log(typeof(lastName))
+console.log(typeof(country))
+console.log(typeof(city))
+console.log(typeof(age))
+console.log(typeof(maritalStatus))
+console.log(typeof(year))
 
 // 7. Check if the type of '10' is equal to 10 using `parseInt`.
 
@@ -42,39 +55,50 @@ let longSentence = 'You cannot end a sentence with because because because is a 
 
 
 // 9. Write three JavaScript statements that provide falsy values.
+console.log(200==="200")
+console.log(50<="20")
+console.log("Question 9 Answer is",100<"50")
 
 
 // 10. Figure out the result of the following comparison expressions without using `console.log()` first, then confirm the result using `console.log()`:
 //write the output in the comments 
-console.log(4 > 3);              
-console.log(4 >= 3);             
-console.log(4 < 3);             
-console.log(4 <= 3);             
-console.log(4 == 4);            
-console.log(4 === 4);           
-console.log(4 != 4);            
-console.log(4 !== 4);            
-console.log(4 != '4');           
-console.log(4 == '4');           
-console.log(4 === '4');          
+console.log(4 > 3);   //true           
+console.log(4 >= 3);  //true     
+console.log(4 < 3);   //false      
+console.log(4 <= 3);  //false    
+console.log(4 == 4);  //true   
+console.log(4 === 4); //true          
+console.log(4 != 4);  //false  
+console.log(4 !== 4); //false           
+console.log(4 != '4');//false           
+console.log(4 == '4'); //true         
+console.log(4 === '4');//false       
 
 // 11. Find the length of the words 'python' and 'jargon' and make a falsy comparison statement.
+let word22 = "python"
+let word23 = "jargon"
+let length22 = word22.length
+let length23 = word23.length
+let result = length22 !== length23
+console.log(length22,length23,result)
 
 // 12. Evaluate the following expressions and confirm with `console.log()`:
 //write the output in the comments 
-console.log(4 > 3 && 10 < 12);   
-console.log(4 > 3 && 10 > 12);   
-console.log(4 > 3 || 10 < 12);   
-console.log(4 > 3 || 10 > 12);   
-console.log(!(4 > 3));          
-console.log(!(4 < 3));           
-console.log(!(false));           
-console.log(!(4 > 3 && 10 < 12)); 
-console.log(!(4 > 3 && 10 > 12)); 
-console.log(!(4 === '4'));        
+console.log(4 > 3 && 10 < 12);  //true 
+console.log(4 > 3 && 10 > 12);   //false
+console.log(4 > 3 || 10 < 12);   //true
+console.log(4 > 3 || 10 > 12);   //true
+console.log(!(4 > 3));          //false
+console.log(!(4 < 3));           //true
+console.log(!(false));           //true
+console.log(!(4 > 3 && 10 < 12)); //false
+console.log(!(4 > 3 && 10 > 12)); //true
+console.log(!(4 === '4'));        //true
 
 // 13. Check if there is no 'on' in both 'dragon' and 'python'.
 let dragon = 'dragon';
+let python = 'python';
+console.log(!dragon.includes('on') ,!python.includes('on'));
 
 // 14. Write a script  the user to enter the base and height of a triangle, then calculate its area.
 
@@ -93,9 +117,9 @@ let dragon = 'dragon';
 // 21. Calculate the value of y (y = x^2 + 6x + 9) for different x values and figure out when y equals 0.
 
 // 22. Compare the length of your first name and your family name.
-let firstName = "Swapnil"
+let firstName1 = "Swapnil"
 let lastName = "Gaikwad"
-let comparison = firstName.length >= lastName.length ? "Your first name characters are higher or equal than your last name" : "Your last name characters are higher than your first name"
+let comparison = firstName1.length >= lastName.length ? "Your first name characters are higher or equal than your last name" : "Your last name characters are higher than your first name"
 console.log(comparison)
 
 // 23. Declare two variables `myAge` and `yourAge`, then calculate the age difference.
@@ -113,7 +137,7 @@ let canDrive = drive >= ageToDrive ? "Yess You are ready to drive" : "You have t
 console.log(canDrive)
 
 //25  using ternary opertor check number is even or odd
-let num100 = 21
+let num100 = 22
 let numCheck = num100 % 2 === 0 ? "even" : "odd"
 console.log(numCheck)    
 
