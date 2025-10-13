@@ -178,7 +178,7 @@ console.log(newstr)*/
 
 // Q39. Declare a variable age = 25. Print its data type using typeof.
 
-let age = 25
+/*let age = 25
 console.log(typeof age)
 
 // Q40. Create a string "JavaScript is Fun". Find its length.
@@ -196,7 +196,7 @@ console.log(str1.substring(str1.length-1))
 let str2= "openai"
 console.log(str2.toUpperCase())
 let str3="HELLO"
-console.log(str3.toLowerCase())
+console.log(str3.toLowerCase())*/
 
 // Q43. Use method chaining: Take "  JavaScript  ", trim the spaces, convert to uppercase, and print length.
 
@@ -230,3 +230,8 @@ console.log(str3.toLowerCase())
 // Q57. Generate a random 6-digit OTP using Math.random().
 
 // Q58. Generate a random number between 500 and 1000.
+ 
+//Date Obejct 
+let current = new Date()
+console.log(current)
+
