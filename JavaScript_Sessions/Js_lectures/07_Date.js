@@ -12,26 +12,26 @@ console.log(year) //2025
 
 // getMonth() --> it will return the current month but (0-11) 0 is for jan and 11 is for dec
 // if you want your month shown in number format
-let month = date.getMonth()+1
+let month = date.getMonth() + 1
 console.log(month) //10
 
 // short form of month 
-let shortmonth = date.toLocaleString("en-gb",{month:"short"})
+let shortmonth = date.toLocaleString("en-gb", { month: "short" })
 console.log(shortmonth) //Oct
 
 // long form of month
-const longmonth = date.toLocaleString("en-gb",{month:"long"})
+const longmonth = date.toLocaleString("en-gb", { month: "long" })
 console.log(longmonth) //October
 
 // getDate() --> it will return the current date (1-31)
-let currentdate =date.getDate()
+let currentdate = date.getDate()
 console.log(currentdate)
 
 
 
 // human format date 
-let humanDateformat = `${currentdate}/${month}/${year}`
-console.log(humanDateformat)
+// let humanDateformat = `${dayformat}/${monthformat}/${year}`
+// console.log(humanDateformat)
 
 
 // FOR TIME 
@@ -55,4 +55,49 @@ console.log(sec)
 let currenttime = `${hours}:${min}:${sec}`
 console.log(currenttime)
 
+// ------------------
 
+// date in human readable format 
+let dayformat = currentdate < 10 ? `0${currentdate}` : currentdate
+let monthformat = month < 10 ? `0${month}` : month
+
+
+// human format date 
+let humanDateformat1 = `${dayformat}/${monthformat}/${year}`
+console.log(humanDateformat1) //10/10/2025
+
+// Padstart(what length,what charcter to add) -->using padStart method to add leading zeros 
+let dayformat2 = String(currentdate).padStart(3, "0")
+
+
+console.log(dayformat2)
+// // PadEnd(what length,what charcter to add)  --> using to add zero at the ending of the string
+
+let dateformat3 = String(currentdate).padEnd(3, "a")
+console.log(dateformat3)
+
+// 21:18:39
+
+// time in 12 hours format 
+
+let chour = date.getHours()
+console.log(chour)
+let cmin = date.getMinutes()
+console.log(cmin)
+
+console.log(`${chour}:${cmin}`) //21:20
+
+// let ampm ?
+let ampm = chour > 12 ? "PM" : "AM"
+console.log(ampm)
+let chours12 = chour % 12
+console.log(chours12)
+let hourformat = String(chours12).padStart(2, "0")
+console.log(hourformat)
+let minformat = String(cmin).padStart(2, "0")
+console.log(minformat)
+console.log(`${hourformat}:${minformat} ${ampm}`) //09:20 PM
+
+console.log(curindtime)
+
+//------------------------------------------------------------------------------
