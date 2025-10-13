@@ -51,7 +51,12 @@ Return the date in the format: "Day of the Week, DD Month YYYY HH:mm"
 */
 let curDay= date.toLocaleString("en-gb",{weekday:"long"})
 console.log(curDay)
-console.log(curDay + ","+" " + currentDate +" "+ longmonth +" " + year +" "+ hours +":" + minutes)
+console.log("Ans 0f 2",curDay + ","+" " + currentDate +" "+ longmonth +" " + year +" "+ hours +":" + minutes)
+let ampm = hours > 12 ? "PM" : "AM"
+console.log(ampm)
+let hourformat = String(hours12).padStart(2, "0")
+console.log("Ans 0f 2",curDay + ","+" " + currentDate +" "+ longmonth +" " + year +" "+ hourformat +":" + minutes)
+
 
 
 /* 
@@ -63,8 +68,27 @@ Calculate how many days are left until a specific date (input: 'YYYY-MM-DD').
 
 */
 
+let date1 = new Date
+let currentDate2 = date.getDate()
+let month1 = date.getMonth()+1
+let year1 = date.getFullYear()
+let currentDate1 = year1  + ":" + month1 + ":" + currentDate2
+console.log("Today",currentDate1)
+let givenDateYear = 2025
+let givenDateMonth = 12
+let givenDateDay = 31
+let givenDate = givenDateYear + ":" + givenDateMonth + ":" + givenDateDay
+console.log("given Date",givenDate)
+let DaysRemaining1 = givenDateYear - year1
+let DaysRemaining2 = givenDateMonth - month1
+let DaysRemaining3 = givenDateDay - currentDate2
+console.log(DaysRemaining1,DaysRemaining2,DaysRemaining3)
+let DaysRemaining = (DaysRemaining1*365) + (DaysRemaining2*30) + (DaysRemaining3)
+console.log("Days remaining for the date 31 dec 2025 from today is",DaysRemaining)
+
 /* 
 Question 4: 
 Check if a current  year is a leap year.
-
+need help on this
 */
+
