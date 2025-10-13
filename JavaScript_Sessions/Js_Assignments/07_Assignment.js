@@ -17,12 +17,12 @@ yyyy:mm:DD mm:hh
 
 let age = 25
 
- let secondslived = age*(365*24*60*60) //assume this is not a leap year 
-console.log(secondslived) //788400000
+ //assume this is not a leap year 
 
-let assumption = 100
-let secondslived2 = assumption*(365*24*60*60) //assume this is not a leap year 
-console.log(secondslived2)  //  3153600000
+
+
+ //assume this is not a leap year 
+
 
 /* 
 Question 2: 
