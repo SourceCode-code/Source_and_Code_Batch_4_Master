@@ -1,0 +1,95 @@
+// Assignment: JavaScript Date and Time Exercises
+
+/* 
+Question 1: 
+Prompt the user to enter the number of years they have lived. 
+Then, calculate the number of seconds a person can live. 
+Assume someone lives 100 years as the maximum. 
+Also, display the current time in various formats.
+
+
+dd:mm:yyyy HH:mm (24 hours)
+dd:mm:yyyy HH:mm (12 hours) // (month should be like oct)
+dd:mm:yyyy HH:mm (12 hours) // (month should be like october)
+yyyy:mm:DD mm:hh 
+
+*/
+
+let age = 25
+
+ let secondslived = age*(365*24*60*60) //assume this is not a leap year 
+console.log(secondslived) //788400000
+
+let assumption = 100
+let secondslived2 = assumption*(365*24*60*60) //assume this is not a leap year 
+console.log(secondslived2)  //  3153600000
+
+let date = new Date 
+let currentDate = date.getDate()
+let month = date.getMonth()+1
+let year = date.getFullYear()
+let hours = date.getHours()
+let minutes = date.getMinutes()
+let shortmonth = date.toLocaleString("en-gb", { month: "short" })
+console.log(currentDate + ":" + month + ":" + year +" "+ hours+":" + minutes)
+let longmonth = date.toLocaleString("en-gb", { month: "long" })
+
+let hours12 = hours % 12
+
+console.log(currentDate + ":" + shortmonth + ":" + year +" "+ hours12+":" + minutes)
+
+console.log(currentDate + ":" + longmonth + ":" + year +" "+ hours12+":" + minutes)
+
+
+
+
+/* 
+Question 2: 
+Return the date in the format: "Day of the Week, DD Month YYYY HH:mm" 
+(e.g., "Monday, 02 October 2024 15:30").
+(e.g., "Monday, 02 October 2024 3:30 pm").
+*/
+let curDay= date.toLocaleString("en-gb",{weekday:"long"})
+console.log(curDay)
+console.log("Ans 0f 2",curDay + ","+" " + currentDate +" "+ longmonth +" " + year +" "+ hours +":" + minutes)
+let ampm = hours > 12 ? "PM" : "AM"
+console.log(ampm)
+let hourformat = String(hours12).padStart(2, "0")
+console.log("Ans 0f 2",curDay + ","+" " + currentDate +" "+ longmonth +" " + year +" "+ hourformat +":" + minutes)
+
+
+
+/* 
+Question 3: 
+Calculate how many days are left until a specific date (input: 'YYYY-MM-DD').
+
+31 -dec*/
+/*let date = new Date
+let currentDate = date.getDate()
+let month = date.getMonth()+1
+let year = date.getFullYear()*/
+let currentDate1 = year  + ":" + month + ":" + currentDate
+console.log("Today",currentDate1)
+let givenDateYear = 2025
+let givenDateMonth = 12
+let givenDateDay = 31
+let givenDate = givenDateYear + ":" + givenDateMonth + ":" + givenDateDay
+console.log("given Date",givenDate)
+let DaysRemaining1 = givenDateYear - year
+let DaysRemaining2 = givenDateMonth - month
+let DaysRemaining3 = givenDateDay - currentDate
+//console.log(DaysRemaining1,DaysRemaining2,DaysRemaining3)
+let DaysRemaining = (DaysRemaining1*365) + (DaysRemaining2*30) + (DaysRemaining3)
+console.log("Days remaining for the date 31 dec 2025 from today is",DaysRemaining)
+
+
+
+/* 
+Question 4: 
+Check if a current  year is a leap year
+*/
+
+let leapYearDays = 366
+let currentYearDays = 365
+let LeapOrNot = currentYearDays === leapYearDays ? "This is a leap year" : "This is not a leap year"
+console.log(LeapOrNot)
