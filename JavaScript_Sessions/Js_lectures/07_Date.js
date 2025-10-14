@@ -98,6 +98,50 @@ let minformat = String(cmin).padStart(2, "0")
 console.log(minformat)
 console.log(`${hourformat}:${minformat} ${ampm}`) //09:20 PM
 
-console.log(curindtime)
+// console.log(curindtime)
 
 //------------------------------------------------------------------------------
+
+let curtime = date.toLocaleString("en-In",{timeZone:"Asia/Kolkata",day:"2-digit",month:"2-digit",year:"numeric",
+    hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:true
+})
+
+console.log(curtime)
+
+
+// MANIPULATION OF DATES WITH setDate()and setMonth() and setYear()
+
+// example --> 
+
+let manipDate= new Date() //13+5 -->18
+
+let futuredate = manipDate.getDate() // new Date().getDate() --> current 13
+console.log(futuredate+20)
+
+manipDate.setDate(futuredate+20)
+
+console.log(manipDate.getDate()) //18
+
+let maniDate2 = new Date()
+
+// example of setMonth()
+
+let futuremonth = maniDate2.getMonth()+1
+
+console.log(futuremonth)
+
+maniDate2.setMonth(futuremonth+3)
+
+console.log(maniDate2.getMonth()) //1 
+
+// -------- manipluation year 
+
+//setYear()
+
+let maniDate3 = new Date()
+
+let futureyear=maniDate3.getFullYear()
+console.log(futureyear)
+
+maniDate3.setFullYear(futureyear+10)
+console.log(maniDate3.getFullYear())
