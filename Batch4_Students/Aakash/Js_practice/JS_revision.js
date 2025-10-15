@@ -45,6 +45,19 @@ console.log(humanMonth1)
 let humanMonth2 = currentMonth<10?`0${currenMonth}`:currentMonth
 console.log(humanMonth2)
 
+let humanMonth3 = currentMonth<10?`0${currentMonth}`:currentMonth
+console.log(humanMonth3)
+
+// human format date 
+let humanDateformat1 = `${dayformat}/${monthformat}/${year}`
+console.log(humanDateformat1) //10/10/2025
+
+// Padstart(what length,what charcter to add) -->using padStart method to add leading zeros 
+let dayformat2 = String(currentdate).padStart(3, "0")
 
 
-// includes()--> this method is used to check whether a string contains a particular substring or not 
+console.log(dayformat2)
+// // PadEnd(what length,what charcter to add)  --> using to add zero at the ending of the string
+
+let dateformat3 = String(currentdate).padEnd(3, "a")
+console.log(dateformat3)
