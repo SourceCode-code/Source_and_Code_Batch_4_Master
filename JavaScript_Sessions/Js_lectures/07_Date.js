@@ -88,7 +88,7 @@ console.log(cmin)
 console.log(`${chour}:${cmin}`) //21:20
 
 // let ampm ?
-let ampm = chour > 12 ? "PM" : "AM"
+let ampm = chour > 12 ? "PM" : "AM"  // 
 console.log(ampm)
 let chours12 = chour % 12
 console.log(chours12)
