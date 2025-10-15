@@ -18,3 +18,6 @@ let strDate = String(settledDate1).padStart(2,"0")
 console.log(strDate)
 let settledDate2 = `${currentYear}:${currentMonth}:${strDate}`
 console.log(settledDate2)
+
+
+
