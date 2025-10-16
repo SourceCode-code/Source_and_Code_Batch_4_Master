@@ -470,3 +470,84 @@ console.log(qqq) //Siddhant "arjun" gadakh
 
 let er = "i am learning js.\nit's \"fun\" to learn js"
 console.log(er)
+
+
+
+//-----------------------26-09-2025---------------------------------------
+
+
+// Methods of string -->
+
+//1 toUppercase()--> this method will return a aplhabatical string in uppercase (capital)
+
+let str7 = "Learning string methods"
+
+console.log(str7.toUpperCase()) //LEARNING STRING METHODS
+
+//2 .toLowerCase() -->this method will return a aplhabatical string in Lower case (small)
+
+let str8 ='LEARNING STRING METHODS 51365163'
+
+console.log(str8.toLowerCase()) //learning string methods 51365163
+
+
+let str9 = "Learning string methods conact"
+console.log(str9.length)
+console.log(typeof str9.length)
+console.log(str9.toUpperCase().toLowerCase())  //LEARNING STRING METHODS CONACT //learning string methods conact
+////LEARNING STRING METHODS CONACT.tolwercase() -->learning string methods conact
+
+
+// method concatination -> when we apply 2 or more methods simulatenously where the output of first method is valid  input 
+//  to second
+
+                                                    //         30  .tolowercase()
+//console.log(str9.toUpperCase().toLowerCase().toUpperCase().length.toUppercase().substr(0,8))
+//
+
+
+//28 
+
+//error 
+
+
+// note when we use any method we get 2 things output 2 is a return type 
+
+//LEARNING STRING METHODS CONACT  --> string
+
+
+//3 Substr() --> substr is method which is used to get a part of string  (starting index , number of charcter )
+let str10 = "Learning string methods conact"
+//                     (starting index, number character)
+let newsub= str10.substr(5,8) //Learning
+
+console.log(newsub)
+
+
+//4 Substring()-->  subString is method which used to get a part of a string (starting index , ending index) // it wil not inculde the  ending 
+// index in the output
+
+// // 0-10 
+// 0 ---9
+
+console.log(str10[7])
+let newsubstr =str10.substring(0,7)
+console.log(newsubstr)
+
+
+
+//5 spilt() --> this  is used to convert one string into many new strings   --> this has a return type of array 
+
+let str11 = " hello my name is siddhant "
+ 
+console.log(str11.split(" ")) //[ '', 'hello', 'my', 'name', 'is', 'siddhant', '' ]
+
+console.log(str11.split("e")) 
+
+console.log(str11.split(""))
+
+
+let str12 = "12582685265"
+
+console.log(str12.split(""))
+
