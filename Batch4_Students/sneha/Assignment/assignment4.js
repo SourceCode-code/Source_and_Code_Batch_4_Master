@@ -4,15 +4,30 @@
 // ==========================================
 
 // Q1. Write a single-line comment and a multi-line comment in JS.
+//single line comment
+
+//this is single line comment
+
+/**
+ * this is multiline comment
+ */
 
 // Q2. Print "Welcome to JavaScript Assignment" using console.log.
+let string="Welcome to JavaScript Assignment"
+console.log(string)
 
 // Q3. Declare a variable using var, reassign it with a new value, and print both values.
-
+var a=12
+a=23
+console.log(a)
 // Q4. Declare a variable using let, update its value, and print it.
-
+let b="sneha"
+b="devansh"
+console.log(b)
 // Q5. Declare a constant variable pi = 3.14 and try re-assigning it. Observe the error.
-
+const pi=3.14
+pi=10
+console.log(pi)
 // Q6. Declare 3 variables (firstName, middleName, lastName) and print your full name using:
 //     a) + operator
 //     b) template literal (backticks)
@@ -85,9 +100,6 @@
 // Q36. Generate a random number between 1 and 100 and check if it is even or odd.
 
 // Q37. Generate 5 random numbers between 1 and 10 
+console.log(Math.floor(Math.random()*10))
 
 // Q38. Create a random password of 8 characters using letters and numbers (hint: use Math.random and string methods).
-
-
-
-
