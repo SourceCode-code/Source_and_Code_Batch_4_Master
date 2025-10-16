@@ -61,7 +61,7 @@ console.log(currenttime)
 let dayformat = currentdate < 10 ? `0${currentdate}` : currentdate
 let monthformat = month < 10 ? `0${month}` : month
 
-
+// 0,1,2,3,---01,02,03,11,12,
 // human format date 
 let humanDateformat1 = `${dayformat}/${monthformat}/${year}`
 console.log(humanDateformat1) //10/10/2025

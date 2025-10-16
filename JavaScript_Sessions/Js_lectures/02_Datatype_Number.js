@@ -191,3 +191,21 @@ console.log(adhar4num1 , adhar4num2,adhar4num3,adhar4num4)
  let randomNum1 = Math.round(Math.random()*100 /10)*10
 console.log(randomNum1);
 
+
+
+
+// generate a random string in which we have 3 aplhabtes 2 numbers 1 symbol 
+
+let aplhastr = "qwertyuiopasdfghjklzxcvbnm"
+let symstr = "!@#$%^&*()_+"
+
+let letter1 = Math.floor(Math.random()*(aplhastr.length))
+let letter2 = Math.floor(Math.random()*(aplhastr.length))
+let letter3= Math.floor(Math.random()*(aplhastr.length))
+
+let strnum = Math.floor(Math.random()*(99-10)+10)
+console.log(strnum)
+
+let randsym = Math.floor(Math.random()*(symstr.length))
+
+console.log(`${aplhastr[letter1]}${aplhastr[letter2]}${aplhastr[letter3]}${strnum}${symstr[randsym]}`)
