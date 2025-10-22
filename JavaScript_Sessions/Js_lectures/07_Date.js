@@ -60,7 +60,7 @@ console.log(currenttime)
 // date in human readable format 
 let dayformat = currentdate < 10 ? `0${currentdate}` : currentdate
 let monthformat = month < 10 ? `0${month}` : month
- 
+
 
 // human format date 
 let humanDateformat1 = `${dayformat}/${monthformat}/${year}`
