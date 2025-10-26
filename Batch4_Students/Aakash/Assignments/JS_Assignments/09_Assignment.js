@@ -114,7 +114,7 @@ else
 
 
 // 2. Check the season based on user input month.
-let month = "may"
+/*let month = "may"
 month = month.toLowerCase()
 switch (month){
    case 'november':
@@ -133,6 +133,7 @@ switch (month){
    case  'october': console.log("This is a Rainy Season.Enjoy..!");
 
 }
+   */
 
 
 // 3. Check if a day is a weekend or working day. Take day input and check its case insensitively.
@@ -167,10 +168,23 @@ default : console.log("Please enter valid details")
  */
 
 // 1. Write a program that tells the number of days in a month.
-
-
+let newD = new Date()
+let cmonth = newD.getMonth()+1
+console.log(cmonth)
+newD.setMonth(newD.getMonth()+3)
+let jMonth = newD.getMonth()+1
+console.log(jMonth)
+let date1 = newD.getDate()
+date1.setDate(newD.getDate())
+console.log(date1)
 
 /**
  * Enter a month: January
  * January has 31 days.
  */
+let month = 1;  // January
+let year = 2024; // You can change the year if needed
+
+let days = new Date(year, month, 0).getDate();
+
+console.log(`January ${year} has ${days} days.`);
