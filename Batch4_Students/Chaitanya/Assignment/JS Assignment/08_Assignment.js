@@ -119,3 +119,7 @@ console.log('q13',dragon.includes('dragon') && python.includes("python"))
 // 24. Using ternary opertor, when birth year and calculate if they are old enough to drive.
 
 //25  using ternary opertor check number is even or odd
+
+
+
+

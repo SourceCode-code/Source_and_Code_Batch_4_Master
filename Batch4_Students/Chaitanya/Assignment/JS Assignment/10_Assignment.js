@@ -95,5 +95,3 @@ Then display “🪔 Get Ready to Celebrate!” if less than 10 days remain.
 🎉 Remember: Programming is not about writing code —
 it’s about breaking problems into logic.
 ------------------------------------------------------------------ */
-
-

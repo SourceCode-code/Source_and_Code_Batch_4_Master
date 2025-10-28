@@ -8,15 +8,28 @@ Assume someone lives 100 years as the maximum.
 Also, display the current time in various formats.
 
 
+
+
 dd:mm:yyyy HH:mm (24 hours)
 dd:mm:yyyy HH:mm (12 hours) // (month should be like oct)
 dd:mm:yyyy HH:mm (12 hours) // (month should be like october)
 yyyy:mm:DD mm:hh 
 
 */
+let date = new Date()
+let birthyear = 1999
+let age = date.getFullYear() - birthyear
+console.log(age)
+let maxage = 100
 
-let age = 25
+let secondslived = age *365*24*60*60
+console.log(secondslived)
 
+let maxsecondslived = maxage*365*24*60*60
+console.log(maxsecondslived)
+
+// time reaming 
+console.log(maxsecondslived-secondslived)
  //assume this is not a leap year 
 
 

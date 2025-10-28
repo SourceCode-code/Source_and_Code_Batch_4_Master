@@ -14,6 +14,7 @@
 
 /**
  * syntax
+ * 
  * if(condition){
  * display output
  * }
@@ -21,9 +22,9 @@
 
 // write a program to check if the given is positive 
 
-let num = -20
+let num = 20
 
-if (num > 0 && num == 0) {
+if (num > 0 || num == 0) {
     console.log("given number is positive ")
 
 }
@@ -51,9 +52,9 @@ else {
  * 
  * if (condition){output}
  * 
- * else if (condition){ouitput}
+ * else if (condition){output}
  * 
- * esle{display}
+ * else{display}
  */
 // create a program to check which equiment to carry while the season
 
@@ -82,9 +83,9 @@ else {
  * switch(paramter){
  * 
  * case 1 : case one
- * 
+ * break
  * case 2 : case two
- * 
+ *  break
  * case 3 : case three
  * 
  * default :output
