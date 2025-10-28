@@ -27,7 +27,9 @@ console.log(maxsecondslived-secondslived)
 let day = date.getDate()
 let month = date.getMonth()+1
 let year = date.getFullYear()
-console.log(`${day}/${month}/${year}`)
+let hour = date.getHours()
+let min = date.getMinutes()
+console.log(`${day}/${month}/${year} ${hour}:${min}`)
 //dd:mm:yyyy HH:mm (12 hours) // (month should be like oct)
 //dd:mm:yyyy HH:mm (12 hours) // (month should be like october)
 //yyyy:mm:DD mm:hh 
