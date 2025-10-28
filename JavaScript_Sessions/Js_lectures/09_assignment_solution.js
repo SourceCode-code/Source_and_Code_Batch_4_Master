@@ -7,11 +7,7 @@ console.log(day)
 // Q39. Calculate how many days are left for Diwali 2025 (use Date difference).
 // 5 NOV 2025
 
-let diwali = new Date('5-11-2026')
-let today = new Date()
 
-let diff = diwali - today
-console.log(diff)
 
 
 
@@ -48,5 +44,28 @@ else if (hour < 5 || hour > 19) {
 else { console.log("invalid data") }
 
 
+// Create a program called “Diwali Countdown”.
+// It should print today’s date and how many days left until Diwali.
+// Then display “🪔 Get Ready to Celebrate!” if less than 10 days remain.
+
+//5 Nov, 2026 
+let diwalidate= new Date("2026-11-5")
+
+let todaydate = new Date()
+//  calculate the difference mili seconds 
+let diff = diwalidate-todaydate
+
+console.log(diff)
+/**
+ * 1000ms - 1sec 
+ * 60 sec - 1 min 
+ * 60 min - 1 hour 
+ * 24 hours - 1 day
+ */
+let daysleft = Math.round(diff/(1000*60*60*24))
+console.log(daysleft)
 
 
+if( daysleft <= 10){
+  console.log('“🪔 Get Ready to Celebrate!” ')
+}
