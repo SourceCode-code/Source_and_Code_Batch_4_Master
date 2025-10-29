@@ -32,15 +32,10 @@
 //   // 9    81    729
 //   // 10   100   1000
 
-for(let i=0;i<=10;i++){
-    console.log(`${i}${i*i}${i**3}`);
-
-}
 
 
 //   // 6) Use for loop to iterate from 0 to 100 and print only even numbers
 
-  
 //   // 7) Use for loop to iterate from 0 to 100 and print only odd numbers
 
   
@@ -71,7 +66,7 @@ for(let i=0;i<=10;i++){
 
 
 
-//2
+//16
 
 // ****
 // *  *
@@ -79,19 +74,19 @@ for(let i=0;i<=10;i++){
 
 
 
-//3
+//17
 
 // 4444
 // 333
 // 22
 // 1
 
-// // 4
+// // 18
 // 1111
 // 222
 // 33
 // 4
 
-//17) print the longest word form the given string
+//19) print the longest word form the given string
 
 // str = " hello i am learning javascript and currently i am seeing the topic loops"
