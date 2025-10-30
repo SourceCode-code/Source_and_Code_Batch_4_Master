@@ -122,3 +122,124 @@ console.log(sum)
 
 ///   // 10) Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
 
+// 11 ) pattern problem 
+
+
+
+// 4444
+// 333
+// 22
+// 1
+
+
+//--------------------------------------------------
+/**
+ * INPUT INFORATION  --> 
+ * 
+ * // output pattern is multi line (4)
+ * // (use loop -- for )
+ * // loop start form 4 and will use dercement operator
+ * 
+ * // the digits are repeat --> ( you will be you using repeat)
+ * 
+ * 
+ * 
+ * 
+ */
+
+let row =5
+
+for(let i =row ;i>=1;i--){
+console.log((String(i).repeat(i)))
+}
+
+/**
+4444
+333
+22
+1
+ * 
+ * 
+ * 
+ */
+//  console.log("#".repeat(i))
+
+
+// 1111
+// 222
+// 33
+// 4
+
+
+let rows = 4
+for(let i =1 ;i<=4;i++){
+console.log((String(i).repeat(rows--)))
+//             1111
+//             333
+//             22
+//             1     
+}
+
+
+
+
+//15) print the following patterns 
+//   * 
+//  ***
+// ******
+//  ***
+//   *
+
+/**
+ * multi line problem  row 5 
+ * pattern is a mirror image  --> we can split the problem in 2  upper half 2 lower half 
+ * 
+ * 
+ */
+
+let line = 3
+
+// upper half 
+//   *    //3  //1
+//  ***   //2  //3
+// ****** //0  //6
+
+
+//upper half
+for(let i =1 ;i<=line;i++){
+let spaces = " ".repeat(line-i)   
+let star= "*".repeat(2*i-1)     //  
+console.log(spaces+star)  
+}
+
+//lower half
+for(let i =line-1 ;i>=1;i--){
+let spaces = " ".repeat(line-i)
+let star= "*".repeat(2*i-1)
+console.log(spaces+star)
+}
+// " ".length   -->1
+// "q".length  -->1
+
+//   *
+//  ***
+// *****
+//  ***
+//   *
+
+
+
+
+
+
+// 16 
+// ****
+// *  *
+// ****
+
+
+// 17
+let str = " hello my name is siddhant gadakh and my age is 26 "
+// by using using loop count the number of vowels  in the string (a,e,i,o,u)
+
+
