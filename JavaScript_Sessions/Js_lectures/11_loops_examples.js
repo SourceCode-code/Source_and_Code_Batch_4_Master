@@ -243,3 +243,5 @@ let str = " hello my name is siddhant gadakh and my age is 26 "
 // by using using loop count the number of vowels  in the string (a,e,i,o,u)
 
 
+
+
