@@ -103,3 +103,28 @@ for (let i = 1; i <= 10; i++) {
 
 
 
+// keywords used in loops 
+// break --> this stops the loops 
+
+// example 
+
+console.log("-----------------------------------------")
+for (let i = 0; i <= 10; i++) {
+    console.log(i)
+    if (i === 5) {
+        break
+    }
+}
+
+
+
+console.log("-----------------------------------------")
+// continue --> skips the current value 
+
+for (let i = 0; i <= 10; i++) {
+
+    if (i === 5) {
+        continue
+    }
+    console.log(i)
+}
