@@ -32,7 +32,8 @@ console.log(language[4])
 // 6. Write a program to generate an even random number between 0-20 using `Math.random()`, then log the number.
 let Randomnum = Math.floor(Math.random() * 11) *2 ;
 console.log(Randomnum)
-
+let Randomnum11 = Math.floor(Math.random() * 11) *2 ;
+console.log(Randomnum11 + 1)
 
 // 7. Create a long literal string that spans multiple lines and log it.
 let longSentence = 'This is a Paragraph .\

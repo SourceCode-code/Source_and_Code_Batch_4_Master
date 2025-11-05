@@ -159,7 +159,7 @@ console.log(postdecr)//8
 // example 
 
 
-let age = 18 
+let age = 15
 
 let canvote = (age >=18)? "yes you can vote" : "no you cannot vote "
 
@@ -173,4 +173,5 @@ let counter =0
 let dsrdend = (status ==="SENT") ? ++counter : counter
 
 console.log(dsrdend)
+
 
