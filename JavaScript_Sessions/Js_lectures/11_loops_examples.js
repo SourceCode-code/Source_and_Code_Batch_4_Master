@@ -207,14 +207,14 @@ let line = 3
 
 //upper half
 for(let i =1 ;i<=line;i++){
-let spaces = " ".repeat(line-i)   
+let spaces = "cc".repeat(line-i)   
 let star= "*".repeat(2*i-1)     //  
 console.log(spaces+star)  
 }
 
 //lower half
 for(let i =line-1 ;i>=1;i--){
-let spaces = " ".repeat(line-i)
+let spaces = "cc".repeat(line-i)
 let star= "*".repeat(2*i-1)
 console.log(spaces+star)
 }
@@ -226,10 +226,6 @@ console.log(spaces+star)
 // *****
 //  ***
 //   *
-
-
-
-
 
 
 // 16 
@@ -244,4 +240,13 @@ let str = " hello my name is siddhant gadakh and my age is 26 "
 
 
 
+let tvowel = 0
 
+
+for(let i =0;i<str.length;i++){
+  if(str[i]==="a"||str[i]==="e"||str[i]==="i"||str[i]==="o"||str[i]==="u"){
+    tvowel++
+  }
+}
+
+console.log(tvowel)

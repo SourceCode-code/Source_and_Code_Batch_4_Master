@@ -31,7 +31,7 @@ for (let a = 10; a >= 1; a--) {
 
 // print each charcater of string on new line 
 
-let str = "happy diwali"
+let str = "happy diwali" 
 
 for (let i = 0; i < str.length; i++) {
     console.log(str[i])
@@ -41,7 +41,6 @@ for (let i = 0; i < str.length; i++) {
 // revsere string 
 for (let i = str.length - 1; i >= 0; i--) {
     console.log(str[i])
-
 }
 
 
