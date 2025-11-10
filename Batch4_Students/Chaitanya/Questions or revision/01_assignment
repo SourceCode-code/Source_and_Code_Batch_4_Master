@@ -1,1 +1,11 @@
 // hello world
+
+let alphabet = "absdefghijklmnopqrstuvwxyz"
+let symbol = "!@#$%^&*?/"
+
+let randomA = Math.floor(Math.random()*(alphabet.length))
+let randomB = Math.floor(Math.random()*(alphabet.length))
+let randomC = Math.floor(Math.random()*(alphabet.length))
+
+let number = Math.floor(Math.random()*(100-10)+10)
+console.log(number)
