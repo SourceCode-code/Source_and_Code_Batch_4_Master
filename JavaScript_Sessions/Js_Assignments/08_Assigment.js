@@ -1,96 +1,50 @@
-/**
- * Exercises: Level 1
- */
+// Assignment: JavaScript Date and Time Exercises
 
-// 1. Get user input using prompt("Enter your age:"). 
-// If user is 18 or older, give feedback: 'You are old enough to drive'. 
-// If not 18, give feedback stating how many years are left to turn 18.
-
-
-/**
- * Enter your age: 30
- * You are old enough to drive.
- *
- * Enter your age: 15
- * You are left with 3 years to drive.
- */
+/* 
+Question 1: 
+Prompt the user to enter the number of years they have lived. 
+Then, calculate the number of seconds a person can live. 
+Assume someone lives 100 years as the maximum. 
+Also, display the current time in various formats.
 
 
+dd:mm:yyyy HH:mm (24 hours)
+dd:mm:yyyy HH:mm (12 hours) // (month should be like oct)
+dd:mm:yyyy HH:mm (12 hours) // (month should be like october)
+yyyy:mm:DD mm:hh 
 
+*/
 
-// 2. Compare the values of myAge and yourAge using if...else.
-// Log the result stating who is older. Use prompt("Enter your age:") to get the age input.
+let age = 25
+
+ //assume this is not a leap year 
 
 
 
-/**
- * Enter your age: 30
- * You are 5 years older than me.
- */
-
-// 3. Compare if 'a' is greater than 'b'. 
-// Implement it in two ways: using if...else and ternary operator.
-
-let a = 4;
-let b = 3;
-
-// Using if...else
+ //assume this is not a leap year 
 
 
-// Using ternary operator
+/* 
+Question 2: 
+Return the date in the format: "Day of the Week, DD Month YYYY HH:mm" 
+(e.g., "Monday, 02 October 2024 15:30").
 
 
-/**
- * 4 is greater than 3
- */
+(e.g., "Monday, 02 October 2024 3:30 pm").
 
-// 4. Check if a number is even or odd.
+*/
 
+/* 
+Question 3: 
+Calculate how many days are left until a specific date (input: 'YYYY-MM-DD').
 
-/**
- * Enter a number: 22
- * 22 is an even number.
- *
- * Enter a number: 99
- * 99 is an odd number.
- */
+31 -dec
 
 
-/**
- * Exercises: Level 2
- */
+*/
 
-// 1. Write a code to give grades to students according to their scores:
-// 80-100: A, 70-79: B, 60-69: C, 50-59: D, 0-49: F
+/* 
+Question 4: 
+Check if a current  year is a leap year.
 
-
-
-// 2. Check the season based on user input month.
-
-
-
-// 3. Check if a day is a weekend or working day. Take day input and check its case insensitively.
-
-
-
-/**
- * What is the day today? Saturday
- * Saturday is a weekend.
- *
- * What is the day today? FrIDAy
- * Friday is a working day.
- */
-
-
-/**
- * Exercises: Level 3
- */
-
-// 1. Write a program that tells the number of days in a month.
-
-
-
-/**
- * Enter a month: January
- * January has 31 days.
- */
+*/

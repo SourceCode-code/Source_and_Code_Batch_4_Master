@@ -1,4 +1,4 @@
-//primitive data type -- primitive are simple data types that cannot br changed
+//primitive data type -- primitive are simple data types that cannot be changed
 
 // 1 Number: - // represents numeric values (e.g., 10, 3.14)  --( integers and floating ) 
 // it inculdes both integers (-infinity to infity) and floating-point numbers (-infinty.infity to +infinty.infity )
