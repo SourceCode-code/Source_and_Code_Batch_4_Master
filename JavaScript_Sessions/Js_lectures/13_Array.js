@@ -128,3 +128,87 @@ let carr = [0,1,2,4]
 
 carr.splice(3,0,3)
 console.log(carr) //[ 0, 1, 2, 3, 4 ]
+
+//6 METHOD sort() --> this method will alphabetically sort your array 
+
+let alarr = ["banana","apple","mango","watermleon"] 
+
+let sortedarr =alarr.sort()
+
+console.log(sortedarr)  //[ 'apple', 'banana', 'mango', 'watermleon' ]
+
+
+let numarr = [1 , 1000,100,50,20,55,65,89,999]
+
+let sortednum = numarr.sort()
+
+console.log(sortednum) //[ 1, 100, 1000, 20,50,  55,   65, 89, 999]
+
+// how to sort a array for numbers 
+
+let sortednum1 = numarr.sort((a,b)=>{return a-b})
+
+console.log(sortednum1) // sorted array in ascendiong order[  1, 20,  50,  55,65, 89, 100, 999, 1000]
+
+let sortednum2 = numarr.sort((a,b)=>{return b-a})
+
+console.log(sortednum2) //sorted array in descending order[1000, 999, 100, 89, 65,  55,  50, 20,  1]
+
+
+
+//6 METHOD reverse()  --> This method will reverse the array
+
+//[ 'apple', 'banana', 'mango', 'watermleon' ]
+
+let revarrv =sortedarr.reverse()
+console.log(revarrv) //[ 'watermleon', 'mango', 'banana', 'apple' ] reversed array 
+
+
+//7 METHOD inculdes() --> Check if an array includes the value 
+
+console.log(revarrv.includes('Banana')) //banana
+
+//8 METHOD indexOf()--> gives the index of the given value 
+
+console.log(revarrv.indexOf("banana"))
+
+
+//9 join() --> Converts an array into string 
+
+let strarr = revarrv.join("---")
+
+console.log(strarr)
+
+//10 METHOD concat() --> this method is used to concat 2 or more array 
+
+let nu= [1,2,3]
+let num = [4,5,6]
+let numb= [7,8,9]
+
+let combine1 = nu.concat(num,numb)
+
+console.log(combine1)
+
+
+//11 METHOD Flat() --> flatten the array 
+
+let mixedarr = [1,2,3,["qwer","ertyu","uhbvc"],[true , false]] // --- > convert this into a single array
+
+let sloved = mixedarr.flat()
+console.log(sloved) ////[  1,       2,3,       'qwer','ertyu', 'uhbvc',true,    false]
+
+
+//Math.max()  ---> gets the largest num
+//let numarr = [1 , 1000,100,50,20,55,65,89,999]
+ // ... this is a spread opertor --> converts array into number
+console.log(Math.max(...numarr))  //1000
+
+
+//Math.min()--> gets the smallest num
+console.log(Math.min(...numarr)) 
+
+
+
+console.log(...revarrv)
+
+
