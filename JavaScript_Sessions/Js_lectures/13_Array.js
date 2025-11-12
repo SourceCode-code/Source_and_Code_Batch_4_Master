@@ -1,3 +1,4 @@
+
 //datatype -->
 // 1 primitive  -->datatype which are simple and can't be changed (numbers , string , boolean, null, undefined)
 //2 non primtive --> datatype which are complex and can be changed (array , object )
@@ -18,8 +19,8 @@ let y = 12
  * 
  * 3 when we say muitple value what eactly stored (which datatype )
  * all datatypes can be stored in an array 
- * 
- */
+ 
+*/ 
 
 //example of array and how to actutally delecare an array
 
@@ -128,3 +129,4 @@ let carr = [0,1,2,4]
 
 carr.splice(3,0,3)
 console.log(carr) //[ 0, 1, 2, 3, 4 ]
+
