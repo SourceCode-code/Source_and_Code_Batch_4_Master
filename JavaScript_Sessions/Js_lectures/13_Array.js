@@ -1,3 +1,4 @@
+
 //datatype -->
 // 1 primitive  -->datatype which are simple and can't be changed (numbers , string , boolean, null, undefined)
 //2 non primtive --> datatype which are complex and can be changed (array , object )
@@ -16,9 +17,15 @@ let y = 12;
  * in array each value is seprated by a comma
  *
  * 3 when we say muitple value what eactly stored (which datatype )
+<<<<<<< HEAD
  * all datatypes can be stored in an array
  *
  */
+=======
+ * all datatypes can be stored in an array 
+ 
+*/ 
+>>>>>>> 9cd7d50a64447cc336be7b2e5e31817138437151
 
 //example of array and how to actutally delecare an array
 
@@ -273,3 +280,13 @@ console.log(even)// [2,  4,  6,  8, 10,12, 14, 16, 18, 20]
 console.log(odd)// [3,  5,  7,  9, 11,13, 15, 17, 19]
 
 
+<<<<<<< HEAD
+=======
+// adding value in anypostion in array using splice 
+
+let carr = [0,1,2,4]
+
+carr.splice(3,0,3)
+console.log(carr) //[ 0, 1, 2, 3, 4 ]
+
+>>>>>>> 9cd7d50a64447cc336be7b2e5e31817138437151

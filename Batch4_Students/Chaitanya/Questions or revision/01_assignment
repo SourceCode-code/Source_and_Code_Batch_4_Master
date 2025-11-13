@@ -1,5 +1,6 @@
 // hello world
 
+<<<<<<< HEAD
 let alphabet = "absdefghijklmnopqrstuvwxyz"
 let symbol = "!@#$%^&*?/"
 
@@ -9,3 +10,6 @@ let randomC = Math.floor(Math.random()*(alphabet.length))
 
 let number = Math.floor(Math.random()*(100-10)+10)
 console.log(number)
+=======
+console.log("hello world")
+>>>>>>> 9cd7d50a64447cc336be7b2e5e31817138437151
