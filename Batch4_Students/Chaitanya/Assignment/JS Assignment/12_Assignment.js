@@ -89,8 +89,18 @@ else {
 // Filter out companies which have more than one 'o' without using the filter method
 
 // Sort the array using sort() method
+
+let sortarray = companies.sort()
+    console.log(sortarray)
+
 // Reverse the array using reverse() method
+let reversearray = sortarray.reverse()
+console.log(reversearray)
+
 // Slice out the first 3 companies from the array
+
+
+
 // Slice out the last 3 companies from the array
 // Slice out the middle IT company or companies from the array
 // Remove the first IT company from the array
