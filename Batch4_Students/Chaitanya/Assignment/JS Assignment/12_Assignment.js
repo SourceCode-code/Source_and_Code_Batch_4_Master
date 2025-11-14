@@ -98,15 +98,34 @@ let reversearray = sortarray.reverse()
 console.log(reversearray)
 
 // Slice out the first 3 companies from the array
-
-
+let clice = companies.slice(0,3)
+console.log(clice)
 
 // Slice out the last 3 companies from the array
+let lice = companies.slice(2,5)
+console.log(lice)
+
 // Slice out the middle IT company or companies from the array
+let mslice = companies.slice(2,3)
+console.log(mslice)
+
 // Remove the first IT company from the array
+companies.shift()
+console.log(companies)
+
 // Remove the middle IT company or companies from the array
+delete companies [1]
+console.log(companies)
+
 // Remove the last IT company from the array
+companies.pop()
+console.log(companies)
 // Remove all IT companies
+delete companies[0]
+console.log(companies)
+ 
+delete companies [2]
+    console.log(companies)
 
 // Exercise: Level 2
 
