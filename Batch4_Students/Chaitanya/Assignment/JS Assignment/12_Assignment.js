@@ -178,3 +178,4 @@ delete companies [2]
 
 
 console.log('hello world')
+console.log('error')
