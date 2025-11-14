@@ -281,6 +281,7 @@ let names = ["siddhant", "amol", "vaibhav", "shree", 0, "arjun", "amal"];
 let aname = [];
 
 let strnames = [];
+
 for (let i = 0; i < names.length; i++) {
   if (typeof names[i] === "string") {
     let cap = names[i].toUpperCase();
@@ -386,3 +387,25 @@ let checkevery = arr_11.every((el, index, arr) => {
 console.log(checkevery);
 
 //------------------------------------------------------------------------------------------------
+
+let numarr1 = [1, "Vaibhav","siddhant","amol",1000, 100, 50, 20, 55, 65, 89, 999];
+let numvale = [];
+let strnames_1 = [];
+
+for (let i = 0; i < numarr1.length; i++) {
+  if (typeof numarr1[i] === "string") {
+    let cap = numarr1[i].toUpperCase();
+    strnames_1.push(cap);
+  }
+  else{
+    numvale.push(numarr1[i])
+  }
+}
+console.log(strnames_1)
+console.log(numvale)
+let sorted_names=strnames_1.sort()
+let sorted_num=numvale.sort((a,b)=>{return a-b})
+console.log(sorted_num)
+console.log(sorted_names)
+let new_final_arr=sorted_names.concat(sorted_num)
+console.log(new_final_arr)
