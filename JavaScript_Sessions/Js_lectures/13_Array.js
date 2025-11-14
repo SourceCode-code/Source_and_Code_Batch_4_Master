@@ -112,6 +112,7 @@ console.log("-----------------------------");
 let bArray = ["siddhant", "arjun", "gadakh", 26, 7020400749];
 
 //5 METHOD splice() --> Used to add or remove a value at any index of the array  = substring()
+
 // Arr.slice( starting , endingindex) // will not inculde ending index
 let arrslice = bArray.slice(0, 3);
 
