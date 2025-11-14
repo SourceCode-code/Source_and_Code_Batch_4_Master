@@ -175,3 +175,6 @@ delete companies [2]
 // Slice the first ten countries from the countries array
 // Find the middle country(ies) in the countries array
 // Divide the countries array into two equal arrays. If the countries array is not even, add one more country to the first half.
+
+
+console.log('hello world')
