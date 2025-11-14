@@ -40,6 +40,13 @@ const webTechs = [
 // Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon are big IT companies.
 // Check if a certain company exists in the itCompanies array. If it exists return the company else return 'Company is not found'
 // Filter out companies which have more than one 'o' without using the filter method
+// arr=["companies"]
+// arr.length
+// revisedrry=[]
+// count=0
+// for(let i=0;i<=arr.length;i++){
+//   includes"o"
+// }
 // Sort the array using sort() method
 // Reverse the array using reverse() method
 // Slice out the first 3 companies from the array

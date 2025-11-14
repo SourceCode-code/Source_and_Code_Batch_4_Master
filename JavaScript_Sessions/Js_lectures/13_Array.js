@@ -255,21 +255,74 @@ for (let i = 0; i < qarr.length; i++) {
 
 console.log(sum); //25058
 
-let mixnum = [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,];
+let mixnum = [
+  2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+];
 
 let odd = [];
 let even = [];
 
 for (let i = 0; i < mixnum.length; i++) {
   if (mixnum[i] % 2 === 0) {
-    even.push(mixnum[i])
-  }
-  else{
-    odd.push(mixnum[i])
+    even.push(mixnum[i]);
+  } else {
+    odd.push(mixnum[i]);
   }
 }
 
-console.log(even)// [2,  4,  6,  8, 10,12, 14, 16, 18, 20]
-console.log(odd)// [3,  5,  7,  9, 11,13, 15, 17, 19]
+console.log(even); // [2,  4,  6,  8, 10,12, 14, 16, 18, 20]
+console.log(odd); // [3,  5,  7,  9, 11,13, 15, 17, 19]
 
+//example
+
+let names = ["siddhant", "amol", "vaibhav", "shree", 0, "arjun", "amal"];
+// output should --> every element should in captial
+// all the names that start with a should be in anew array
+let aname = [];
+
+let strnames = [];
+for (let i = 0; i < names.length; i++) {
+  if (typeof names[i] === "string") {
+    let cap = names[i].toUpperCase();
+    strnames.push(cap);
+  }
+}
+
+console.log(strnames); //[ 'SIDDHANT', 'AMOL', 'VAIBHAV', 'SHREE', 'ARJUN', 'AMAL' ]
+
+for (let i = 0; i < strnames.length; i++) {
+  if (strnames[i].startsWith("A")) {
+    aname.push(strnames[i]);
+  }
+}
+console.log(aname); //[ 'AMOL', 'ARJUN', 'AMAL' ]
+
+//------------------- Advance method of array --------------------------
+
+// map , filter , reduce , each
+
+//MAP() ---> it will iterate over element in the array to perfom a operation and its return is a new array of the output of performed operation
+
+let num3 = [2, 8, 7, 3, 35, 58, 69, 34567, 367, 2, 3, 4, 5, 67, 8, 9, 0];
+
+// add every by 5
+
+/**
+ * el --> current element
+ * index --> index of that current element 
+ * arr --> the original array 
+ */
+
+let add5 = num3.map((el, index, arr) => {
+  return el+5
+});
+
+console.log(add5) //[7,13,12,8,40,63,74,34572,372,7,8,9,10, 72, 13,14,5]
+
+
+let snames = strnames.map((el,index,arr)=>{
+  return el.toLowerCase()
+})
+
+console.log(snames)//[ 'siddhant', 'amol', 'vaibhav', 'shree', 'arjun', 'amal' ]
 
