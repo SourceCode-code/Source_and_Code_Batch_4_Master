@@ -137,7 +137,7 @@ console.log(sortedarr); //[ 'apple', 'banana', 'mango', 'watermleon' ]
 let numarr = [1, 1000, 100, 50, 20, 55, 65, 89, 999];
 
 let sortednum = numarr.sort();
-
+     
 console.log(sortednum); //[ 1, 100, 1000, 20,50,  55,   65, 89, 999]
 
 // how to sort a array for numbers
