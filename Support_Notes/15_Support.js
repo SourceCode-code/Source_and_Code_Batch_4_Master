@@ -2,6 +2,7 @@
 // // 1 primitive  -->datatype which are simple and can't be changed (numbers , string , boolean, null, undefined)
 // //2 non primtive --> datatype which are complex and can be changed (array , object )
 
+
 // // array -->
 // let x = 10;
 // let y = 12;
@@ -30,14 +31,14 @@
 
 // //2 way of delecraing an array  -- ignore this
 // const arr = Array();
-// console.log(arr);
+
 
 // // the  techincal difference between  primitive and non primitive
 
-// let a = 10,
-//   b = 10;
+let a = 10,
+  b = "10";
 
-// console.log(a === b); //true
+// console.log(a ===b); //true 
 
 // console.log(arraya === arrayb); //false
 
@@ -52,21 +53,22 @@
 
 // // example of a array
 // //              0       1    2      3     4
-// let arrc = ["siddhant", 26, "gadakh", true, null];
+let arrc = ["siddhant", 26, "gadakh", true, null];
+
 
 // //1 how to access a particular data in array (extraction )
 // console.log(arrc[0]);
 
 // console.log(arrc[1]);
 
-// //2 how to update a value in an array
-// arrc[0] = "SID";
+// // //2 how to update a value in an array
+arrc[5] = "SID";
 
 // console.log(arrc);
 
-// //3 delete a value form array
+// // //3 delete a value form array
 
-// delete arrc[0];
+// delete arrc[1];
 // console.log(arrc);
 
 // let str = "siddhant arjun gadakh"; //[ 'siddhant', 'arjun', 'gadakh' ]
@@ -75,16 +77,15 @@
 
 // //---------------------------------- METHODS ON ARRAY -------------------------------------------------------------------
 // //METHOD --> when we use method we get 2 thing that is output and return type
-// let Marray = ["siddhant", "arjun", "gadakh", 26, 7020400749];
+let Marray = ["siddhant", "arjun", "gadakh", 26, 7020400749];
 
 // //OUTPUT -->result of action performed
 // //RETURN TYPE -->the datatype of the out recived
 
 // //1 METHOD push()--> ADDS A VALUE AT THE END OF THE ARRAY
-
-// Marray.push("male");
+//  Marray.push("male");
 // console.log(Marray); // output -->[ 'siddhant', 'arjun', 'gadakh', 26, 7020400749, 'male' ]
-
+// Marray[9]=""
 // //2 METHOD unshift()--> ADDS A VALUE AT THE START OF THE ARRAY
 
 // Marray.unshift("MR");
@@ -99,10 +100,16 @@
 // Marray.shift();
 // console.log(Marray); // output [ 'siddhant', 'arjun', 'gadakh', 26, 7020400749 ]
 
+// string =Subster and substring
+// subster= string.subster(starting index,number of char )
+
+// substring  string.substring(starting index,ending index )
+
 // //5 METHOD splice() --> Used to add or remove a value at any index of the array
 
-// // example --> splice( starting index , number character) == substr()
-
+//  example --> splice( starting index , number character) == substr()
+// let arr= [ 'MR', 'siddhant', 'arjun', 'gadakh', 26, 7020400749 ]
+// arr.splice(3,2)
 // let arrsplice = Marray.splice(0, 3);
 
 // console.log(arrsplice); //[ 'siddhant', 'arjun', 'gadakh' ]
@@ -111,9 +118,14 @@
 // console.log("-----------------------------");
 // let bArray = ["siddhant", "arjun", "gadakh", 26, 7020400749];
 
+// Splice==== subster(straing index, num of char)
+// slice=substring(starting index, ending index)
+
 // //5 METHOD splice() --> Used to add or remove a value at any index of the array  = substring()
-// // Arr.slice( starting , endingindex) // will not inculde ending index
+// Arr.slice( starting , endingindex) // will not inculde ending index
 // let arrslice = bArray.slice(0, 3);
+// let arr= [ 'MR', 'siddhant', 'arjun', 'gadakh', 26, 7020400749 ]
+//  arr.slice(1,3)= substring 
 
 // console.log(arrslice);
 // console.log(bArray);
@@ -125,24 +137,24 @@
 // carr.splice(3, 0, 3);
 // console.log(carr); //[ 0, 1, 2, 3, 4 ]
 
+
 // //6 METHOD sort() --> this method will alphabetically sort your array
 
 // let alarr = ["banana", "apple", "mango", "watermleon"];
 
-// let sortedarr = alarr.sort();
+//  let sortedarr = alarr.sort();
 
 // console.log(sortedarr); //[ 'apple', 'banana', 'mango', 'watermleon' ]
 
-// let numarr = [1, 1000, 100, 50, 20, 55, 65, 89, 999];
+// let numarr = [1, "Vaibhav","siddhant","amol",1000, 100, 50, 20, 55, 65, 89, 999];
+// // let sortednum = numarr.sort(     );
 
-// let sortednum = numarr.sort();
+// // console.log(sortednum); //[ 1, 100, 1000, 20,50,  55,   65, 89, 999]
 
-// console.log(sortednum); //[ 1, 100, 1000, 20,50,  55,   65, 89, 999]
+// // // how to sort a array for numbers
 
-// // how to sort a array for numbers
-
-// let sortednum1 = numarr.sort((a, b) => {
-//   return a - b;
+// let sortednum1 = numarr.sort((a,b)=>{
+//     return b-a
 // });
 
 // console.log(sortednum1); // sorted array in ascendiong order[  1, 20,  50,  55,65, 89, 100, 999, 1000]
@@ -171,6 +183,9 @@
 // //9 join() --> Converts an array into string
 
 // let strarr = revarrv.join("---");
+// let numarr = [1, "Vaibhav","siddhant","amol",1000, 100, 50, 20, 55, 65, 89, 999];
+// let stringsrr=numarr.join(" ")
+// console.log(Array(stringsrr).join(""))
 
 // console.log(strarr);
 
@@ -185,16 +200,17 @@
 // console.log(combine1);
 
 // //11 METHOD Flat() --> flatten the array
+//  let mixedarr = [1, 2, 3, ["qwer", ["ertyu"], "uhbvc"], [true, false]]; // --- > convert this into a single array
 
-// let mixedarr = [1, 2, 3, ["qwer", ["ertyu"], "uhbvc"], [true, false]]; // --- > convert this into a single array
-
-// let sloved = mixedarr.flat();
+// let sloved = mixedarr.flat(2);
 // console.log(sloved); ////[  1,       2,3,       'qwer','ertyu', 'uhbvc',true,    false]
 
+
 // //Math.max()  ---> gets the largest num
-// //let numarr = [1 , 1000,100,50,20,55,65,89,999]
-// // ... this is a spread opertor --> converts array into number
-// console.log(Math.max(...numarr)); //1000
+let numarr = [1 ,4,1000,100,50,20,55,65,89,999]
+// // ... this is a spread opertor --> converts array into 
+
+console.log(Math.min(...numarr)); //1000
 
 // //Math.min()--> gets the smallest num
 // console.log(Math.min(...numarr));
@@ -271,17 +287,39 @@
 
 // console.log(even)// [2,  4,  6,  8, 10,12, 14, 16, 18, 20]
 // console.log(odd)// [3,  5,  7,  9, 11,13, 15, 17, 19]
-let mixedarr = [1, 2, 3,5,[6,[7,8,[9,10]]],["qwer", ["ertyu"], "uhbvc"], [true, false]]; // --- > convert this into a single array
+// let mixedarr = [1, 2, 3,5,[6,[7,8,[9,10]]],["qwer", ["ertyu"], "uhbvc"], [true, false]]; // --- > convert this into a single array
 
-let sloved = mixedarr.flat(3);
-console.log(sloved);
+// let sloved = mixedarr.flat(3);
+// console.log(sloved);
 
-let str = "hello my name is Amol Kantilal jadhav"
-let str1 = str.split("")
-console.log(str1)
-mystring = {}
-for(let key of str1){
-mystring[key]=(mystring[key]||0)+1
-}
-let check = Object.entries(mystring).map(([word,count])=>({word,count})).sort((a,b)=>(a.count-b.count))
-console.log(check)
+// let str = "hello my name is Amol Kantilal jadhav"
+// let str1 = str.split("")
+// console.log(str1)
+// mystring = {}
+// for(let key of str1){
+// mystring[key]=(mystring[key]||0)+1
+// }
+// let check = Object.entries(mystring).map(([word,count])=>({word,count})).sort((a,b)=>(a.count-b.count))
+// console.log(check)
+// larr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// //2 how to update a value in an array
+// arrc[0] = "SID";
+
+// //1 METHOD push()--> ADDS A VALUE AT THE END OF THE ARRAY
+
+// Marray.push("male");
+// console.log(Marray); // output -->[ 'siddhant', 'arjun', 'gadakh', 26, 7020400749, 'male' ]
+
+// //2 METHOD unshift()--> ADDS A VALUE AT THE START OF THE ARRAY
+
+// Marray.unshift("MR");
+// console.log(Marray); // output ['MR', 'siddhant','arjun', 'gadakh',26,  7020400749, 'male']
+
+// let arr=[ 'siddhant', 'arjun', 'gadakh', 26, 7020400749, 'male' ]
+// arr[6]=312
+// console.log(arr)
+
+// total methods to 
+// add -3 Index, push  and unshift
+// delete = Delete(using index),Pop, shift 
