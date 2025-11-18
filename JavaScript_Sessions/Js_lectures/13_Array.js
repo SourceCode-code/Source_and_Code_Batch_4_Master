@@ -112,6 +112,7 @@ console.log("-----------------------------");
 let bArray = ["siddhant", "arjun", "gadakh", 26, 7020400749];
 
 //5 METHOD splice() --> Used to add or remove a value at any index of the array  = substring()
+
 // Arr.slice( starting , endingindex) // will not inculde ending index
 let arrslice = bArray.slice(0, 3);
 
@@ -136,7 +137,7 @@ console.log(sortedarr); //[ 'apple', 'banana', 'mango', 'watermleon' ]
 let numarr = [1, 1000, 100, 50, 20, 55, 65, 89, 999];
 
 let sortednum = numarr.sort();
-
+     
 console.log(sortednum); //[ 1, 100, 1000, 20,50,  55,   65, 89, 999]
 
 // how to sort a array for numbers
