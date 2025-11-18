@@ -180,7 +180,7 @@ let strarr = revarrv.join("---");
 
 console.log(strarr);
 
-//10 METHOD concat() --> this method is used to concat 2 or more array
+//10 METHOD concat() ----> this method is used to concat 2 or more array
 
 let nu = [1, 2, 3];
 let num = [4, 5, 6];
@@ -214,12 +214,12 @@ console.log(...revarrv);
 let larr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 console.log(larr.length); //10
 
-// syntax for loop in array
+// syntax for loop in array     
 
-//index starts form 0  --> it refers to the value stored
-// length will start 1 --> it refers to total size of array
+//index starts form 0  --> it refers to the value stored.
+// length will start 1 --> it refers to total size of array.
 
-//normal for loop
+//normal for loop.
 
 // for (let i = 1; i <= 10; i++) {
 //   console.log(i);
@@ -227,9 +227,9 @@ console.log(larr.length); //10
 
 for (let i = 0; i < larr.length; i++) {
   console.log(larr[i]);
-}
+} 
 
-// ------------------------------------------------------
+// -------------------------------------------------------
 
 //let larr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
