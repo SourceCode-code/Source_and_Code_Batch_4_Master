@@ -58,3 +58,54 @@
 // else{console.log("need to drop my plan")}
 // //else {console.log("need to drop my plan")}
 
+// let mixnum = [
+//   2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+// ];
+
+// let odd = [];
+// let even = [];
+
+// for (let i = 0; i < mixnum.length; i++) {
+//   if (mixnum[i] % 2 === 0) {
+//     even.push(mixnum[i]);
+//   } else {
+//     odd.push(mixnum[i]);
+//   }
+// }
+
+// console.log(even); // [2,  4,  6,  8, 10,12, 14, 16, 18, 20]
+// console.log(odd); // [3,  5,  7,  9, 11,13, 15, 17, 19]
+
+// let mixnum = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,];
+
+// let odd=[]
+// let even = []
+// for (let i = 0; i<mixnum.length;i++){
+//     if (mixnum[i]%2===0){
+//         even.push(mixnum[i])
+//     }
+//     else(odd.push(mixnum[i]))
+// }
+// console.log(even)
+// console.log(odd)
+
+let mixnum = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,];
+let count = 0
+let odd = []
+
+let even = []
+for (let i =0 ;i<mixnum.length;i++){
+
+    if (mixnum[i]%2===0){
+        even.push(mixnum[i])
+    }
+    else{
+        odd.push(mixnum[i])
+    } 
+    for (let i = 0; i<push.length;i++){
+    count+=push
+}
+   console.log(count)
+}
+
+// let mixnum = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,1234,55,6,78,9,5,63,46,57,88,5,64,];

@@ -282,6 +282,7 @@ let names = ["siddhant", "amol", "vaibhav", "shree", 0, "arjun", "amal"];
 let aname = [];
 
 let strnames = [];
+
 for (let i = 0; i < names.length; i++) {
   if (typeof names[i] === "string") {
     let cap = names[i].toUpperCase();
@@ -300,7 +301,7 @@ console.log(aname); //[ 'AMOL', 'ARJUN', 'AMAL' ]
 
 //------------------- Advance method of array --------------------------
 
-// map , filter , reduce , each
+// map , filter , reduce , forEach
 
 //MAP() ---> it will iterate over element in the array to perfom a operation and its return is a new array of the output of performed operation
 
@@ -310,20 +311,102 @@ let num3 = [2, 8, 7, 3, 35, 58, 69, 34567, 367, 2, 3, 4, 5, 67, 8, 9, 0];
 
 /**
  * el --> current element
- * index --> index of that current element 
- * arr --> the original array 
+ * index --> index of that current element
+ * arr --> the original array
  */
 
 let add5 = num3.map((el, index, arr) => {
-  return el+5
+  return el + 5;
 });
 
-console.log(add5) //[7,13,12,8,40,63,74,34572,372,7,8,9,10, 72, 13,14,5]
+console.log(add5); //[7,13,12,8,40,63,74,34572,372,7,8,9,10, 72, 13,14,5]
 
+let snames = strnames.map((el, index, arr) => {
+  return el.toLowerCase();
+});
 
-let snames = strnames.map((el,index,arr)=>{
-  return el.toLowerCase()
-})
+console.log(snames); //[ 'siddhant', 'amol', 'vaibhav', 'shree', 'arjun', 'amal' ]
 
-console.log(snames)//[ 'siddhant', 'amol', 'vaibhav', 'shree', 'arjun', 'amal' ]
+// filter --> it will filter out  element in the array to and its return is a new array of the output of filtered element
 
+let filterA = snames.filter((el, index, arr) => {
+  return el.startsWith("a");
+});
+
+console.log(filterA);
+
+// -----------------------------------------------------------
+
+let num_mix = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let even_num = num_mix.filter((el, index, arr) => {
+  return el % 2 == 0;
+});
+
+console.log(even_num); //[ 2, 4, 6, 8, 10 ]
+
+//forEach() -->a method to perform opertion on every element of array but it does not retrun a new array
+
+snames.forEach((el, index, arr) => {
+  console.log(el.toUpperCase());
+});
+
+// pro tip --> in cypress and playwright instead loop we pefer forEach method   -->cypress has its own method for looping called as each
+
+// reduce()--> this method is used to get the sum of all the elements in the array this also retrun the sum in a new array
+
+let num_1_arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+
+//  sum = sum + qarr[i];
+
+// syntax
+// here acc is accumaltor similar to the varaible of sum deleceraed as zero(let sum = 0;)
+
+let sum_total = num_1_arr.reduce((acc, el, index, arr) => {
+  return el + acc;
+}, 0);
+console.log(sum_total);
+
+// some && every --> check if array matchs the given condition or not
+
+// some --> check if some of varaible match the condition
+
+let arr_11 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+
+let checksome = arr_11.some((el, index, arr) => {
+  return el > 5;
+});
+
+console.log(checksome); //boolean --> t or f (T) this will act as a or (||)
+
+// every -->check if every of varaible match the condition  this is && for array
+
+let checkevery = arr_11.every((el, index, arr) => {
+  return el < 100;
+});
+
+console.log(checkevery);
+
+//------------------------------------------------------------------------------------------------
+
+let numarr1 = [1, "Vaibhav","siddhant","amol",1000, 100, 50, 20, 55, 65, 89, 999];
+let numvale = [];
+let strnames_1 = [];
+
+for (let i = 0; i < numarr1.length; i++) {
+  if (typeof numarr1[i] === "string") {
+    let cap = numarr1[i].toUpperCase();
+    strnames_1.push(cap);
+  }
+  else{
+    numvale.push(numarr1[i])
+  }
+}
+console.log(strnames_1)
+console.log(numvale)
+let sorted_names=strnames_1.sort()
+let sorted_num=numvale.sort((a,b)=>{return a-b})
+console.log(sorted_num)
+console.log(sorted_names)
+let new_final_arr=sorted_names.concat(sorted_num)
+console.log(new_final_arr)

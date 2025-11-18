@@ -215,13 +215,173 @@ console.log(fullStack)
 // Divide the countries array into two equal arrays. If the countries array is not even, add one more country to the first half.
 
 // The following is an array of 10 students' ages:
-// const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+let ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+
 // Sort the array and find the min and max age
+let minage = Math.min(...ages)
+console.log("age",minage)
+let maxage = Math.max(...ages)
+console.log(maxage)
 // Find the median age(one middle item or two middle items divided by two)
+
+let sortedage = ages.sort()
+
+console.log(sortedage)
+let medianage = sortedage[sortedage.length/2]
+console.log(medianage)
 // Find the average age(all items divided by number of items)
+let sum= 0
+for (let i = 0; i<ages.length;i++){
+    sum=sum+ages[i]
+}
+console.log(sum)
+let average= sum/ages.length
+console.log(average)
 // Find the range of the ages (max minus min)
+let range = maxage-minage
+console.log(range)
 // Compare the value of (min - average) and (max - average), use abs() method
 
+let diffMin = Math.abs(minage - average)
+let diffMax = Math.abs(maxage - average)
+console.log(diffMin,diffMax)
+if (diffMin>diffMax){
+console.log("min average is bigger")
+}
+else if (diffMax>diffMin){
+    console.log("max average is bigger")
+}
+else{
+    console.log("both are equal")
+}
+console.log("________________________________")
 // Slice the first ten countries from the countries array
+let countries1 = [
+  "Afghanistan",
+  "Albania",
+  "Algeria",
+  "Andorra",
+  "Angola",
+  "Argentina",
+  "Armenia",
+  "Australia",
+  "Austria",
+  "Azerbaijan",
+  "Bahamas",
+  "Bahrain",
+  "Bangladesh",
+  "Barbados",
+  "Belarus",
+  "Belgium",
+  "Belize",
+  "Benin",
+  "Bhutan",
+  "Bolivia",
+  "Bosnia and Herzegovina",
+  "Botswana",
+  "Brazil",
+  "Brunei",
+  "Bulgaria",
+  "Burkina Faso",
+  "Burundi",
+  "Cambodia",
+  "Cameroon",
+  "Canada",
+  "Cape Verde",
+  "Central African Republic",
+  "Chad",
+  "Chile",
+  "China",
+  "Colombia",
+  "Comoros",
+  "Congo (Brazzaville)",
+  "Congo (Kinshasa)",
+  "Costa Rica",
+  "Croatia",
+  "Cuba",
+  "Cyprus",
+  "Czech Republic",
+  "Denmark",
+  "Djibouti",
+  "Dominica",
+  "Dominican Republic",
+  "Ecuador",
+  "Egypt",
+  "El Salvador",
+  "Equatorial Guinea",
+  "Eritrea",
+  "Estonia",
+  "Eswatini",
+  "Ethiopia",
+  "Fiji",
+  "Finland",
+  "France",
+  "Gabon",
+  "Gambia",
+  "Georgia",
+  "Germany",
+  "Ghana",
+  "Greece",
+  "Grenada",
+  "Guatemala",
+  "Guinea",
+  "Guinea-Bissau",
+  "Guyana",
+  "Haiti",
+  "Honduras",
+  "Hungary",
+  "Iceland",
+  "India",
+  "Indonesia",
+  "Iran",
+  "Iraq",
+  "Ireland",
+  "Israel",
+  "Italy",
+  "Jamaica",
+  "Japan",
+  "Jordan",
+  "Kazakhstan",
+  "Kenya",
+  "Kiribati",
+  "Kuwait",
+  "Kyrgyzstan",
+  "Laos",
+  "Latvia",
+  "Lebanon",
+  "Lesotho",
+  "Liberia",
+  "Libya",
+  "Liechtenstein",
+  "Lithuania",
+  "Luxembourg",
+];
+let slicedCountries= countries1.slice(0,10)
+console.log(slicedCountries)
 // Find the middle country(ies) in the countries array
+
+let middleCountries = countries1[Math.floor(countries1.length/2)]
+console.log(middleCountries)
 // Divide the countries array into two equal arrays. If the countries array is not even, add one more country to the first half.
+// let countriesOneven = []
+// let countriesOnodd= []
+// for (let i= 0; i<countries1.length; i++){
+//     if (countries1[i]%2===0){
+//     countriesOneven.push(countries1[i])
+// }
+// else {
+//     countriesOnodd.push(countries1[i])
+// }
+// }
+// console.log("arr",countriesOneven)
+// console.log("arr",countriesOnodd)
+
+let divide = (countries1.length / 2);
+
+let firstHalf = countries1.slice(0,divide);
+let secondHalf = countries1.slice(divide);
+
+console.log("1",firstHalf)
+console.log(secondHalf)
+
