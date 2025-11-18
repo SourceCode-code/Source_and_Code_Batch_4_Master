@@ -40,3 +40,5 @@ console.log(Toyota_Fortuner)
 
 Toyota_Fortuner["colors"].pop("grey")
 console.log(Toyota_Fortuner)
+
+//wsw
