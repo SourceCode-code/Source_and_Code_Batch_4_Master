@@ -250,22 +250,77 @@ console.log("===============================================")
 
 // The following is an array of 10 students' ages:
 // Sort the array and find the min and max age
-// Find the median age(one middle item or two middle items divided by two)
-// Find the average age(all items divided by number of items)
-// Find the range of the ages (max minus min)
-// Compare the value of (min - average) and (max - average), use abs() method
-// Slice the first ten countries from the countries array
-// Find the middle country(ies) in the countries array
-// Divide the countries array into two equal arrays. If the countries array is not even, add one more country to the first half.
+// let ageOfStudent=[25,21,22,24,19,18,26,28,27,29]
+// let sortedAge=ageOfStudent.sort((a,b)=>  a-b)
+// console.log(ageOfStudent)
+// console.log("Max age of Student :",Math.max(...ageOfStudent))
 
-// The following is an array of 10 students' ages:
-// const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
-// Sort the array and find the min and max age
+// console.log("Min age of student :",Math.min(...ageOfStudent))
+
 // Find the median age(one middle item or two middle items divided by two)
+//const length = sortedAges.length;
+// let len =sortedAge.length;
+// let middle1=sortedAge[len/2-1]
+// let middle2=sortedAge[len/2]
+// console.log("middle ages are ",middle1,middle2)
+// let ageDivigen=(middle1+middle2)/2
+// console.log("Divisione of two ages is :", ageDivigen)
+
 // Find the average age(all items divided by number of items)
-// Find the range of the ages (max minus min)
-// Compare the value of (min - average) and (max - average), use abs() method
+
+// console.log("Length is :",len)
+// let sum=0
+
+// for (let i = 0; i < sortedAge.length; i++) {
+//   sum += sortedAge[i];
+// }
+// console.log("Sum of all studet ages is :",sum)
+// console.log("Average of all age is :",sum/len)
+// let averageAge=sum/len
+// // Find the range of the ages (max minus min)
+// console.log(" ==Find the range of the ages (max minus min)==")
+// let maxAge=Math.max(...ageOfStudent)
+// let minAge=Math.min(...ageOfStudent)
+// let maxMinusMin=(maxAge-minAge)
+// console.log("Range of age is :",maxMinusMin)
+// // Compare the value of (min - average) and (max - average), use abs() method
+
+// let min=Math.abs(minAge-averageAge)
+
+
 
 // Slice the first ten countries from the countries array
-// Find the middle country(ies) in the countries array
+
+// let countries = [
+//   "India", "USA", "UK", "Canada", "Australia",
+//   "Germany", "France", "Japan", "China", "Brazil",
+//   "Italy", "Spain", "Russia"
+// ];
+//let firstTen=countries.slice(0,10)
+//console.log("First ten Countries are :",firstTen)
+
+// // Find the middle country(ies) in the countries array
+// let countries = [
+//   "India", "USA", "UK", "Canada", "Australia",
+//   "Germany", "France", "Japan", "China", "Brazil",
+//   "Italy", "Spain", "Russia"
+// ];
+// let len=countries.length
+// let mid=Math.floor(len/2)
+// // console.log(len)
+// if(len%2===0){
+//     console.log(countries[mid-1],countries[mid])
+// }else{
+//     console.log(countries[mid])
+// }
+// console.log(countries)
+
 // Divide the countries array into two equal arrays. If the countries array is not even, add one more country to the first half.
+// const middle = Math.ceil(len / 2);
+
+// Slice into two halves
+// const firstHalf = countries.slice(0, middle);
+// const secondHalf = countries.slice(middle);
+
+// console.log("First Half:", firstHalf);
+// console.log("Second Half:", secondHalf);
