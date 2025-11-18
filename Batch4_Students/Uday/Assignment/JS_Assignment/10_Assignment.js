@@ -173,7 +173,7 @@ for(let i=1;i<=n;i++){
    // console.log("\n")
 }*/
 
-let count=7
+/*let count=7
 for(let c=1;c<=count;c++){
     let p=''
     for(let r=1;r<=c;r++){
@@ -214,3 +214,16 @@ for(let c=1;c<=count;d++){
 //17) print the longest word form the given string
 
 // str = " hello i am learning javascript and currently i am seeing the topic loops"
+*/
+
+//By using loop count the number of vovels in the string(a,e,i,o,u)
+let str= "hellow my name is sidhant gadak and my age is 26"
+let count=0
+let vovels= "aeiou"
+for(let a=0;a<=str.length-1;a++){
+   if(vovels.includes(str[a])){ 
+  count++
+}
+}
+console.log("Vovels count:",count)
+
