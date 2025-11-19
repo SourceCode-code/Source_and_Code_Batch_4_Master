@@ -257,6 +257,10 @@ let tenCountries = countries1.splice(0,10)
 console.log(tenCountries)
 
 // Find the middle country(ies) in the countries array
+
+
+
+
 // Divide the countries array into two equal arrays. If the countries array is not even, add one more country to the first half.
 
 

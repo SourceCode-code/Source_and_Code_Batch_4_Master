@@ -16,32 +16,120 @@ and be able to confidently write clean, working JS programs.
 // =====================================================
 
 // Q1. Print your name, age, and one goal for Diwali learning using variables.
+let name = 'Chaitanya Bhausaheb Kute';
+let age = 26;
+let goal = 'completing this assignment today';
+console.log(name);
+console.log(age)
+console.log(goal)
+
 // Q2. Declare 3 variables in one line and print them.
+let a = 'declare', b= 3, c = 'variables';
+console.log(a,b,c)
+
 // Q3. Write a program that swaps two numbers without using a third variable.
+
+
+
+
+
+
+
 // Q4. Display the type of each of these: 45, "45", true, undefined, null.
+
+let q = 45, w = "45" , e = null
+let r;
+console.log(typeof(q))
+console.log(typeof(w))
+console.log(typeof(e))
+console.log(typeof(r))
+
 // Q5. Create a variable “message” = "Happy Diwali" and print it 10 times using a loop.
+let message = 'Happy Diwali'
+console.log(message.repeat(10))
+
+
 // Q6. Create a variable x = 10; increment and decrement it, printing value each time.
+let x = 10;
+console.log(x++)
+console.log(x--)
+
+
 // Q7. Print the result of typeof NaN — explain what you see.
+
+
+
 
 // =====================================================
 // 2. NUMBER DATATYPE (LOGIC & ARITHMETIC)
 // =====================================================
 
 // Q8. Find the sum of first 100 natural numbers using a loop.
+let sumNatNum = 0;
+
+for (let c = 1 ; c <= 100 ; c++){
+sumNatNum = sumNatNum + c
+}
+console.log(sumNatNum)
+
 // Q9. Given 3 numbers, find the greatest number (no if, use Math.max()).
+
+
+
+
+
+
+
 // Q10. Find the factorial of a number using a for loop.
+
+
+
+
+
 // Q11. Write a program to check if a number is prime.
+
+
+
+
+
 // Q12. Write a program to find the number of digits in a given number.
+let q12 = 1234567890;
+console.log(q12.length)
+
+// length is a proprty of string check another method to get output
+
+
+
 // Q13. Generate a random number between 1 and 100.
+console.log(Math.floor(Math.random()*(100 - 1 + 1 ) + 1 ))
+
+
 // Q14. Check if a number is a perfect square.
+
+
+
 // Q15. Write a program that prints multiplication table of 9.
+for(let i = 1 ; i <= 10 ; i++){
+    console.log('9 x ${i}= ${9*i}')
+}
+
+
+// output proper nahi yet
+
+
+
 
 // =====================================================
 // 3. STRING DATATYPE (LOGIC + PATTERN)
 // =====================================================
 
 // Q16. Write a program that prints each character of a string on a new line.
+let q16= "write \na \nprogramme\n that \nprints\n new line"
+console.log(q16)
+
 // Q17. Given a name string, print only the vowels from it.
+
+
 // Q18. Check if two strings are equal (case insensitive).
 // Q19. Count how many words are in the string: “Happy Diwali to Everyone”.
 // Q20. Create a string that repeats “✨” 20 times using repeat().

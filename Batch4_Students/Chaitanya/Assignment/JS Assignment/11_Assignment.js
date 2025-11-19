@@ -169,9 +169,18 @@ console.log("Sum of odd numbers is:", sumOdd);
 // 222
 // 33
 // 4
+*/
 
 //17) print the longest word form the given string
 
-// str = " hello i am learning javascript and currently i am seeing the topic loops"
+str = " hello i am learning javascript and currently i am seeing the topic loops"
 
-*/
+let newArray = str.split(" ")
+let newString = newArray.length
+for (let i = 0 ; i <= newString.length - 1 ; i++){
+console.log(newArray[i].length)
+}
+
+
+
+///////// yacha output nahi yete
