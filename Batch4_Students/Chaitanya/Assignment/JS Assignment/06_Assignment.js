@@ -5,7 +5,7 @@
 
 // 1. Write a program to generate a random number between 50 and 100 (inclusive).
 // -----------------------------------------------------
-console.log(Math.floor(Math.random()*(100-50+1))+50);
+console.log(Math.floor(Math.random() * (100 - 50 + 1)) + 50);
 
 // 2. Take any floating number (e.g., 45.6789) and print it rounded to 2 decimal places.
 // -----------------------------------------------------
@@ -13,8 +13,8 @@ let q2 = 45.6789
 console.log(q2.toFixed(2));
 
 // 3. Create a program to roll two dice (1–6 each) and print their sum.
-let die1 = Math.floor(Math.random()*(6-1+1)+1);
-let die2 = Math.floor(Math.random()*(6-1+1)+1)
+let die1 = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+let die2 = Math.floor(Math.random() * (6 - 1 + 1) + 1)
 let die = (die1 + " " + die2)
 console.log(die);
 
@@ -22,13 +22,13 @@ console.log(die);
 
 // 4. Write a program that rounds any number entered by the user to the nearest multiple of 10.
 // Example: 47 → 50, 123 → 120
-let q4 =  47;
-console.log(Math.round(47/10)*10)
+let q4 = 47;
+console.log(Math.round(47 / 10) * 10)
 // -----------------------------------------------------
 
 // 5. Generate a random 6-digit OTP using Math methods.
 // -----------------------------------------------------
-let q5 = (Math.floor(Math.random()*(999999-100000+1))+100000)
+let q5 = (Math.floor(Math.random() * (999999 - 100000 + 1)) + 100000)
 console.log(q5)
 // -----------------------------------------------------
 
@@ -43,7 +43,7 @@ console.log(q7[9])
 // 8. Write a program to count how many characters (excluding spaces) are in a string.
 let q8 = "  Chaitanya  ";
 console.log(q8.length)
-let q9 = q8.replaceAll(" ","")
+let q9 = q8.replaceAll(" ", "")
 console.log(q9.length)
 // -----------------------------------------------------
 
@@ -87,15 +87,15 @@ console.log(q133);
 let q14 = "an apple a day keeps dr. away\
             a is for apple and apple is a fruit \
             apple is apple and apple is good in taste"
-let q144 = q14.replaceAll("apple","mango")
+let q144 = q14.replaceAll("apple", "mango")
 console.log(q144)
 // -----------------------------------------------------
 
 // 15. Split the string "red,green,blue,yellow" into an array and print each color separately.
 let q15 = "red,green,blue,yellow"
 let q161 = q15.split(",")
-for (let i = 0 ; i <q161.length ; i++){
-console.log(q161[i])
+for (let i = 0; i < q161.length; i++) {
+    console.log(q161[i])
 }
 
 // -----------------------------------------------------
@@ -110,20 +110,20 @@ console.log(q16.lastIndexOf('a'))
 let q17 = "JavaScript"
 console.log(q17.indexOf("S"))
 console.log(q17.indexOf("t"))
-console.log(q17.substring(4,10))
+console.log(q17.substring(4, 10))
 // -----------------------------------------------------
 
 // 18. Extract the first 4 characters of the string "Programming" using substr().
 let q18 = "Programming"
-console.log(q18.substr(0,4))
+console.log(q18.substr(0, 4))
 // -----------------------------------------------------
 
 // 19. Write a program that takes two strings and joins them using concat().
 let q191 = "this is first string "
 let q192 = "this is second string"
 let q193 = "this is third string "
-console.log(q192.concat(q193,q191))
-console.log(q193.concat(q192,q191))
+console.log(q192.concat(q193, q191))
+console.log(q193.concat(q192, q191))
 // -----------------------------------------------------
 
 // 20. Generate a random number and round it up (Math.ceil) and round it down (Math.floor). Print both results.
@@ -149,7 +149,7 @@ console.log(str1.length)
 // 2. Retrieve the last character of the string "automation".
 let str2 = "automation";
 console.log(str2.indexOf('n'))
-console.log(str2.substr(9,1))
+console.log(str2.substr(9, 1))
 
 // 3. Convert the string "learning" to uppercase.
 let str3 = "learning";
@@ -170,19 +170,19 @@ console.log(str5.trim())
 
 // 6. Extract the first 5 characters from the string "PlaywrightAutomation".
 let str6 = "PlaywrightAutomation";
-console.log(str6.substring(0,6))
+console.log(str6.substring(0, 6))
 
 // 7. Split the string "Cypress is fun" by spaces and print each word on a new line.
 let str7 = "Cypress is fun";
 let str77 = str7.split(" ")
-for (let i = 0 ; i < str77.length ; i++){
-console.log(str77[i])
+for (let i = 0; i < str77.length; i++) {
+    console.log(str77[i])
 }
 
 
 // 8. Replace all occurrences of 'banana' with 'pineapple' in the string "banana apple".
 let str8 = "banana apple";
-console.log(str8.replaceAll("banana","pineapple"))
+console.log(str8.replaceAll("banana", "pineapple"))
 
 // 9. Use method chaining to convert the string "JavaScript" 
 //    to uppercase, then lowercase, then uppercase again.
@@ -203,7 +203,7 @@ console.log(q111.includes("API"))
 // 12. Extract the last 4 characters from the string "automation testing".
 let str12 = "automation testing";
 console.log(str12.length)
-console.log(str12.substr(14,4))
+console.log(str12.substr(14, 4))
 
 // 13. Convert the string " HELLOworld " to lowercase and remove spaces from the beginning and end.
 let str13 = " HELLOworld ";
@@ -213,6 +213,6 @@ console.log(str131)
 // 14. Replace the first occurrence of "test" with "exam" 
 //     in the string "test your code with a test case".
 let str14 = "test your code with a test case";
-console.log(str14.replace("test","exam"))
+console.log(str14.replace("test", "exam"))
 //-------------------------------------------------------------------------------------------------------------------
 

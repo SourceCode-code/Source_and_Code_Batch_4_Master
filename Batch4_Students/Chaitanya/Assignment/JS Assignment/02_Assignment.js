@@ -32,16 +32,16 @@ console.log(Math.floor(num))
 console.log(Math.ceil(num));
 
 // Hint: Rounds up to the nearest integer.
- // Hint: Rounds down to the nearest integer.
+// Hint: Rounds down to the nearest integer.
 
 
 // 5. Write program  `rollDice` that simulates rolling two dice and returns their combined result.
 // Hint: Each dice roll should return a number between 1 and 6.
-let die1 = Math.floor(Math.random()*6)+1;
-let die2 = Math.floor(Math.random()*6)+1;
+let die1 = Math.floor(Math.random() * 6) + 1;
+let die2 = Math.floor(Math.random() * 6) + 1;
 console.log(die1)
 console.log(die2)
-console.log (die1 + " " + die2);
+console.log(die1 + " " + die2);
 
 
 // 6. What will be the result of the following code? Explain why.
@@ -76,8 +76,8 @@ Math.floor() → round down to whole number.
 
 // 8 generate a random number between 5.5-9.3
 //Example: randomFloat(5.5, 9.3) should generate a random float between 5.5 and 9.3.
- let num2 = Math.random() * (9.3 - 5.5) + 5.5;
- console.log(num2);
+let num2 = Math.random() * (9.3 - 5.5) + 5.5;
+console.log(num2);
 
 
 // 9. Given a number `x = 1234.56789`, write code to round this number to 2 decimal places. that is x=1234.57
@@ -89,9 +89,9 @@ console.log(number.toFixed(2));
 // Example:if 28 is given  should return 30, 32 should return 30.
 
 let numToRound = 4;
-let roundedNum =Math.round(numToRound/5)
+let roundedNum = Math.round(numToRound / 5)
 // 94 /5 = 18.8 --> 19 
-console.log(Math.round(numToRound/5)) //19*5 =95
+console.log(Math.round(numToRound / 5)) //19*5 =95
 
-console.log(roundedNum*5) 
+console.log(roundedNum * 5)
 

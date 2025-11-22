@@ -66,15 +66,15 @@ let q92 = "hello";
 let q93 = true;
 let q94 = undefined;
 let q95 = null;
-console.log(typeof(q91));
-console.log(typeof(q92));
-console.log(typeof(q93));
-console.log(typeof(q94));
-console.log(typeof(q95));
+console.log(typeof (q91));
+console.log(typeof (q92));
+console.log(typeof (q93));
+console.log(typeof (q94));
+console.log(typeof (q95));
 
 // 10.Store null in a variable and print typeof — explain the result.
 let q10 = null;
-console.log(typeof(q10));
+console.log(typeof (q10));
 // here it shows object when it should show null.
 
 //-------------------------------------------------------------------
@@ -88,19 +88,19 @@ let q121 = "JavaScript Assignment_05";
 let q122 = false;
 let q123;
 let q124 = null;
-console.log(typeof(q12));
-console.log(typeof(q121));
-console.log(typeof(q122));
-console.log(typeof(q123));
-console.log(typeof(q124));
+console.log(typeof (q12));
+console.log(typeof (q121));
+console.log(typeof (q122));
+console.log(typeof (q123));
+console.log(typeof (q124));
 
 //13.Declare a number and do all arithmetic ops: +, -, *, /, %. 
 let anumber = 2
-console.log(2+2);
-console.log(2-2);
-console.log(2*2);
-console.log(2/2);
-console.log(15%4);  /*here, Divide 15 by 4:  15/4 = 3.75
+console.log(2 + 2);
+console.log(2 - 2);
+console.log(2 * 2);
+console.log(2 / 2);
+console.log(15 % 4);  /*here, Divide 15 by 4:  15/4 = 3.75
                       The quotient (whole number part) is 3.
                       The decimal/fractional part corresponds to the remainder. which is .75 
                      Multiply the quotient by the divisor  i.e 3*4 = 12
@@ -120,7 +120,7 @@ console.log(Math.round(10.99));
 
 //17.Write a small program that rounds any given number to the nearest multiple of 5 (e.g., 28 → 30, 32 → 30)
 let num = 28;
-console.log((Math.round(28/5))*5)
+console.log((Math.round(28 / 5)) * 5)
 
 //18.For "Chaitanya Bahusaheb Kute"  print: length, first character, last character. 
 let q18 = "Chaitanya Bahusaheb Kute"
@@ -152,16 +152,16 @@ console.log(q20.toUpperCase());
 //21. Split "I love JavaScript" into an array by spaces.
 let q21 = "I love JavaScript";
 console.log(q21.split(" "));
-    
+
 //22. Extract "Chaitanya"from "Chaitanya Bhausaheb Kute" using substr()
 let q22 = "Chaitanya Bhausaheb Kute";
 console.log(q22.length);
-console.log(q22.substr(0,9));
+console.log(q22.substr(0, 9));
 
 //23.Extract "Bhausaheb" from "Chaitanya Bhausaheb Kute" using substring()
 let q23 = "Chaitanya Bhausaheb Kute"
 console.log(q23.indexOf("B"));
-console.log(q23.substring(10,19));
+console.log(q23.substring(10, 19));
 
 //q24. Split "banana" wherever "a" occurs (so you get ["b", "n", "n", ""])
 let q24 = "banana"
@@ -179,53 +179,53 @@ let chaitanyaBhausahebKute = "my name";
 console.log(chaitanyaBhausahebKute);
 
 //27. Generate a random integer between 200 and 500.
-let q27 = (Math.floor(Math.random()*(500 - 200 + 1 )) + 200 );
+let q27 = (Math.floor(Math.random() * (500 - 200 + 1)) + 200);
 console.log(q27);
 // here Math.floor(Math.random() * (max - min + 1)) + min
 
 //28. Generate a random integer between -50 and -30.
-let q28 = (Math.floor(Math.random()*((-50) - (-30) + 1) ) + (-30));
+let q28 = (Math.floor(Math.random() * ((-50) - (-30) + 1)) + (-30));
 console.log(q28);
 
 
 //29. Simulate rolling two dice and print their individual values and total.
-let die1 = (Math.floor(Math.random()* (6 - 1 + 1)) + 1 );
-let die2 = (Math.floor(Math.random()* (6 - 1 + 1)) + 1 );
+let die1 = (Math.floor(Math.random() * (6 - 1 + 1)) + 1);
+let die2 = (Math.floor(Math.random() * (6 - 1 + 1)) + 1);
 console.log(die1);
 console.log(die2);
 console.log(die1 + " " + die2);
 
 
 //30. Generate a random 6-digit OTP (100000–999999).
-let otp = (Math.floor(Math.random()* (999999 - 100000 + 1 ) ) + 100000);
+let otp = (Math.floor(Math.random() * (999999 - 100000 + 1)) + 100000);
 console.log(otp);
 
 // generate a random 5 digit otp from 10000-99999;
-let otp2 =(Math.floor(Math.random()* (99999 - 10000 + 1 )) + 10000);
+let otp2 = (Math.floor(Math.random() * (99999 - 10000 + 1)) + 10000);
 console.log(otp2);
 
 // generate a random adhar number 
-let n1 = Math.floor(Math.random() * (9999 - 1000 + 1 ) + 1000);
-let n2 = Math.floor(Math.random() * (9999 - 1000 + 1 ) + 1000);
-let n3 = Math.floor(Math.random() * (9999 - 1000 + 1 ) + 1000);
-let n4 = Math.floor(Math.random() * (9999 - 1000 + 1 ) + 1000);
-console.log(n1  ,  n2  ,  n3  ,  n4);
+let n1 = Math.floor(Math.random() * (9999 - 1000 + 1) + 1000);
+let n2 = Math.floor(Math.random() * (9999 - 1000 + 1) + 1000);
+let n3 = Math.floor(Math.random() * (9999 - 1000 + 1) + 1000);
+let n4 = Math.floor(Math.random() * (9999 - 1000 + 1) + 1000);
+console.log(n1, n2, n3, n4);
 
 // generate a random mobile number 
-let mobno = Math.ceil(Math.random()* (9999999999 - 0 + 1 ));
+let mobno = Math.ceil(Math.random() * (9999999999 - 0 + 1));
 console.log(mobno);
 
 //31.Create a random 10-character password using uppercase letters, lowercase letters, numbers, and special symbols.
 let upc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let lwc = "abcdefghijklmnopqrstuvwxyz";
-let numbs = (Math.floor(Math.random()*(9999-1000+1)+1000))
+let numbs = (Math.floor(Math.random() * (9999 - 1000 + 1) + 1000))
 let sym = "@#$%&*"
 
-let a1 = (Math.floor(Math.random()*(upc.length)))
-let a2 = (Math.floor(Math.random()*(upc.length)))
-let a3 = (Math.floor(Math.random()*(upc.length)))
-let a4 = (Math.floor(Math.random()*(upc.length)))
-let sym1 = (Math.floor(Math.random()*(sym.length)))
+let a1 = (Math.floor(Math.random() * (upc.length)))
+let a2 = (Math.floor(Math.random() * (upc.length)))
+let a3 = (Math.floor(Math.random() * (upc.length)))
+let a4 = (Math.floor(Math.random() * (upc.length)))
+let sym1 = (Math.floor(Math.random() * (sym.length)))
 console.log(`${upc[a1]}${upc[a2]}${upc[a3]}${upc[a4]}${sym[sym1]}${numbs}`)
 
 

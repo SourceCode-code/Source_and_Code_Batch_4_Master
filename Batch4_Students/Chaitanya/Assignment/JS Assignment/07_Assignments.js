@@ -4,7 +4,7 @@
 //          1. Math.floor()
 
 // 1.Generate a random decimal number between 0 and 10 and use Math.floor() to round it down.
-let q1 = Math.random()*(10+1)
+let q1 = Math.random() * (10 + 1)
 let q1a = Math.floor(q1);
 console.log(q1a)
 
@@ -13,7 +13,7 @@ let input = 10.99999999;
 console.log(Math.floor(input));
 
 // 3. Divide two numbers (e.g., 17 / 4) and print only the whole part using Math.floor().
-let q3 = 17/4;
+let q3 = 17 / 4;
 console.log(Math.floor(q3));
 
 //------------------------------------------------------------------------------------------------
@@ -21,14 +21,14 @@ console.log(Math.floor(q3));
 //          2. Math.ceil()
 
 // 4. Round up 4.2 and 9.7 using Math.ceil().
-let q4 = 4.2,q5 = 9.7;
+let q4 = 4.2, q5 = 9.7;
 console.log(Math.ceil(q4));
 console.log(Math.ceil(q5));
 
 // 5. Find how many boxes are needed to pack 53 apples if one box holds 10 apples.
 let apples = 53;
 let box = 10
-let boxneeded = (Math.ceil(apples/box));
+let boxneeded = (Math.ceil(apples / box));
 console.log(boxneeded);
 
 // 6. Generate a decimal random number and round it up using Math.ceil().
@@ -40,18 +40,18 @@ console.log(q6);
 //          3. Math.random()
 
 // 7. Generate a random number 12 digit number
-let q7 = (Math.floor(Math.random()*(999999999999-100000000000+1))+100000000000);
+let q7 = (Math.floor(Math.random() * (999999999999 - 100000000000 + 1)) + 100000000000);
 console.log(q7);
 
 // 8. Generate a random Adhaar Number
-let q81 = (Math.floor(Math.random()*(9999-1000+1))+1000);
-let q82 = (Math.floor(Math.random()*(9999-1000+1))+1000);
-let q83 = (Math.floor(Math.random()*(9999-1000+1))+1000);
+let q81 = (Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000);
+let q82 = (Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000);
+let q83 = (Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000);
 let q84 = (`${q81} ${q82} ${q83}`);
 console.log(q84);
 
 // 9. Generate a random number between -10.50 to -1500.50
-let q9 = (Math.floor(Math.random()*((-1500.50)-(-10.50)+1))+(-10.50));
+let q9 = (Math.floor(Math.random() * ((-1500.50) - (-10.50) + 1)) + (-10.50));
 console.log(q9);
 
 //------------------------------------------------------------------------------------------------
@@ -75,16 +75,16 @@ console.log(bill.toFixed(2));
 //          5. Math.random() with range logic
 
 // 13. Generate a random number between 50 and 100.
-let q13 = (Math.floor(Math.random()*(100-50+1))+50);
+let q13 = (Math.floor(Math.random() * (100 - 50 + 1)) + 50);
 console.log(q13);
 
 // 14. Create a random OTP between 1000 and 9999.
-let q14 = (Math.floor(Math.random()*(9999-1000+1))+1000);
+let q14 = (Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000);
 console.log(q14);
 
 // 15. Simulate two dice roll (values 1–6).and print values together
-let q15 = (Math.floor(Math.random()*6)+1);
-let q15a = (Math.floor(Math.random()*6)+1);
+let q15 = (Math.floor(Math.random() * 6) + 1);
+let q15a = (Math.floor(Math.random() * 6) + 1);
 let dieroll = (q15 + " " + q15a)
 console.log(dieroll);
 
@@ -95,13 +95,13 @@ console.log(dieroll);
 // 16. Add two numbers variables using + operator
 let q16 = 2;
 let q161 = 4;
-let add = (q16+""+q161);
+let add = (q16 + "" + q161);
 console.log(add);
 
 // 17. Concatenate two strings using +.
 let q17 = "Chaitanya Bhausaheb Kute";
 let q171 = "Patil";
-console.log(q17+" "+q171);
+console.log(q17 + " " + q171);
 
 // 18. Demonstrate how + behaves with numbers and strings mixed (e.g., 5 + "5").
 let a = 10 + 20;    // 30
@@ -195,11 +195,11 @@ console.log(q29.toUpperCase())
 let q30 = "Learning JavaScript is Fun"
 console.log(q30.indexOf("J"))
 console.log(q30.indexOf("t"))
-let UC = q30.substring(9,19).toUpperCase();
+let UC = q30.substring(9, 19).toUpperCase();
 console.log(UC)
-let q301 ="Learning"
+let q301 = "Learning"
 let q302 = "is Fun"
-console.log(q301 +" "+UC +" "+q302);
+console.log(q301 + " " + UC + " " + q302);
 //------------------------------------------------------------------------------------------------
 
 //          11. toLowerCase()
@@ -238,7 +238,7 @@ console.log(q35.trim().toUpperCase())
 
 // 36. Replace "bad" with "good" and then convert the result to uppercase.
 let q36 = "Smoking is bad for Health"
-console.log(q36.replace("bad","good").toUpperCase())
+console.log(q36.replace("bad", "good").toUpperCase())
 
 //------------------------------------------------------------------------------------------------
 
@@ -246,16 +246,16 @@ console.log(q36.replace("bad","good").toUpperCase())
 
 // 37. Extract first 4 characters from "JavaScript".
 let q37 = "JavaScript"
-console.log(q37.substr(0,4))
+console.log(q37.substr(0, 4))
 
 // 38. Extract last 3 characters from a given string.
 let q38 = "JavaScript is a programming language"
 console.log(q38.length)
-console.log(q38.substr(33,3))
+console.log(q38.substr(33, 3))
 
 // 39. Extract middle part from "Beautiful" starting at index 3, length 4.
 let q39 = "Beautiful"
-console.log(q39.substr(3,4))
+console.log(q39.substr(3, 4))
 //------------------------------------------------------------------------------------------------
 
 //          14. substring()
@@ -264,13 +264,13 @@ console.log(q39.substr(3,4))
 let q40 = "JavaScript"
 console.log(q40.length)
 console.log(q40.indexOf("S"))
-console.log(q40.substring(4,11))
+console.log(q40.substring(4, 11))
 
 // 41. Extract the first half of "Programming".
 let q41 = "Programming"
 console.log(q41.length)
 console.log(q41.indexOf("a"))
-console.log(q41.substring(0,6))
+console.log(q41.substring(0, 6))
 
 // 42. Swap substrings of two words.
 
@@ -350,7 +350,7 @@ let q55 = "JavaScript"
 console.log(q55.includes("Script"))
 
 // 56. Test whether "frontend developer" includes "back".
-let q56 = "frontend developer" 
+let q56 = "frontend developer"
 console.log(q56.includes("back"))
 
 // 57. Use includes() to verify a user’s email contains "@".
@@ -362,32 +362,32 @@ console.log(q57.includes("@"))
 
 // 58. Replace "Hello" with "Hi" in "Hello World".
 let q58 = "Hello"
-console.log(q58.replace("Hello","Hi"))
+console.log(q58.replace("Hello", "Hi"))
 
 // 59. Replace only the first "a" in "banana" with A.
 let q59 = "banana"
-console.log(q59.replace("a","A"))
+console.log(q59.replace("a", "A"))
 
 // 60. Replace "bad" with "good" in a sentence.
 let q60 = "not every bad thing is a bad thing"
-console.log(q60.replace("bad","good"))
+console.log(q60.replace("bad", "good"))
 //------------------------------------------------------------------------------------------------
 
 //          21. replaceAll()
 
 // 61. Replace all "a" with "@" in "banana".
 let q61 = "banana"
-console.log(q61.replace("a","@"))
+console.log(q61.replace("a", "@"))
 
 // 62. Replace all spaces with - in "My name is John".
 let q62 = "My name is John";
-console.log(q62.replaceAll(" ","-"));
+console.log(q62.replaceAll(" ", "-"));
 
 // 63. Replace all "is" with "was" in a paragraph.
 let q63 = "This is to show how is is used\
             bcoz is is used where is should be used\
             and is is vital as is is irreplaceable"
-console.log(q63.replaceAll("is","was"))
+console.log(q63.replaceAll("is", "was"))
 
 //------------------------------------------------------------------------------------------------
 
@@ -429,15 +429,15 @@ console.log(q69.lastIndexOf("is"));
 
 // 70. Concatenate two strings using concat().
 let q70 = "hello"
-let q701 ="world"
-console.log(q70.concat( q701))
+let q701 = "world"
+console.log(q70.concat(q701))
 
 // 71. Join "Hello" and "World" with a space using concat().
-console.log(q70.concat(" ",q701))
+console.log(q70.concat(" ", q701))
 
 // 72. Chain multiple concat() calls to form a sentence.
-let q72 ="Chaitanya"
-console.log(q72.concat("Bhausaheb","Kute","Age","-","26","City"," ","-","Sangamner"))
+let q72 = "Chaitanya"
+console.log(q72.concat("Bhausaheb", "Kute", "Age", "-", "26", "City", " ", "-", "Sangamner"))
 
 //------------------------------------------------------------------------------------------------
 
@@ -494,7 +494,7 @@ console.log(times3.repeat(3))
 //          28. match()
 
 // 82. Find all "a" letters in "banana".
-let str8= "banana"
+let str8 = "banana"
 let str9 = (str8.match("a"))
 console.log(str9)
 
