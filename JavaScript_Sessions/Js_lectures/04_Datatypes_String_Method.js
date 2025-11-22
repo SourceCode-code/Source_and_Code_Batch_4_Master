@@ -183,3 +183,11 @@ let str21 = "Write a program to count how many characters (excluding spaces) are
 let strlen = str21.replaceAll(" ","")
 console.log(strlen)
 console.log(strlen.length)
+
+
+
+let str141 = "the rain in mumbai stays mainly during monsoon"
+
+let result1 = str141.match("mumbai")
+
+console.log(result1)  //return a array

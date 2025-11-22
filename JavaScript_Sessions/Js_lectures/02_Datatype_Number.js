@@ -209,3 +209,15 @@ console.log(strnum)
 let randsym = Math.floor(Math.random()*(symstr.length))
 
 console.log(`${aplhastr[letter1]}${aplhastr[letter2]}${aplhastr[letter3]}${strnum}${symstr[randsym]}`)
+
+
+
+let a = 'accdefghijk'
+let b = '!@#$%*'
+let num = (Math.floor(Math.random()*(9999-1000))+1000)
+
+let a1 = Math.floor(Math.random()*(a.length))
+let a2 = Math.floor(Math.random()*(a.length))
+let a3 = Math.floor(Math.random()*(a.length))
+let bsym = Math.floor(Math.random()*(b.length))
+console.log(`${a[a1]}${a[a2]}${a[a3]}${b[bsym]}${num}`)

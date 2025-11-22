@@ -56,7 +56,7 @@ name = "Doe"; // Re-assigning the variable
 console.log(name);// Output: Doe
 
 
-// 2. let - used to declare a block-scoped variable that can be re-assigned
+// 2. let - used to declare a block-scoped variable that can be updated.
 let age = 30;              
 console.log(age); // Output: 30 
 age = 31; // Re-assigning the variable
