@@ -214,11 +214,14 @@ console.log(q32.toLowerCase())
 
 // 33. Check if two strings are equal by converting both to lowercase.
 
+let str1 = "JavaScript";
+let str2 = "javascript";
 
-
-
-
-
+if (str1.toLowerCase() === str2.toLowerCase()) {
+  console.log("Both strings are equal");
+} else {
+  console.log("Strings are not equal");
+}
 
 
 //------------------------------------------------------------------------------------------------
@@ -276,30 +279,13 @@ console.log(q41.substring(0,6))
 
 
 
-
-
-
-
-
 //------------------------------------------------------------------------------------------------
 
 //          15. split()
 
 // 43. Split "Cypress is fun" into words.
 let q43 = "Cypress is fun"
-console.log(q43.split(""))
-
-
-
-
-// here unable to split into words
-
-
-
-
-
-
-
+console.log(q43.split(" "))
 
 // 44. Split a sentence by commas.
 let q44 = "violet,indigo,blue,green,yellow,orange,red"
@@ -466,9 +452,10 @@ let q74 = "hello world"
 console.log(q74.startsWith("world"))
 
 // 75. Validate if a mobile number starts with +91.
-let no = "+919970959408";      // we cant check if it starts with number so cinvert it into string and then check
-console.log(no.startsWith("+91"));
-
+let no = +919970959408;      // we cant check if it starts with number so cinvert it into string and then check
+let mobno = no.toString()
+console.log(mobno)
+console.log(mobno.startsWith(91));
 //------------------------------------------------------------------------------------------------
 
 //          26. endsWith()
@@ -499,21 +486,8 @@ console.log(q80.repeat(5));
 
 // 81. Repeat a user input word 3 times.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let times3 = "repeat"
+console.log(times3.repeat(3))
 
 //------------------------------------------------------------------------------------------------
 
@@ -523,15 +497,6 @@ console.log(q80.repeat(5));
 let str8= "banana"
 let str9 = (str8.match("a"))
 console.log(str9)
-
-// 83. Match all digits in "Room number 205, floor 3".
-
-
-
-
-
-
-// 84. Match all capital letters in a sentence.
 
 
 

@@ -42,8 +42,9 @@ console.log(q7[9])
 
 // 8. Write a program to count how many characters (excluding spaces) are in a string.
 let q8 = "  Chaitanya  ";
-console.log(q8.trim().length)
-
+console.log(q8.length)
+let q9 = q8.replaceAll(" ","")
+console.log(q9.length)
 // -----------------------------------------------------
 
 // 9. Concatenate first name, middle name, and last name using template literals and print it.
@@ -92,8 +93,10 @@ console.log(q144)
 
 // 15. Split the string "red,green,blue,yellow" into an array and print each color separately.
 let q15 = "red,green,blue,yellow"
-console.log(q15.split("red"))
-
+let q161 = q15.split(",")
+for (let i = 0 ; i <q161.length ; i++){
+console.log(q161[i])
+}
 
 // -----------------------------------------------------
 
@@ -171,7 +174,11 @@ console.log(str6.substring(0,6))
 
 // 7. Split the string "Cypress is fun" by spaces and print each word on a new line.
 let str7 = "Cypress is fun";
-console.log(str7.split(""))
+let str77 = str7.split(" ")
+for (let i = 0 ; i < str77.length ; i++){
+console.log(str77[i])
+}
+
 
 // 8. Replace all occurrences of 'banana' with 'pineapple' in the string "banana apple".
 let str8 = "banana apple";
@@ -209,5 +216,3 @@ let str14 = "test your code with a test case";
 console.log(str14.replace("test","exam"))
 //-------------------------------------------------------------------------------------------------------------------
 
-//8
-//15
