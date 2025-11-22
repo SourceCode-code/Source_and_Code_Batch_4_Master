@@ -218,7 +218,7 @@ console.log(mobno);
 //31.Create a random 10-character password using uppercase letters, lowercase letters, numbers, and special symbols.
 let upc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let lwc = "abcdefghijklmnopqrstuvwxyz";
-let numbs = (Math.floor(Math.random(*(9999-1000+1)+1000)))
+let numbs = (Math.floor(Math.random()*(9999-1000+1)+1000))
 let sym = "@#$%&*"
 
 let a1 = (Math.floor(Math.random()*(upc.length)))
