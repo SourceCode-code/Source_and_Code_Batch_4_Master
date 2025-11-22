@@ -127,8 +127,8 @@ let length = 10;
 let width = 20;
 let areaOfRect = (length * width)
 let pmtrOfRect = (2 * (length + width))
-console.log("area of Rectangle =",areaOfRect)
-console.log('perimeter of Rectangle =',pmtrOfRect)
+console.log("area of Rectangle =", areaOfRect)
+console.log('perimeter of Rectangle =', pmtrOfRect)
 
 // 17. Get the radius   calculate the area and circumference of a circle.
 let radius = 47;
@@ -146,20 +146,19 @@ console.log(circleCircumference)
 // 21. Calculate the value of y (y = x^2 + 6x + 9) for different x values and figure out when y equals 0.
 
 // 22. Compare the length of your first name and your family name.
-let firstname = 'Chaitanya' , familyname = 'kute'
+let firstname = 'Chaitanya', familyname = 'kute'
 
 // 23. Declare two variables `myAge` and `yourAge`, then calculate the age difference.
 let myAge = 26;
 let yourAge = 23;
 
-if (myAge>yourAge){
-    console.log(`i am elder to you by ${myAge-yourAge} years`)
+if (myAge > yourAge) {
+    console.log(`i am elder to you by ${myAge - yourAge} years`)
 }
-else if(yourAge>myAge){
-console.log(`your are older than me by ${yourAge-myAge} years`)
+else if (yourAge > myAge) {
+    console.log(`your are older than me by ${yourAge - myAge} years`)
 }
-else 
-{console.log('we are of same age')}
+else { console.log('we are of same age') }
 
 
 // 24. Using ternary opertor, when birth year and calculate if they are old enough to drive.

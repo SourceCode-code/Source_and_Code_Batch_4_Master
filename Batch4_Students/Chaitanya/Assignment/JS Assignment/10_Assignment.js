@@ -32,9 +32,6 @@ console.log(a,b,c)
 
 
 
-
-
-
 // Q4. Display the type of each of these: 45, "45", true, undefined, null.
 
 let q = 45, w = "45" , e = null
@@ -56,9 +53,8 @@ console.log(x--)
 
 
 // Q7. Print the result of typeof NaN — explain what you see.
-
-
-
+console.log(typeof(NaN))
+// the output shows number datatype
 
 // =====================================================
 // 2. NUMBER DATATYPE (LOGIC & ARITHMETIC)
