@@ -80,6 +80,7 @@ console.log(typeof(q10));
 //-------------------------------------------------------------------
 //11.Convert "123" (string) to a number and print its typeof.
 let q11 = "123"
+console.log(Number(q11))
 
 //12.Declare one variable each for: number, string, boolean, undefined, null — print values and their typeof.
 let q12 = 123;
@@ -217,8 +218,16 @@ console.log(mobno);
 //31.Create a random 10-character password using uppercase letters, lowercase letters, numbers, and special symbols.
 let upc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let lwc = "abcdefghijklmnopqrstuvwxyz";
-let numbs = 1234567890;
+let numbs = (Math.floor(Math.random(*(9999-1000+1)+1000)))
 let sym = "@#$%&*"
+
+let a1 = (Math.floor(Math.random()*(upc.length)))
+let a2 = (Math.floor(Math.random()*(upc.length)))
+let a3 = (Math.floor(Math.random()*(upc.length)))
+let a4 = (Math.floor(Math.random()*(upc.length)))
+let sym1 = (Math.floor(Math.random()*(sym.length)))
+console.log(`${upc[a1]}${upc[a2]}${upc[a3]}${upc[a4]}${sym[sym1]}${numbs}`)
+
 
 
 

@@ -43,8 +43,6 @@ console.log(die1)
 console.log(die2)
 console.log (die1 + " " + die2);
 
-//hot to get combine result(error)
-
 
 // 6. What will be the result of the following code? Explain why.
 
@@ -80,7 +78,6 @@ Math.floor() → round down to whole number.
 //Example: randomFloat(5.5, 9.3) should generate a random float between 5.5 and 9.3.
  let num2 = Math.random() * (9.3 - 5.5) + 5.5;
  console.log(num2);
-//(error) output exceed 9.3
 
 
 // 9. Given a number `x = 1234.56789`, write code to round this number to 2 decimal places. that is x=1234.57

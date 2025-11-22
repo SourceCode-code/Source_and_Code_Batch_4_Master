@@ -242,8 +242,15 @@ console.log(coin1 [coinToss]);
 let Q34 = Math.floor(Math.random() * ( 999 - 100 + 1)) + 100;
 console.log(Q34);
 
-// Q36. Generate a random number between 1 and 100 and check if it is even or odd.
-
+//  Q36. Generate a random number between 1 and 100 and check if it is even or odd.
+let rannum = (Math.floor(Math.random()*(100)+1))
+console.log(rannum)
+if (rannum % 2 !== 0){
+    console.log('odd number')
+}
+else {
+    console.log('even number')
+}
 
 
 // Q37. Generate 5 random numbers between 1 and 10 
@@ -260,8 +267,3 @@ let num = Math.round(Math.random() * 999)
 console.log(strNew + spNew + num);
 
 
-
-/*
-Isuues in Question
-36
-*/
