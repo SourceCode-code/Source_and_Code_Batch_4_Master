@@ -269,3 +269,11 @@ for (let i = 0 ; i <= 100 ; i++){
     sum = sum + i
 }
 console.log(sum)
+
+
+for (let P = 0 ; P <= 10 ; P++){
+console.log(P)
+}
+
+for (let q = 10 ; q >=0 ; q--)
+{console.log(q)}
