@@ -133,8 +133,75 @@ console.log(totalriceprice); //400
 
 console.log(totalriceprice + total_eggprice); //472
 
-// pom --> page object metholdy 
+// pom --> page object metholdy
 // classes and function
 
+//on the way of writing
 
-// 
+// 1 delecartion function --> here the function name is delecalred in the start
+
+// syntax -->
+
+/*
+function functionname(parameter){
+return     code
+}
+*/
+
+// 2 experssion type --> because the here the function is stored in a expression
+
+let fullname1 = function (firstname, lastname) {
+  return `${firstname} ${lastname}`;
+};
+
+console.log(fullname1("sid", "gadakh"));
+
+//3 arrow function =>
+let fullname3 = (firstname, lastname) => {
+  return `${firstname} ${lastname}`;
+};
+
+console.log(fullname3("asf", "asfcasc"));
+
+// --------------------------------------------------------------------------------------------------------
+
+//examples of problems on function
+
+// write a script which will tell me how many vowels are there in a given string (a,e,i,o,u)
+
+function countvowel(string) {
+  let count = 0;
+  let lowerstring = string.toUpperCase();
+  for (let i = 0; i < lowerstring.length; i++) {
+    if (
+      lowerstring[i] === "A" ||
+      lowerstring[i] === "E" ||
+      lowerstring[i] === "I" ||
+      lowerstring[i] === "O" ||
+      lowerstring[i] === "U"
+    ) {
+      count++;
+    }
+  }
+  console.log(`the vowels in the given string ${string} are ${count}`)
+}
+
+
+countvowel("siddhant")
+
+countvowel("sneha")
+
+countvowel("vaibhav")
+
+
+// write a script which will give me the largest number form given number 
+
+function LargestNumber(array){
+let Array1 = Math.max(...array)
+console.log(Array1)
+}
+
+LargestNumber([1,2,3,4,5,6,7,8,9])
+
+
+LargestNumber([11,13,20,0,100,500,600,50000])
