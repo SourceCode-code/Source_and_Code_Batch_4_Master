@@ -277,3 +277,11 @@ console.log(P)
 
 for (let q = 10 ; q >=0 ; q--)
 {console.log(q)}
+
+let fullName = (fname, lastName) =>{
+    return `${fname} ${lastName}`
+}
+console.log(fullName('sahil',"kute"))
+
+let fullname = (a,b) => { return a * b }
+console.log(fullname (10,1))

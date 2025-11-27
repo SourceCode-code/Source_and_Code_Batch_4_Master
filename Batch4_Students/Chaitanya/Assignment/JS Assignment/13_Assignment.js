@@ -92,3 +92,30 @@ function fuelPrice(petrolprice , litresOfPetrol){
 }
     let petrolPrice = fuelPrice(106.9,5)
     console.log(petrolPrice)
+
+
+    //------------------------------------------------------------------------------------------------
+
+
+    // expression type functions
+
+let expression = function (para1 , para2){
+    return para1 / para2;
+
+}
+console.log(expression(10,2))
+
+ //------------------------------------------------------------------------------------------------
+
+
+let toUpper = function (word){
+    return word.toUpperCase();
+}
+console.log(toUpper('chaitanya'))
+ //------------------------------------------------------------------------------------------------
+
+
+ let num = function (no1 ,no2){
+    return (no1 * no2 + no1 -no2)
+     }
+     console.log(num(5,1))
