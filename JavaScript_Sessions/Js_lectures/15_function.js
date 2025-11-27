@@ -133,8 +133,133 @@ console.log(totalriceprice); //400
 
 console.log(totalriceprice + total_eggprice); //472
 
-// pom --> page object metholdy 
+// pom --> page object metholdy
 // classes and function
 
+//on the way of writing
 
-// 
+// 1 delecartion function --> here the function name is delecalred in the start
+
+// syntax -->
+
+/*
+function functionname(parameter){
+return     code
+}
+*/
+
+// 2 experssion type --> because the here the function is stored in a expression
+
+let fullname1 = function (firstname, lastname) {
+  return `${firstname} ${lastname}`;
+};
+
+console.log(fullname1("sid", "gadakh"));
+
+//3 arrow function =>
+let fullname3 = (firstname, lastname) => {
+  return `${firstname} ${lastname}`;
+};
+
+console.log(fullname3("asf", "asfcasc"));
+
+// --------------------------------------------------------------------------------------------------------
+
+//examples of problems on function
+
+// write a script which will tell me how many vowels are there in a given string (a,e,i,o,u)
+
+function countvowel(string) {
+  let count = 0;
+  let lowerstring = string.toUpperCase();
+  for (let i = 0; i < lowerstring.length; i++) {
+    if (
+      lowerstring[i] === "A" ||
+      lowerstring[i] === "E" ||
+      lowerstring[i] === "I" ||
+      lowerstring[i] === "O" ||
+      lowerstring[i] === "U"
+    ) {
+      count++;
+    }
+  }
+  console.log(`the vowels in the given string ${string} are ${count}`);
+}
+
+countvowel("siddhant");
+
+countvowel("sneha");
+
+countvowel("vaibhav");
+
+// write a script which will give me the largest number form given number
+
+function LargestNumber(array) {
+  let Array1 = Math.max(...array);
+  console.log(Array1);
+}
+
+LargestNumber([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+
+LargestNumber([11, 13, 20, 0, 100, 500, 600, 50000]);
+
+// create a function to check if the given is  prime
+
+function checkprime(num) {
+  if (num < 2) {
+    return false;
+  }
+
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(checkprime(7)); // prime
+console.log(checkprime(13)); // prime
+console.log(checkprime(4)); // not prime
+
+// create a function which will give me the longest word in the string
+
+let str =
+  " my name is siddhant i am a software engineer my expertise are in automation and development";
+
+function longestword(string) {
+  let splitstr = string.split(" "); //this will convert into array by spilting on spaces
+  let word = "";
+  console.log(splitstr);
+  for (let i = 0; i < splitstr.length; i++) {
+    if (splitstr[i].length > word.length) {
+      word = splitstr[i];
+    }
+  }
+  return word;
+}
+
+console.log(longestword(str));
+
+console.log(longestword("qwertyuio tryujkl,hmgnvfdg"));
+
+// create a function which get me the second largest element form array
+
+let numarr = [1, 5, 6, 12, 75, 96, 1000, 556, 111, 1111, 112355, 764];
+
+function Largestnumber1(array) {
+  let large = Math.max(...array);
+  console.log(large);
+}
+
+Largestnumber1(numarr);
+
+//-------------------------------------
+
+function Secondlargest(array) {
+  let ascendsort = array.sort((a, b) => {
+    return a - b;
+  });
+  console.log(ascendsort[ascendsort.length - 2]); //
+}
+Secondlargest(numarr); // 1111
