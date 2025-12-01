@@ -128,3 +128,33 @@ console.log(...arr2)
 let numarr =[...arr2]
 
 console.log(numarr)
+
+
+
+
+// ----------------------------->
+
+
+let xs = 10
+let yss=20
+
+
+//  how to swap varaibles 
+
+// xs = xs ^ yss
+// yss = xs ^ yss
+// xs = xs ^ yss
+
+
+// console.log(xs)
+// console.log(yss)
+
+// 
+
+xs = xs+yss
+yss = xs-yss
+xs= xs-yss
+
+
+console.log(xs)
+console.log(yss)
