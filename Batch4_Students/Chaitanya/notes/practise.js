@@ -1,3 +1,5 @@
+
+
 let date = new Date()
 console.log(date)
 console.log(date.getFullYear())
@@ -285,3 +287,45 @@ console.log(fullName('sahil',"kute"))
 
 let fullname = (a,b) => { return a * b }
 console.log(fullname (10,1))
+
+// destructuring--
+let arr =[1,2,3,4]
+let arr1 = arr[0]
+let arr2 = arr[1]
+let arr3 = arr[2]
+let arr4 = arr[3]
+console.log(arr1)
+console.log(arr2)
+console.log(arr3)
+console.log(arr4)
+
+let ar = [1,2,3,4,5]
+let [no1,no2,no3,no4,no5] = ar
+console.log(no1,no2,no3,no4,no5)
+
+
+let str =['chaitanya', 'sahil', 'adesh']
+let[name1,name2,name3] = str
+console.log(name3,name2,name1)
+
+
+let fullStack = [
+    ["HTML", "CSS", "JS", "React", "Angular"],   // Frontend stack
+    ["Node", "Express", "MongoDB", "SQL"]         // Backend stack
+];
+
+let [Frontend,Backend]=fullStack
+
+console.log(Frontend)
+console.log(Backend)
+
+
+let nos = [1,2,3,4,5,6,7]
+let [n1,n2,,,,n7] = nos
+console.log(n1,n2,n7)
+
+let abc = [1,2,3,4,5,6,7,8,9,10]
+
+let [q,p,...sss]= abc
+console.log(q,p)
+console.log(sss)

@@ -4,9 +4,10 @@ Exercises: Level 1
 
 1 Declare a function fullName and it print out your full name.
 
+
 2 Declare a function fullName and now it takes firstName, lastName as a parameter and it returns your full - name.
 
-3 Declare a function addNumbers and it takes two two parameters and it returns sum.
+3Declare a function addNumbers and it takes two two parameters and it returns sum. 
 
 4 An area of a rectangle is calculated as follows: area = length x width. Write a function which calculates areaOfRectangle.
 

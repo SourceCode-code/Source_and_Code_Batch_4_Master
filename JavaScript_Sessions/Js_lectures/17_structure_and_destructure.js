@@ -16,6 +16,7 @@ let num4 = arr[3]
 let num5 = arr[4]
 
 
+
 console.log(num1,num2,num3,num4,num5)
 
 //example of destructuring an array 
