@@ -62,6 +62,7 @@ let [q, x, ...n] = moreNumbers;
 console.log(q, x);
 console.log(n);
 
+
 // ---------------
 // Destructing of object
 
