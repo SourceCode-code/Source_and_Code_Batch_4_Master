@@ -374,6 +374,7 @@ console.log(above3)
     experience: 10,
     skills: [ 'JavaScript', 'GitHub Actions', 'Playwright' ],
     position: 'Backend Developer'
+   
   },
   {
     firstName: 'Arjun',
