@@ -6,64 +6,64 @@
 // fullname()
 
 // 2 Declare a function fullName and now it takes firstName, lastName as a parameter and it returns your full - name.
-function fullName(firstname,middlename,lastname){
+function fullName(firstname, middlename, lastname) {
     return `${firstname} ${middlename} ${lastname}`
 }
-let name = fullName("Akash","Manik","Jadhav")
+let name = fullName("Akash", "Manik", "Jadhav")
 console.log(name)
 
 // 3 Declare a function addNumbers and it takes two two parameters and it returns sum.
-function sumofNums(a,b){
-    return console.log(a+b)
+function sumofNums(a, b) {
+    return console.log(a + b)
 }
-sumofNums(5,7)
+sumofNums(5, 7)
 
 // 4 An area of a rectangle is calculated as follows: area = length x width. Write a function which calculates areaOfRectangle.
-function Area(length,width){
-    return console.log(length*width)
+function Area(length, width) {
+    return console.log(length * width)
 }
-Area(5,10)
+Area(5, 10)
 //5 A perimeter of a rectangle is calculated as follows: perimeter= 2x(length + width). Write a function which calculates perimeterOfRectangle.
-function perimeter(length,width){
-    return 2*(length+width)
+function perimeter(length, width) {
+    return 2 * (length + width)
 }
-let recTangle = perimeter(10,20)
+let recTangle = perimeter(10, 20)
 console.log(recTangle)
 
 //6 A volume of a rectangular prism is calculated as follows: volume = length x width x height. Write a function which calculates volumeOfRectPrism.
-function volume(length,width,height){
-    return length*width*height
+function volume(length, width, height) {
+    return length * width * height
 }
-let prism1 = volume(10,20,30)
+let prism1 = volume(10, 20, 30)
 console.log(prism1)
 
 //7 Area of a circle is calculated as follows: area = π x r x r. Write a function which calculates areaOfCircle
 const pIi = 3.14
-function areaOfcircle(pIi,r){
-    return pIi*r**2
+function areaOfcircle(pIi, r) {
+    return pIi * r ** 2
 }
-let areaC = areaOfcircle(pIi,10)
+let areaC = areaOfcircle(pIi, 10)
 console.log(areaC)
 
 //8 Circumference of a circle is calculated as follows: circumference = 2πr. Write a function which calculates circumOfCircle
-function circumFerence(pIi,r){
-    return 2*pIi*r
+function circumFerence(pIi, r) {
+    return 2 * pIi * r
 }
-let circumF = circumFerence(pIi,20)
+let circumF = circumFerence(pIi, 20)
 console.log(circumF)
 
 //9 Density of a substance is calculated as follows:density= mass/volume. Write a function which calculates density.
-function density(a,b){
-    return a/b
+function density(a, b) {
+    return a / b
 }
-let density1 = density(100,20)
+let density1 = density(100, 20)
 console.log(density1)
 
 //10 Speed is calculated by dividing the total distance covered by a moving object divided by the total amount of time taken. Write a function which calculates a speed of a moving object, speed.
-function speed(distance, time){
-    return distance/time
+function speed(distance, time) {
+    return distance / time
 }
-let speedOfobject = speed(150,5)
+let speedOfobject = speed(150, 5)
 console.log(speedOfobject)
 
 //11 Weight of a substance is calculated as follows: weight = mass x gravity. Write a function which calculates weight.
@@ -75,8 +75,8 @@ let weight1 = weight(100, gravity)
 console.log(weight1)
 
 //12 Temperature in oC can be converted to oF using this formula: oF = (oC x 9/5) + 32. Write a function which convert oC to oF convertCelsiusToFahrenheit.
-function temperaTure (oc){
-return (oc * 9/5) + 32
+function temperaTure(oc) {
+    return (oc * 9 / 5) + 32
 }
 let oF = temperaTure(55)
 console.log(oF)
@@ -91,42 +91,42 @@ console.log(oF)
 //Normal weight: BMI is 18.5 to 24.9
 //Overweight: BMI is 25 to 29.9
 //Obese: BMI is 30 or more
-function bmi(w,h){
- let bmi1 =  w / (h*h)
- console.log(bmi1)
- if (bmi1<18.5){
-    console.log("underweight")
- }
- else if(bmi1>=18.5&&bmi1<=24.99){
-    console.log("Normal Weight")
- }
- else if (bmi1>=25&&bmi1<=29.9){
-    console.log("Overweight")
- }
- else{
-    console.log("obese")
- }
+function bmi(w, h) {
+    let bmi1 = w / (h * h)
+    console.log(bmi1)
+    if (bmi1 < 18.5) {
+        console.log("underweight")
+    }
+    else if (bmi1 >= 18.5 && bmi1 <= 24.99) {
+        console.log("Normal Weight")
+    }
+    else if (bmi1 >= 25 && bmi1 <= 29.9) {
+        console.log("Overweight")
+    }
+    else {
+        console.log("obese")
+    }
 }
-bmi(85,2)
+bmi(85, 2)
 
 //14 Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.
 let date = new Date()
-let month = date.getMonth()+1
+let month = date.getMonth() + 1
 // console.log(month)
-function checkseason(month){
-    if (month >= 3 && month <= 5){
+function checkseason(month) {
+    if (month >= 3 && month <= 5) {
         console.log("Spring")
     }
-    else if(month >= 6 && month <= 8){
+    else if (month >= 6 && month <= 8) {
         console.log("Summer")
     }
-    else if (month >= 9 && month <= 11){
+    else if (month >= 9 && month <= 11) {
         console.log("Autumn")
     }
-    else if(month <= 12 && month <= 2) {
+    else if (month <= 12 && month <= 2) {
         console.log("Winter")
     }
-    else{
+    else {
         console.log("invalid data")
     }
 }
@@ -139,19 +139,19 @@ checkseason(3)
 // 10
 // console.log(findMax(0, -10, -2))
 // 0
-function findMax(a,b,c){
-    switch (true){
-        case a>b && a>c : console.log("a is largest")
-        break
-        case b>a && b>c : console.log("b is largest")
-        break
-        case c>a && c>b : console.log("c is largest")
-        break
+function findMax(a, b, c) {
+    switch (true) {
+        case a > b && a > c: console.log("a is largest")
+            break
+        case b > a && b > c: console.log("b is largest")
+            break
+        case c > a && c > b: console.log("c is largest")
+            break
         default: console.log("enter correct data ")
     }
-    
+
 }
-findMax(0,10,5)
+findMax(0, 10, 5)
 findMax(0, -10, -2)
 
 // 1 Linear equation is calculated as follows: ax + by + c = 0.
@@ -195,18 +195,18 @@ printArray(moreNumbers)
 // showDateTime()
 // 08/01/2020 04:08
 
-function showDatetime(){
-let date = new Date()
-let day = date.getDate()
-let month = date.getMonth()+1
-let year = date.getFullYear()
-let hours = date.getHours()
-let mins = date.getMinutes()
-let dayformat = day < 10 ? `0${day}` : day
-let monthformat = month < 10 ? `0${month}` : month
-let hourformat = hours < 10 ? `0${hours}` : hours
-let minformat = mins < 10 ? `0${mins}` : mins
-console.log(`${dayformat}/${monthformat}/${year} ${hourformat}:${minformat}`)
+function showDatetime() {
+    let date = new Date()
+    let day = date.getDate()
+    let month = date.getMonth() + 1
+    let year = date.getFullYear()
+    let hours = date.getHours()
+    let mins = date.getMinutes()
+    let dayformat = day < 10 ? `0${day}` : day
+    let monthformat = month < 10 ? `0${month}` : month
+    let hourformat = hours < 10 ? `0${hours}` : hours
+    let minformat = mins < 10 ? `0${mins}` : mins
+    console.log(`${dayformat}/${monthformat}/${year} ${hourformat}:${minformat}`)
 }
 
 showDatetime()
@@ -230,6 +230,51 @@ swapValues(3, 4)
 // It takes array as a parameter and it returns the reverse of the array (don't use method).
 
 // console.log(reverseArray([1, 2, 3, 4, 5]))
-// //[5, 4, 3, 2, 1]
+//[5, 4, 3, 2, 1]
 // console.log(reverseArray(['A', 'B', 'C']))
-// //['C', 'B', 'A']
+//['C', 'B', 'A']
+
+function reverseArray(arrr) {
+    let revarr = []
+    for (let i = arrr.length - 1; i >= 0; i--) {
+        revarr.push(arrr[i])
+    }
+    return revarr
+}
+console.log(reverseArray([1, 2, 3, 4, 5]))
+console.log(reverseArray(['A', 'B', 'C']))
+
+
+//7 Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
+
+function capitalizedArray(arr) {
+    let arr1 = []
+    for (let i = 0; i < arr.length; i++) {
+        arr1.push(arr[i].toUpperCase())
+
+    }
+    return arr1
+}
+
+console.log(capitalizedArray(["apple", "banana", "mango", "orange"]))
+//8 Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
+
+let arr1 = []
+function addItem(item) {
+
+    arr1.push(item)
+    return arr1
+
+}
+console.log(addItem('APPLE'))
+
+// 9 Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
+let arr2 = []
+function removeItem(index) {
+
+
+    arr2.push(item)
+    return arr1
+
+}
+console.log(removeItem('APPLE', 'BANANA', 'MANGO', 'ORANGE'))
