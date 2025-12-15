@@ -263,3 +263,15 @@ function Secondlargest(array) {
   console.log(ascendsort[ascendsort.length - 2]); //
 }
 Secondlargest(numarr); // 1111
+
+
+
+// function for unlimited parameter 
+function getSum(...numbers){
+   let total = 0
+   for(let n of numbers){
+    total+=n
+   }
+   return total
+}
+console.log(getSum(1,2,2,3,6))

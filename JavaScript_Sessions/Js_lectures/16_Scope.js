@@ -39,6 +39,7 @@ function printxnum() {
   console.log(x);
 }
 printxnum();
+
 // because this is a block scope varaibale it cannot bypass the scope
 
 // same is it with const , const is also a block scope varaible
