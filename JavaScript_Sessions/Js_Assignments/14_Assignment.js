@@ -43,6 +43,7 @@
 //     {word:'all',count:1},
 //     {word:'Python',count:1},
 //     {word:'If',count:1}]
+
 // console.log(tenMostFrequentWords(paragraph, 10))
 // [{word:'love', count:6},
 // {word:'you', count:5},
