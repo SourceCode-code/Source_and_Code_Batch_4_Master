@@ -1,158 +1,167 @@
-// // // // 
+// let arr = ["akkash","swapnil",124356]
+// let [n1,n2,n3] = arr
+// console.log(n1,n2,n3)
 
-// // // let rows = 4
-// // // for(let i =1 ;i<=4;i++){
-// // // console.log((String(i).repeat(rows--)))}
+// let fullStack = [
+//   ["HTML", "CSS", "JS", "React", "Angular"], // Frontend stack
+//   ["Node", "Express", "MongoDB", "SQL"], // Backend stack
+// ];
 
-// // // let str = " hello my name is siddhant gadakh and my age is 26 "
-// // // let tvowel = 0
+// let [frontend,backend] = fullStack
+// console.log(frontend)
 
+// let [
+//     [f1,f2,f3,f4,f5],
+//     [f6,f7,f8,f9,f10]
+// ]=fullStack
+// console.log(f1)
 
-// // // for(let i =0;i<str.length;i++){
-// // //   if(str[i]==="a"||str[i]==="e"||str[i]==="i"||str[i]==="o"||str[i]==="u"){
-// // //     tvowel++
-// // //   }
-// // // }
+// // 3. Skipping Elements during Destructuring
+// let numbers = [1, 2, 3, 4];
 
-// // // console.log(tvowel)
+// let [num11, , , num44] = numbers;
+// console.log(num11, num44);
+// // using destructing with spread opertaor
+// let moreNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-// // let Companies10 = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"];
-// // let slicedAr1 = Companies10.splice(2,3)
-// // console.log(slicedAr1)
-// // let Companies12 = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"];
-// // Companies12.splice(0,Companies12.length)
-// // console.log("hh",Companies12)
-
-// // let shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
-// // shoppingCart.push("Sugar")
-// // console.log(shoppingCart)
-
-// // shoppingCart.unshift("Meat")
-// // console.log(shoppingCart)
-
-// // shoppingCart.splice(3)
-// // console.log(shoppingCart)
-
-// // let frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
-// // let backEnd = ['Node', 'Express', 'MongoDB']
-// // let fullStack = frontEnd.concat(backEnd)
-// // console.log(fullStack)
-
-// // // let num3 = [2, 8, 7, 3, 35, 58, 69, 34567, 367, 2, 3, 4, 5, 67, 8, 9, 0]
-
-// // // let minage = Math.min(...ages)
-// // // console.log("age",minage)
-// // // let maxage = Math.max(...ages)
-// // // console.log(maxage)
-
-// // // let arr1 = [1, 2, 3];
-// // // let arr2 = [...arr1];
-// // // console.log(arr1)
-
-// // // let arr_11 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
-// // // let secondBig = arr_11.sort((a, b) => b - a)[1];
-
-// // // console.log(secondBig);
-
-// // let users = {  
-// //   Alex: {
-// //     email: 'alex@alex.com',
-// //     skills: ['HTML', 'CSS', 'JavaScript'],
-// //     age: 20,
-// //     isLoggedIn: false,
-// //     points: 30
-// //   },
-// //   Asab: {
-// //     email: 'asab@asab.com',
-// //     skills: ['HTML', 'CSS', 'JavaScript', 'Redux', 'MongoDB', 'Express', 'React', 'Node'],
-// //     age: 25,
-// //     isLoggedIn: false,
-// //     points: 50
-// //   },
-// //   Brook: {
-// //     email: 'daniel@daniel.com',
-// //     skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
-// //     age: 30,
-// //     isLoggedIn: true,
-// //     points: 50
-// //   },
-// //   Daniel: {
-// //     email: 'daniel@alex.com',
-// //     skills: ['HTML', 'CSS', 'JavaScript', 'Python'],
-// //     age: 20,
-// //     isLoggedIn: false,
-// //     points: 40
-// //   },
-// //   John: {
-// //     email: 'john@john.com',
-// //     skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node.js'],
-// //     age: 20,
-// //     isLoggedIn: true,
-// //     points: 50
-// //   },
-// //   Thomas: {
-// //     email: 'thomas@thomas.com',
-// //     skills: ['HTML', 'CSS', 'JavaScript', 'React'],
-// //     age: 20,
-// //     isLoggedIn: false,
-// //     points: 40
-// //   },
-// //   Paul: {
-// //     email: 'paul@paul.com',
-// //     skills: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node'],
-// //     age: 20,
-// //     isLoggedIn: false,
-// //     points: 40
-// //   }
-// // };
-// // // users.akash =  {
-// // //     email: 'paul@paul.com',
-// // //     skills: ['HTML', 'CSS', 'Node'],
-// // //     age: 20,
-// // //     isLoggedIn: false,
-// // //     points: 40
-// // //   }
-// // //   console.log(users)
-
-// // let asusers = Object.assign({},users)
-// // console.log("kk",asusers)
+// let [q, x, ...n] = moreNumbers;
+// console.log(q, x);
+// console.log(n);
 
 
-// // var xx =10
+// let obj = {
+//     firstname: "akash",
+//     age: 26,
+//     exp:3,
+//     skill:["cypress ", "playwright", "js", "ts", "react"],
+//     position: "Senior Software engineer"
+// }
+// let {firstname,age,exp,skill,position} = obj
+// console.log(firstname,age,exp,skill,position)
 
-// // console.log(xx)
+// let {firstname:fn,age:ag,exp:ex,skill:sk,position:ps}=obj
+// console.log(ps)
 
-// // function printxx(){
-// //     console.log(xx)
-// // }
+// let [cy,pw,js,ts,react] =sk
+// console.log(cy,pw,js,ts,react)
+// let {firstname:fnn,age:agg,exp:exx,skill:[cyy,pww,jss,tss,reactt],position:pss}=obj
+// console.log(pww,jss,tss)
 
-// // printxx()
+// let arr2 = [1,2,3,4,5,6,7,8,9]
+// console.log(...arr2)
 
-// // var xx = 10
-// // console.log(xx)
-// // function printxx(){
-// //   console.log(xx)
-// // }
-// // printxx()
+// let arr3 = [...arr2]
+// console.log(arr3)
 
-// // const pii = 3.1432;
+// let xss = 10
+// let yss = 20
 
-// // function printpi() {
-// //   const pii = 3.14;
-// //   console.log(pii);
-// // }
+// xss = xss+yss
+// yss = xss-yss
+// xss = xss-yss
+// console.log(xss)
+// console.log(yss)
 
-// // console.log(pii);
-// // printpi();
-// // const pii = 3.1432
-// // function printpi(){
-// //   const pii = 3.14
-// //   console.log(pii)
-// // }
 
-// // console.log(pii)
-// // printpi()
+const ste1 = new Set()
+console.log(ste1)
 
-// let pattern = "siddhant";
-// let regex = new RegExp(pattern);
-// console.log(regex); // 
+let arr1 = [1,1,1,1,1,1,1,1,1]
+let ste2 = new Set(arr1)
+console.log(ste2)
+
+let lang = [
+  "english",
+  "hindi",
+  "marathi",
+  "english",
+  "chinese",
+  "marathi",
+  "english"
+]
+
+let ste3 = new Set(lang)
+console.log(ste3)
+
+for (const i of ste3){
+  console.log(i)
+
+}
+
+let comparr = ["google", "amazon", "microsoft", "netflix", "facebook"];
+let comset = new Set()
+
+for (let company of comparr){
+  comset.add(company)
+}
+console.log(comset)
+
+comset.add("oracle")
+console.log(comset)
+comset.delete("amazon")
+console.log(comset)
+
+comset.clear()
+console.log(comset)
+
+let arr2 = [1, 2, 3, 4];
+let arr3 = [4, 5, 6, 7, 8];
+
+let arr4 = [...arr2,...arr3]
+console.log(arr4)
+
+setofnum1 = new Set(arr4);
+console.log(setofnum1)
+
+
+let x = [1, 2, 3, 4, 5, 6, 6, 4];
+let y = [5, 6, 7, 8, 9, 10, 6, 5];
+let setx = new Set(x)
+let sety = new Set(y)
+console.log(setx)
+console.log(sety) 
+// let intersection = x.filter((el) => sety.has(el))
+// let inset = new Set(intersection)
+// console.log(inset)
+
+let intersection = x.filter((el) => sety.has(el))
+let inset = new Set(intersection)
+console.log(inset)
+
+let diff = x.filter((el) => !sety.has(el))
+console.log(diff)
+let diff1 = y.filter((el) => !setx.has(el))
+console.log(diff1)
+
+let diff3 = [...diff,...diff1]
+console.log(diff3)
+let diff4 = new Set(diff3)
+console.log(diff4)
+
+let countarr = [
+  ["indian", "hindi"],
+  ["usa", "english"],
+  ["germnay", "german"],
+]
+
+let map1 = new Map(countarr)
+console.log(map1)
+
+
+let pattern = "akash"
+let regex = new RegExp(pattern)
+console.log(regex)
+
+let regex2 = /"akash"/gi
+console.log(regex2)
+
+let str = " i am Learning js and the topic in js is regex"
+let result = /learning/gi
+let output = result.test(str)
+console.log(output)
+// let str = " i am Learning js and the topic in js is regex";
+
+// let result = /learning/gi;
+
+// let output = result.test(str);
+// console.log(output);
