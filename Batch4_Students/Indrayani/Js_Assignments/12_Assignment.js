@@ -73,68 +73,77 @@ let users = {
 };
 
 // // Tasks:
+
+// converts object to array of entries
+
+const usersArray = Object.entries(users)
+
+
 // // 1. Find the person with the most skills.
-let maxSkills = 0;
-let mostSkills = " ";
-for (let key in users) {
-  if (users[key].skills.length > maxSkills) {
-    maxSkills = users[key].skills.length;
-    mostSkills = key;
-  }
-}
-console.log(mostSkills);
+
+const maxskills = Math.max(
+  ...usersArray.map(([username, details]) => details.skills.length)
+)
+console.log(maxskills)
+
+// filtering users with max skills
+
+const mostSkilledUsers = usersArray.filter(
+  ([username, details]) => details.skills.length === maxskills
+)
+// printing the result
+
+mostSkilledUsers.forEach(([username, details]) => {
+  console.log(username, details.skills.length)
+})
 
 // // 2. Count the number of users who are logged in.
-let login = 0;
-for (let key in users) {
-  if (users[key].isLoggedIn === true) {
-    login++;
-  }
-}
-console.log(login);
+
+const loggedInUsers = Object.values(users).filter(user => user.isLoggedIn === true).length
+console.log(loggedInUsers)
 
 // // 3. Count the number of users with points greater than or equal to 50.
-let point = 0;
-for (let key in users) {
-  if (users[key].points >= 50) {
-    point++;
-  }
-}
-console.log(point);
+const userPoints = Object.values(users).filter(user => user.points >= 50).length
+console.log(userPoints)
 
 // // 4. Identify the MERN stack developers in the users object.
 // //'MongoDB', 'Express', 'React', 'Node'
 
-//   // console.log(el)
-// let mern = 0
-// for (let key in users)
-//   {if (skills.includes("MongoDB")){
-//     mern++
-//   }
-//   console.log("hhh",mern)
-// }
+const mernDevelopers = Object.entries(users).filter(
+  ([username, details]) => {
+    const skills = details.skills
+    return (
+      skills.includes("MongoDB") &&
+      skills.includes("Express") &&
+      skills.includes("React") &&
+      (skills.includes("Node") || skills.includes("Node.js"))
+    )
+  }
+)
+console.log("MERN Developers:")
+mernDevelopers.forEach(([username]) => console.log(username))
 
-// //  (el.users.includes("MongoDB")
-//   // // &el.users.includes("Express")
-//   //   &&el.users.includes("React")
-//   //   &&el.users.includes("Node")
 // // 5. Add your own details to the users object without modifying the original object.
-// users.Akash =  {
-//     email: 'aakshjadhav.work@gmail.com',
-//     skills: ['HTML', 'CSS', 'JavaScript'],
-//     age: 26,
-//     isLoggedIn: false,
-//     points: 30
-//   }
-// console.log(users)
+
+users.Indrayani = {
+  email: "indrayani.work@gmail.com",
+  skills: ["HTML", "CSS", "JavaScript", "React"],
+  age: 30,
+  isLoggedIn: true,
+  points: 60,
+}
+
+console.log(users)
+
 // // 6. Retrieve all keys (properties) in the users object.
 
-let allKeys = Object.keys(users);
-console.log(allKeys);
+const userkeys = Object.keys(users)
+console.log(userkeys)
 
 // // 7. Retrieve all values in the users object.
-let allValues = Object.values(users);
-console.log(allValues);
+
+const uservalues = Object.values(users)
+console.log(uservalues)
 
 // // Question 2: Working with a Countries Object
 // // Using a countries object, write a program that prints:
@@ -171,20 +180,26 @@ const countries = {
   },
 };
 // - Country name
-let countryNames = Object.keys(countries);
-console.log(countryNames);
+
+for (const [country, details] of Object.entries(countries)) {
+  console.log(country)
+}
+
 // - Capital city
-for (let key in countries) {
-  console.log(countries[key].capital);
+
+for (const [country, details] of Object.entries(countries)) {
+  console.log(details.capital)
 }
 
 // - Population count
-for (let key in countries) {
-  console.log(countries[key].population);
+
+for (const [country, details] of Object.entries(countries)) {
+  console.log(details.population)
 }
 // - Languages spoken
-for (let key in countries) {
-  console.log(countries[key].languages);
+
+for (const [country, details] of Object.entries(countries)) {
+  console.log(details.languages)
 }
 
 // Question 3: Creating a personAccount Object
@@ -203,6 +218,36 @@ for (let key in countries) {
 // - addIncome(description, amount): Add a new income.
 // - addExpense(description, amount): Add a new expense.
 // - accountBalance(): Calculate and return the account balance.
+
+const personalAccount = {
+  firstName: "Indrayani",
+  lastName: "Suryawanshi",
+  incomes: [
+    { description: "Salary", amount: 5000 },
+    { description: "Freelance", amount: 1500 },],
+  expenses: [
+    { description: "Rent", amount: 1200 },
+    { description: "Groceries", amount: 300 }]
+}
+personalAccount.totalIncome = function () {
+  return this.incomes.reduce((total, income) => total + income.amount, 0)
+}
+personalAccount.totalExpenses = function () {
+  return this.expenses.reduce((total, expense) => total + expense.amount, 0)
+}
+personalAccount.accountInfo = function () {
+  return `Account Holder: ${this.firstName} ${this.lastName} ${this.totalIncome()} ${this.totalExpenses()}`
+}
+personalAccount.addIncome = function (description, amount) {
+  this.incomes.push({ description, amount })
+}
+personalAccount.addExpense = function (description, amount) {
+  this.expenses.push({ description, amount })
+}
+personalAccount.accountbalance = function () {
+  return this.totalIncome() - this.totalExpenses()
+}
+console.log(personalAccount.accountInfo())
 
 // Question 4: Users and Products Analysis
 // Consider the following arrays:
@@ -230,6 +275,51 @@ for (let key in countries) {
 // 4. Product Likes:
 //    Create a function likeProduct to like a product if it’s not already liked, or to remove the like if it was already liked.
 
+// 1. Sign Up Function: Create a function signUp which allows a user to add themselves to the users array. If the user already exists, display a message saying they already have an account.
+
+function signUp(newUser) {
+  const userExists = users.some(user => user.email === newUser.email)
+  
+  if (userExists) {
+    console.log("User already has an account")
+  }
+  else {
+    users.push(newUser)
+    console.log("User signed up successfully")
+  }
+}
+
+
+// 2. Sign In Function: Create a function signIn to allow a user to log into the application.
+
+function signIn(email, password) {
+  const user = users.find(user => user.email === email && user.password === password)
+  if (user) {
+    user.isLoggedIn = true
+    console.log("user logged in successfully")
+  }
+  else {
+    console.log("Invaild email or password")
+  }
+}
+
+
+// 3. Product Rating:
+//    a. Create a function rateProduct to rate a product.
+function rateProduct(productId, userId, rate) {
+  const product = products.find(product => product._id === productId)
+  if (product) {
+    const existingRating = product.ratings.find(rating => rating.userId === userId)
+    if (existingRating) {
+      existingRating.rate = rate
+    } else {
+      product.ratings.push({ userId, rate })
+    }
+  }
+
+}
+ 
+
 //5 form given data
 let data = {
   Data: {
@@ -248,4 +338,33 @@ let data = {
 };
 
 // 1 check if maharastra is presnt
+
+let states = data.Data.States
+for (let i = 0; i < states.length; i++) {
+  if (states[i].Name === "Maharashtra") {
+    console.log("Maharashtra is present")
+  }
+}
 //2 get the the total population of both states
+
+let totalpopulation = 0
+for (let i = 0; i < states.length; i++) {
+  totalpopulation += parseInt(states[i].Population)
+}
+console.log("Total population:", totalpopulation)
+
+//3 add new state
+states.push({ Name: "Rajasthan", Population: "81000000" })
+console.log(states)
+
+// 4 update the population of gujarat to 80000000
+for (let i = 0; i < states.length; i++) {
+  if (states[i].Name === "Gujarat") {
+    states[i].Population = "80000000"
+  }
+}
+console.log(states)
+
+// Exercises: Level 2
+
+// 3 Declare a function name printArray. It takes array as a parameter and it prints out each value of the array.

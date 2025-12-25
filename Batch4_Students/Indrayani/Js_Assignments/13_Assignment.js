@@ -1,4 +1,4 @@
-/** 
+/*
 
 Exercises: Level 1
 
@@ -178,3 +178,20 @@ sevenRandomNumbers()
 20 Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array
 
 */
+// 1. Declare a function fullName and it print out your full name.
+
+function fullName(){
+  console.log("Indrayani Suryawanshi");
+}
+fullName()
+
+// 2. Declare a function fullName and now it takes firstName, lastName as a parameter and it returns your full - name.
+
+function fullName(firstName,middleName,lastName){
+  return firstName + " " + middleName + " " + lastName
+}
+
+console.log(fullName("Indrayani","Prataprao","Suryawanshi"));
+
+
+// 3. Declare a function addNumbers and it takes two two parameters and it returns sum.

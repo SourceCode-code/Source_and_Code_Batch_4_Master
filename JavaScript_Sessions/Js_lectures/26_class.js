@@ -32,7 +32,7 @@ class Details {
 
 let sid = new Details("sid", "gadakh", 26);
 
-console.log(sid);
+console.log(sid); //Details { fn: 'sid', ln: 'gadakh', ag: 26 }
 
 // example where in class we describe what the value of given of given parameter
 
@@ -106,5 +106,65 @@ console.log(book1);
 console.log(book1.nameofbookandcopiesold());
 console.log(book1.showdate());
 
+// setter and getter method
+// if you retirve -->get
+// if you want set --> set
+
+class details_data {
+  constructor(fn, mn, ln, age) {
+    this.fn = fn;
+    this.mn = mn;
+    this.ln = ln;
+    this.age = age;
+  }
+
+  get get_AGE() {
+    return this.age;
+  }
+
+  set modifty_AGE(Age) {
+    this.age = Age;
+  }
+}
+
+let my_data = new details_data("siddhant", "arjun", "gadakh", 30);
+console.log(my_data); //details_data { fn: 'siddhant', mn: 'arjun', ln: 'gadakh', age: 30 }
+
+console.log(my_data.get_AGE); //30
+
+my_data.modifty_AGE=26
+console.log(my_data);
+console.log(my_data.get_AGE) 
+//details_data { fn: 'siddhant', mn: 'arjun', ln: 'gadakh', age: 26 }
+// 26 
 
 
+// static --> when you create a method using static keyword it is applied directly to the class
+
+class details_data_2 {
+  constructor(fn, mn, ln, age) {
+    this.fn = fn;
+    this.mn = mn;
+    this.ln = ln;
+    this.age = age;
+  }
+
+  get get_AGE() {
+    return this.age;
+  }
+
+  set modifty_AGE(Age) {
+    this.age = Age;
+  }
+
+  static showDATE(){
+    let date = new Date()
+    let curDate = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`
+    return curDate
+  }
+}
+
+
+
+console.log(details_data_2.showDATE()) //23/12/2025
+ 
