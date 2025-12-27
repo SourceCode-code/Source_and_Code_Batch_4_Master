@@ -51,20 +51,78 @@ myDog.eat();
 class cat extends Animal {
   constructor(name, color) {
     super(name);
-    this.color=color
+    this.color = color;
   }
 
-  meow(){
-    console.log(`${this.name} of ${this.color} is meowing`)
+  meow() {
+    console.log(`${this.name} of ${this.color} is meowing`);
   }
 }
 
+let Mycat = new cat("tom", "black");
 
-let Mycat = new cat("tom","black")
+Mycat.meow();
+Mycat.eat();
 
-Mycat.meow()
-Mycat.eat()
+// static --> when you create a method using static keyword it is applied directly to the class
 
+class details_data_2 {
+  constructor(fn, mn, ln, age) {
+    this.fn = fn;
+    this.mn = mn;
+    this.ln = ln;
+    this.age = age;
+  }
 
-// overriding -->
-// overloading-->
+  get get_AGE() {
+    return this.age;
+  }
+
+  set modifty_AGE(Age) {
+    this.age = Age;
+  }
+
+  static showDATE() {
+    let date = new Date();
+    let curDate = `${date.getDate()}/${
+      date.getMonth() + 1
+    }/${date.getFullYear()}`;
+    return curDate;
+  }
+}
+
+console.log(details_data_2.showDATE()); //23/12/2025
+
+// overriding -->  when child class updates the inhertated method of parent class that is called overriding
+
+class Parent {
+  show() {
+    console.log(" i am parent");
+  }
+}
+
+class child extends Parent {
+  show() {
+    console.log("i am child");
+  }
+}
+
+let c = new child();
+
+c.show(); //i am child
+
+// overloading-->  when you define mutiple methods or function in class with same name but different paramter it is called overloading
+
+class MathADD {
+  add(a, b) {
+    if (b !== undefined) {
+      return a + b;
+    }
+    return a;
+  }
+}
+
+const addm = new MathADD()
+
+console.log(addm.add(1))
+console.log(addm.add(10,1))
