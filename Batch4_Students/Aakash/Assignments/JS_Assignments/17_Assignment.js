@@ -42,4 +42,10 @@ class cat extends animal{
         super(name, age, color, legs, breed)
         this.breed = breed
     }
+    meow(){
+        console.log(`${this.name} is meowing`)
+    }
 }
+const myCat = new cat("rups",5,"white","short","persian")
+console.log(myCat)
+myCat.meow()
