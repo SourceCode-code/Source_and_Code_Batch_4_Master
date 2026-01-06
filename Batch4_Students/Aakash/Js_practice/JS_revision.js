@@ -337,3 +337,311 @@ console.log(sort2)
 
 let rev1 = numarr.reverse()
 console.log("aa",rev1)
+
+// function checkprime(array){
+//   let Array1 = 
+// }
+
+
+
+
+// function isPrime(num) {
+//     if (num <= 1) return false;
+//     if (num === 2) return true;
+//     if (num % 2 === 0) return false;
+
+//     for (let i = 3; i <= Math.sqrt(num); i += 2) {
+//         if (num % i === 0) return false;
+//     }
+//     return true;
+// }
+// function getPrimes(arr) {
+//     return arr.filter(isPrime);
+// }
+// const numbers = [1,   2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+
+// const primes = getPrimes(numbers);
+// console.log(primes);
+// // Output: [2, 3, 5, 7, 11]
+
+function isPrime(num){
+  if (num <= 1) return false;
+  if (num === 2) return false;
+  if (num % 2 === 0) return false;
+
+  for (let i = 3; i <= Math.sqrt(num);i += 2){
+    if (num % i ===0) return false;
+  }
+  return true
+}
+function getPrimes(arr){
+  return arr.filter(isPrime)
+}
+
+let arr2 = [10009,11,10007,4,45,5,5,5,5,5,5,55,5,,5,6,6,7,3,5,5,,,101,102,103,104,105]
+
+console.log(getPrimes(arr2))
+
+
+let lines =7
+for (let i = 1; i<=lines; i++){
+  let spaces = " ".repeat(lines-i)
+  let repeat = "#".repeat(2*i-1)
+  console.log(spaces+repeat)
+}
+for(let i = lines-1; i>=1; i--){
+  let spaces = " ".repeat(lines-i)
+  let repeat = "#".repeat(2*i-1)
+  console.log(spaces+repeat)
+}
+let linee = 10
+for (let i = 1; i<=linee; i++ ){
+  let spaces = " ".repeat(linee-i)
+  let star = "*".repeat(2*i-1)
+  console.log(spaces+star)
+}
+for (let i = linee-1; i>=1 ; i--){
+  let spaces = " ".repeat(linee-i)
+  let star = "*".repeat(2*i-1)
+  console.log(spaces+star)
+}
+
+console.log("-----------------------------------------")
+
+let Marray = ["siddhant", "arjun", "gadakh", 26, 7020400749];
+
+Marray.push("male")
+console.log(Marray)
+
+Marray.unshift("MR")
+console.log(Marray)
+
+Marray.pop()
+console.log(Marray)
+
+Marray.shift()
+console.log(Marray)
+
+// let splicedArr = Marray.splice(0,3)
+// console.log(splicedArr)
+
+// console.log(Marray)
+
+let slicedArr = Marray.splice(0,3)
+console.log(slicedArr)
+
+console.log(Marray)
+
+// adding value in anypostion in array using splice
+
+let carr = [0, 1, 2, 4];
+
+carr.splice(3,0,3)
+console.log(carr)
+
+//6 METHOD sort() --> this method will alphabetically sort your array
+
+let arral = ["banana", "apple", "mango", "watermleon"];
+
+let sortedarr = arral.sort()
+console.log(sortedarr)
+
+
+let numarr1 = [1, 1000, 100, 50, 20, 55, 65, 89, 999];
+
+let sortedNum = numarr1.sort()
+console.log(sortedNum)
+
+let clearSort = numarr1.sort((a,b)=>{return a - b})
+console.log(clearSort)
+
+let revSot = numarr1.sort((a,b)=>{return b-a})
+console.log(revSot)
+
+
+let arral1 = ["banana", "apple", "mango", "watermleon"];
+arral1.reverse()
+console.log(arral1)
+
+console.log(arral1.includes("banana"))
+
+console.log(arral1.indexOf("banana"))
+
+let strarr = sortedarr.join("---")
+console.log(strarr)
+
+let nu = [1, 2, 3];
+let num = [4, 5, 6];
+let numb = [7, 8, 9];
+
+
+let combine1 = nu.concat(num,numb)
+console.log(combine1)
+
+let mixedarr = [1, 2, 3, ["qwer", ["ertyu"], "uhbvc"], [true, false]]
+let solvearr = mixedarr.flat(Infinity)
+console.log(solvearr)
+
+let numarr12 = [1 , 1000,100,50,20,55,65,89,999]
+
+let mxNum = Math.max(...numarr12)
+console.log(mxNum)
+
+let minNum = Math.min(...numarr12)
+console.log(minNum)
+
+console.log(...sortedarr)
+
+//loops in array
+let larr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(larr.length)
+
+for (let i = 0; i<larr.length; i++){
+  console.log(larr[i])
+}
+
+//add 3 in arr
+let add3arr = []
+for (let i = 0;i<larr.length;i++){
+add3arr.push(larr[i]+3)
+}
+console.log(add3arr)
+
+
+let filterarr = []
+
+for (let i = 0; i<larr.length;i++){
+  if (larr[i]>=5){
+    filterarr.push(larr[i])
+
+  }
+}
+console.log(filterarr)
+
+let qarr = [100, 50, 1000, 3000, 4000, 5000, 10000, 55, 66, 788, 999];
+
+let sum1 = 0
+for (let i = 0; i<qarr.length;i++){
+  sum1 =sum1 + qarr[i]
+}
+console.log(sum1)
+
+//for odd and even
+
+let mixnum = [
+  2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+];
+
+let odd = []
+let even = []
+for (let i = 0; i<mixnum.length;i++){
+  if (mixnum[i]%2===0){
+    even.push(mixnum[i])
+  }
+  else{
+    odd.push(mixnum[i])
+  }
+}
+
+console.log(odd)
+console.log(even)
+
+
+let names = ["siddhant", "amol", "vaibhav", "shree", 0, "arjun", "amal"];
+// output should --> every element should in captial
+// all the names that start with a should be in anew array
+
+let capname = []
+
+for (let i = 0;i<names.length;i++){
+if (typeof names[i] === "string"){
+  let cap = names[i].toUpperCase()
+  capname.push(cap)
+}
+}
+console.log(capname)
+let namea = []
+for (let i = 0; i < capname.length; i++){
+  if (capname[i].startsWith("A")){
+    namea.push(capname[i])
+  }
+}
+console.log(namea)
+
+let num3 = [2, 8, 7, 3, 35, 58, 69, 34567, 367, 2, 3, 4, 5, 67, 8, 9, 0];
+let add5 = num3.map((el,index,arr) => {
+  return el + 5
+})
+console.log(add5)
+
+let add10 = num3.map((el,index,arr) => {
+  return el + 10
+})
+
+console.log(add10)
+
+
+let names1 = ["siddhant", "amol", "vaibhav", "shree", "arjun", "amal"];
+
+let named = names1.map((el,index,arr) => {
+  return el.toUpperCase()
+})
+console.log(named)
+
+
+let namef = named.filter((el,index,arr) => {
+  return el.startsWith("A")
+})
+console.log(namef)
+
+
+let num_mix = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let even_num = num_mix.filter((el,index,arr) => {
+  return el%2 ===0
+})
+console.log(even_num)
+
+let num_1_arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+
+let sumof = num_1_arr.reduce((acc,el,index,arr) => {
+  return el + acc
+},0)
+console.log(sumof)
+
+let arr_11 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+let check = arr_11.some((el,index,arr) => {
+  return el>5
+})
+console.log(check)
+
+let ev = arr_11.every((el,index,arr) => {
+  return el>100
+})
+console.log(ev)
+
+let numarr2 = [1, "Vaibhav","siddhant","amol",1000, 100, 50, 20, 55, 65, 89, 999];
+let fname = []
+let fnum = []
+
+for (let i = 0; i<numarr2.length;i++){
+  if (typeof numarr2[i]==="string"){
+let cap = numarr2[i].toUpperCase()
+fname.push(cap)
+  }
+  else{
+    fnum.push(numarr2[i])
+  }
+}
+
+console.log(fname)
+console.log(fnum)
+
+let srtn = fname.sort()
+let srtnum = fnum.sort((a,b) => {return a-b})
+let finalArr = srtn.concat(srtnum)
+console.log(finalArr)
+
+
+
+//object
+
