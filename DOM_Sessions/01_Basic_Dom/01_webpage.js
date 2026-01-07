@@ -36,5 +36,6 @@
 // |                    |        |
 //<textarea         name=  "message"       class="feedback-input" placeholder="Comments"> </textarea>
 
-//                                                    text
+//                                                  text
 //    <input type="text" placeholder="enter text"> box1 </input>
+
