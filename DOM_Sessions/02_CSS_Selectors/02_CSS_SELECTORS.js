@@ -88,3 +88,6 @@ id="contact-us"
 // visit --> https://opensource-demo.orangehrmlive.com/web/index.php/auth/login --> find at least 10 unique selector 
 // visit -->https://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html --> find at least 10 unique selector 
 //  visit amazon or flipkart and find uqiue selector for login  serachbox 
+
+
+// [class="FQZ6ZB yBSM00"]
