@@ -207,14 +207,14 @@ let line = 3
 
 //upper half
 for(let i =1 ;i<=line;i++){
-let spaces = "cc".repeat(line-i)   
+let spaces = " ".repeat(line-i)   
 let star= "*".repeat(2*i-1)     //  
 console.log(spaces+star)  
 }
 
 //lower half
 for(let i =line-1 ;i>=1;i--){
-let spaces = "cc".repeat(line-i)
+let spaces = " ".repeat(line-i)
 let star= "*".repeat(2*i-1)
 console.log(spaces+star)
 }

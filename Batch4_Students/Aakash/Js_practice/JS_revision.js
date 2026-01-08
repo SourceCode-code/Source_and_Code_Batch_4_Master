@@ -1,116 +1,647 @@
-// let date = new Date ()
-// let currentDate = date.getDate()
-// console.log(currentDate)
-// let currentMonth = date.getMonth()+1
-// console.log(currentMonth)
-// let currentYear = date.getFullYear()
-// console.log(currentYear)
-// let dateInreverse = `${currentYear}:${currentMonth}:${currentDate}`
-// console.log(dateInreverse)
+// // let arr = ["akkash","swapnil",124356]
+// // let [n1,n2,n3] = arr
+// // console.log(n1,n2,n3)
 
-// let settledDate = new Date()
-// let dateToset = settledDate.getDate()
-// settledDate.setDate(dateToset-13)
-// let settledDate1 = settledDate.getDate()
-// console.log(settledDate1)
+// // let fullStack = [
+// //   ["HTML", "CSS", "JS", "React", "Angular"], // Frontend stack
+// //   ["Node", "Express", "MongoDB", "SQL"], // Backend stack
+// // ];
 
-// let strDate = String(settledDate1).padStart(2,"0")
-// console.log(strDate)
-// let settledDate2 = `${currentYear}:${currentMonth}:${strDate}`
-// console.log(settledDate2)
+// // let [frontend,backend] = fullStack
+// // console.log(frontend)
 
+// // let [
+// //     [f1,f2,f3,f4,f5],
+// //     [f6,f7,f8,f9,f10]
+// // ]=fullStack
+// // console.log(f1)
 
+// // // 3. Skipping Elements during Destructuring
+// // let numbers = [1, 2, 3, 4];
 
-// let num = -20
-// if (num>0) {console.log("given number is positive")}
+// // let [num11, , , num44] = numbers;
+// // console.log(num11, num44);
+// // // using destructing with spread opertaor
+// // let moreNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-// else{console.log("given number is positive")}
-// //
-// let height = 170
-// if (height>=160){console.log("you are allowed to proceed")}
-
-// else{console.log("not allowed to proceed")}
-
-// //
-// let profit = 0
-
-// if (profit>50000){console.log("supertrader")}
-// else if (profit<=50000&&profit>30000){console.log("AverageTrader")}
-
-// else if (profit>0&&profit<30000){console.log("below average Trader")}
-// else if(profit<0){console.log(console.log("loss Making trader"))}
-
-// else{console.log("learn trading first")}
+// // let [q, x, ...n] = moreNumbers;
+// // console.log(q, x);
+// // console.log(n);
 
 
-// //i want to buy a property that costs 50lakh but i only i have 30 lakh cash ,
-// //  if i want to buy it any how so i  need to take a loan of 20lakhs so i can buy it 
-// //if loan did not passed then need to drop my plan
+// // let obj = {
+// //     firstname: "akash",
+// //     age: 26,
+// //     exp:3,
+// //     skill:["cypress ", "playwright", "js", "ts", "react"],
+// //     position: "Senior Software engineer"
+// // }
+// // let {firstname,age,exp,skill,position} = obj
+// // console.log(firstname,age,exp,skill,position)
 
-// let requiredCash  = 5000000
-// let cashInHand = 3000000
-// let requiredLoan = 1000000
-// let toBuyProperty = cashInHand+requiredLoan
-// console.log(toBuyProperty)
-// if (requiredCash == toBuyProperty){console.log("you can buy a property")}
-// else if(cashInHand>requiredLoan){console.log("can\'t buy property")}
-// else if (requiredLoan<2000000){console.log("need to arrange remaining amount")}
-// else{console.log("need to drop my plan")}
-// //else {console.log("need to drop my plan")}
+// // let {firstname:fn,age:ag,exp:ex,skill:sk,position:ps}=obj
+// // console.log(ps)
 
-// let mixnum = [
-//   2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-// ];
+// // let [cy,pw,js,ts,react] =sk
+// // console.log(cy,pw,js,ts,react)
+// // let {firstname:fnn,age:agg,exp:exx,skill:[cyy,pww,jss,tss,reactt],position:pss}=obj
+// // console.log(pww,jss,tss)
 
-// let odd = [];
-// let even = [];
+// // let arr2 = [1,2,3,4,5,6,7,8,9]
+// // console.log(...arr2)
 
-// for (let i = 0; i < mixnum.length; i++) {
-//   if (mixnum[i] % 2 === 0) {
-//     even.push(mixnum[i]);
-//   } else {
-//     odd.push(mixnum[i]);
+// // let arr3 = [...arr2]
+// // console.log(arr3)
+
+// // let xss = 10
+// // let yss = 20
+
+// // xss = xss+yss
+// // yss = xss-yss
+// // xss = xss-yss
+// // console.log(xss)
+// // console.log(yss)
+
+
+// const ste1 = new Set()
+// console.log(ste1)
+
+// let arr1 = [1,1,1,1,1,1,1,1,1]
+// let ste2 = new Set(arr1)
+// console.log(ste2)
+
+// let lang = [
+//   "english",
+//   "hindi",
+//   "marathi",
+//   "english",
+//   "chinese",
+//   "marathi",
+//   "english"
+// ]
+
+// let ste3 = new Set(lang)
+// console.log(ste3)
+
+// for (const i of ste3){
+//   console.log(i)
+
+// }
+
+// let comparr = ["google", "amazon", "microsoft", "netflix", "facebook"];
+// let comset = new Set()
+
+// for (let company of comparr){
+//   comset.add(company)
+// }
+// console.log(comset)
+
+// comset.add("oracle")
+// console.log(comset)
+// comset.delete("amazon")
+// console.log(comset)
+
+// comset.clear()
+// console.log(comset)
+
+// let arr2 = [1, 2, 3, 4];
+// let arr3 = [4, 5, 6, 7, 8];
+
+// let arr4 = [...arr2,...arr3]
+// console.log(arr4)
+
+// setofnum1 = new Set(arr4);
+// console.log(setofnum1)
+
+
+// let x = [1, 2, 3, 4, 5, 6, 6, 4];
+// let y = [5, 6, 7, 8, 9, 10, 6, 5];
+// let setx = new Set(x)
+// let sety = new Set(y)
+// console.log(setx)
+// console.log(sety) 
+// // let intersection = x.filter((el) => sety.has(el))
+// // let inset = new Set(intersection)
+// // console.log(inset)
+
+// let intersection = x.filter((el) => sety.has(el))
+// let inset = new Set(intersection)
+// console.log(inset)
+
+// let diff = x.filter((el) => !sety.has(el))
+// console.log(diff)
+// let diff1 = y.filter((el) => !setx.has(el))
+// console.log(diff1)
+
+// let diff3 = [...diff,...diff1]
+// console.log(diff3)
+// let diff4 = new Set(diff3)
+// console.log(diff4)
+
+// let countarr = [
+//   ["indian", "hindi"],
+//   ["usa", "english"],
+//   ["germnay", "german"],
+// ]
+
+// let map1 = new Map(countarr)
+// console.log(map1)
+
+
+// let pattern = "akash"
+// let regex = new RegExp(pattern)
+// console.log(regex)
+
+// let regex2 = /"akash"/gi
+// console.log(regex2)
+
+// let str = " i am Learning js and the topic in js is regex"
+// let result = /learning/gi
+// let output = result.test(str)
+// console.log(output)
+// // let str = " i am Learning js and the topic in js is regex";
+
+// // let result = /learning/gi;
+
+// // let output = result.test(str);
+// // console.log(output);
+
+// class details_data (){
+//   constructor(fn,mn,ln,age){
+//     this.fn = fn
+//     this.mn = mn
+//     this.ln = ln
+//     this.age = age
+//   }
+
+// get getAge(){}
+// }
+
+// let my_data = new details_data("akash","manik","jadhav",26)
+// console.log(my_data)
+
+// function BankAccount(startbalance) {
+//   let initalbalance = startbalance;
+
+//   return {
+//     deposit(amount) {
+//       if (amount > 0) {
+//         initalbalance += amount;
+//         console.log(
+//           ` your amount ${amount} has been deposited and your total balanace is ${initalbalance}`
+//         );
+//       }
+//     },
+//     withdraw(amount) {
+//       if (amount > 0 && amount <= initalbalance) {
+//         initalbalance -= amount;
+//         console.log(
+//           ` your amount ${amount} has been withdraw and your total balanace is ${initalbalance}`
+//         );
+//       }
+//       else { 
+//         console.log("insufficent funds")
+//       }
+//     },
+
+//     checkbalance(){
+//         console.log( ` your current balance is ${initalbalance}`)
+//     }
+//   };
+// }
+
+// function BankAccount(startbalance){
+//   let initialbalance = startbalance
+// return{
+//   deposit(amount){
+//     if (amount>0){
+//       initialbalance+=amount
+//       console.log(
+//         `your ${amount} has been deposited and your total balance is ${initialbalance}`
+//       )
+//     }
+//   },
+//   withdraw(amount){
+//     if (amount>0 && amount<=initialbalance){
+//       initialbalance-=amount
+//       console.log(`your amount ${amount} has been withdrawed and your total balance is ${initialbalance}`)
+//     }
+//     else {
+//       console.log(`insufficient funds`)
+//     }
+//   },
+//   checkbalance(){
+//     console.log(`your current balance is ${initialbalance}`)
 //   }
 // }
-
-// console.log(even); // [2,  4,  6,  8, 10,12, 14, 16, 18, 20]
-// console.log(odd); // [3,  5,  7,  9, 11,13, 15, 17, 19]
-
-// let mixnum = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,];
-
-// let odd=[]
-// let even = []
-// for (let i = 0; i<mixnum.length;i++){
-//     if (mixnum[i]%2===0){
-//         even.push(mixnum[i])
-//     }
-//     else(odd.push(mixnum[i]))
 // }
-// console.log(even)
-// console.log(odd)
+// const account1 = BankAccount(1000)
+// account1.checkbalance()
+// account1.deposit(1000)
+// account1.checkbalance(
 
-let mixnum = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,];
+// )
+// account1.withdraw(1000)
+
+// let interval = setInterval(() => {
+//   console.log("this will repeat after 3 secs");
+// }, 3000);
+
+// setTimeout(() => {
+//   clearInterval(interval);
+//   console.log("program has been ended after 10 secs");
+// }, 10000);
+
+let str1 = "akash"
+let regex = new RegExp(str1)
+console.log(regex)
+
+let regex2 = /akash/gi
+console.log(regex2)
+
+let str2 = "i am Learning js and the topic is regex"
+let result = /learning/gi
+console.log(result)
+
+let output = result.test(str2)
+console.log(output)
+
+
+let str3 = "my name is akash and my js email adress is Akash333.aj@gmail.com"
+let result2 = /akash/gi
+let output2 = result2.test(str3)
+
+let len1 = str3.match(/email/gi).length
+console.log(len1)
+
+let arr1 = str3.split(" ")
 let count = 0
+console.log(arr1)
+for (let i =0; i<arr1.length;i++){
+  if (arr1[i].includes("js")){
+count++
+  }
+}
+console.log(count)
+
+
+//for replace method 
+let str4 =
+  " i am learning Javascript 1 2 4 5 678 89 9 and i am also have hands on javaSCript \
+ i would reccommend every one to learn JAVASCRIPT";
+//console.log(str4.replaceAll("Javascript","python"))
+
+let strrep = str4.replace(/javascript/gim,"python")
+console.log(strrep)
+
+console.log(str4.match(/\d+/gim))
+let str5 = "this is regex session conducted on 8 of jan 2025 at 9:59 pm"
+
+console.log(str5.match(/\d+/g))
+
+let str7 =
+  " i am learning Javascript 1 2 4 5 678 89 9 and i am also have hands on javaSCript \
+ i would reccommend every one to learn JAVASCRIPT";
+//by using loop
+let vovel = 0
+for (let i= 0;i<str7.length;i++){
+  if (str7[i]==="a"||str7[i]==="e"||str7[i]==="i"||str7[i]==="o"||str7[i]==="u"){
+    vovel++
+  }
+}
+console.log(vovel)
+
+let vov = str7.match(/[aeiou]/gim)
+console.log(vov.length)
+
+let vaild_pan = "SSSSP9922F"
+let invaild_PAN = "SSSS1PPP5"
+
+//let test_pan = /[A-Za-z]{5}[0-9]{4}[A-Za-z]{1}/i.test(invaild_PAN) // true 
+
+//console.log(test_pan) //false
+
+let testpan1 = /[A-Za-z]{5}[0-9]{4}[A-Za-z]{1}/gim.test(vaild_pan)
+console.log(testpan1)
+
+
+let numarr = [1, 1000, 100, 50, 20, 55, 65, 89, 999];
+
+let sort1 = numarr.sort()
+console.log(sort1)
+
+let sort2 = numarr.sort((a,b) =>{
+  return b - a
+})
+console.log(sort2)
+
+let rev1 = numarr.reverse()
+console.log("aa",rev1)
+
+// function checkprime(array){
+//   let Array1 = 
+// }
+
+
+
+
+// function isPrime(num) {
+//     if (num <= 1) return false;
+//     if (num === 2) return true;
+//     if (num % 2 === 0) return false;
+
+//     for (let i = 3; i <= Math.sqrt(num); i += 2) {
+//         if (num % i === 0) return false;
+//     }
+//     return true;
+// }
+// function getPrimes(arr) {
+//     return arr.filter(isPrime);
+// }
+// const numbers = [1,   2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+
+// const primes = getPrimes(numbers);
+// console.log(primes);
+// // Output: [2, 3, 5, 7, 11]
+
+function isPrime(num){
+  if (num <= 1) return false;
+  if (num === 2) return false;
+  if (num % 2 === 0) return false;
+
+  for (let i = 3; i <= Math.sqrt(num);i += 2){
+    if (num % i ===0) return false;
+  }
+  return true
+}
+function getPrimes(arr){
+  return arr.filter(isPrime)
+}
+
+let arr2 = [10009,11,10007,4,45,5,5,5,5,5,5,55,5,,5,6,6,7,3,5,5,,,101,102,103,104,105]
+
+console.log(getPrimes(arr2))
+
+
+let lines =7
+for (let i = 1; i<=lines; i++){
+  let spaces = " ".repeat(lines-i)
+  let repeat = "#".repeat(2*i-1)
+  console.log(spaces+repeat)
+}
+for(let i = lines-1; i>=1; i--){
+  let spaces = " ".repeat(lines-i)
+  let repeat = "#".repeat(2*i-1)
+  console.log(spaces+repeat)
+}
+let linee = 10
+for (let i = 1; i<=linee; i++ ){
+  let spaces = " ".repeat(linee-i)
+  let star = "*".repeat(2*i-1)
+  console.log(spaces+star)
+}
+for (let i = linee-1; i>=1 ; i--){
+  let spaces = " ".repeat(linee-i)
+  let star = "*".repeat(2*i-1)
+  console.log(spaces+star)
+}
+
+console.log("-----------------------------------------")
+
+let Marray = ["siddhant", "arjun", "gadakh", 26, 7020400749];
+
+Marray.push("male")
+console.log(Marray)
+
+Marray.unshift("MR")
+console.log(Marray)
+
+Marray.pop()
+console.log(Marray)
+
+Marray.shift()
+console.log(Marray)
+
+// let splicedArr = Marray.splice(0,3)
+// console.log(splicedArr)
+
+// console.log(Marray)
+
+let slicedArr = Marray.splice(0,3)
+console.log(slicedArr)
+
+console.log(Marray)
+
+// adding value in anypostion in array using splice
+
+let carr = [0, 1, 2, 4];
+
+carr.splice(3,0,3)
+console.log(carr)
+
+//6 METHOD sort() --> this method will alphabetically sort your array
+
+let arral = ["banana", "apple", "mango", "watermleon"];
+
+let sortedarr = arral.sort()
+console.log(sortedarr)
+
+
+let numarr1 = [1, 1000, 100, 50, 20, 55, 65, 89, 999];
+
+let sortedNum = numarr1.sort()
+console.log(sortedNum)
+
+let clearSort = numarr1.sort((a,b)=>{return a - b})
+console.log(clearSort)
+
+let revSot = numarr1.sort((a,b)=>{return b-a})
+console.log(revSot)
+
+
+let arral1 = ["banana", "apple", "mango", "watermleon"];
+arral1.reverse()
+console.log(arral1)
+
+console.log(arral1.includes("banana"))
+
+console.log(arral1.indexOf("banana"))
+
+let strarr = sortedarr.join("---")
+console.log(strarr)
+
+let nu = [1, 2, 3];
+let num = [4, 5, 6];
+let numb = [7, 8, 9];
+
+
+let combine1 = nu.concat(num,numb)
+console.log(combine1)
+
+let mixedarr = [1, 2, 3, ["qwer", ["ertyu"], "uhbvc"], [true, false]]
+let solvearr = mixedarr.flat(Infinity)
+console.log(solvearr)
+
+let numarr12 = [1 , 1000,100,50,20,55,65,89,999]
+
+let mxNum = Math.max(...numarr12)
+console.log(mxNum)
+
+let minNum = Math.min(...numarr12)
+console.log(minNum)
+
+console.log(...sortedarr)
+
+//loops in array
+let larr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(larr.length)
+
+for (let i = 0; i<larr.length; i++){
+  console.log(larr[i])
+}
+
+//add 3 in arr
+let add3arr = []
+for (let i = 0;i<larr.length;i++){
+add3arr.push(larr[i]+3)
+}
+console.log(add3arr)
+
+
+let filterarr = []
+
+for (let i = 0; i<larr.length;i++){
+  if (larr[i]>=5){
+    filterarr.push(larr[i])
+
+  }
+}
+console.log(filterarr)
+
+let qarr = [100, 50, 1000, 3000, 4000, 5000, 10000, 55, 66, 788, 999];
+
+let sum1 = 0
+for (let i = 0; i<qarr.length;i++){
+  sum1 =sum1 + qarr[i]
+}
+console.log(sum1)
+
+//for odd and even
+
+let mixnum = [
+  2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+];
+
 let odd = []
-
 let even = []
-for (let i =0 ;i<mixnum.length;i++){
-
-    if (mixnum[i]%2===0){
-        even.push(mixnum[i])
-    }
-    else{
-        odd.push(mixnum[i])
-    } 
-    for (let i = 0; i<push.length;i++){
-    count+=push
-}
-   console.log(count)
+for (let i = 0; i<mixnum.length;i++){
+  if (mixnum[i]%2===0){
+    even.push(mixnum[i])
+  }
+  else{
+    odd.push(mixnum[i])
+  }
 }
 
-// let mixnum = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,1234,55,6,78,9,5,63,46,57,88,5,64,];
+console.log(odd)
+console.log(even)
+
+
+let names = ["siddhant", "amol", "vaibhav", "shree", 0, "arjun", "amal"];
+// output should --> every element should in captial
+// all the names that start with a should be in anew array
+
+let capname = []
+
+for (let i = 0;i<names.length;i++){
+if (typeof names[i] === "string"){
+  let cap = names[i].toUpperCase()
+  capname.push(cap)
+}
+}
+console.log(capname)
+let namea = []
+for (let i = 0; i < capname.length; i++){
+  if (capname[i].startsWith("A")){
+    namea.push(capname[i])
+  }
+}
+console.log(namea)
+
+let num3 = [2, 8, 7, 3, 35, 58, 69, 34567, 367, 2, 3, 4, 5, 67, 8, 9, 0];
+let add5 = num3.map((el,index,arr) => {
+  return el + 5
+})
+console.log(add5)
+
+let add10 = num3.map((el,index,arr) => {
+  return el + 10
+})
+
+console.log(add10)
+
+
+let names1 = ["siddhant", "amol", "vaibhav", "shree", "arjun", "amal"];
+
+let named = names1.map((el,index,arr) => {
+  return el.toUpperCase()
+})
+console.log(named)
+
+
+let namef = named.filter((el,index,arr) => {
+  return el.startsWith("A")
+})
+console.log(namef)
+
+
+let num_mix = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let even_num = num_mix.filter((el,index,arr) => {
+  return el%2 ===0
+})
+console.log(even_num)
+
+let num_1_arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+
+let sumof = num_1_arr.reduce((acc,el,index,arr) => {
+  return el + acc
+},0)
+console.log(sumof)
+
+let arr_11 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+let check = arr_11.some((el,index,arr) => {
+  return el>5
+})
+console.log(check)
+
+let ev = arr_11.every((el,index,arr) => {
+  return el>100
+})
+console.log(ev)
+
+let numarr2 = [1, "Vaibhav","siddhant","amol",1000, 100, 50, 20, 55, 65, 89, 999];
+let fname = []
+let fnum = []
+
+for (let i = 0; i<numarr2.length;i++){
+  if (typeof numarr2[i]==="string"){
+let cap = numarr2[i].toUpperCase()
+fname.push(cap)
+  }
+  else{
+    fnum.push(numarr2[i])
+  }
+}
+
+console.log(fname)
+console.log(fnum)
+
+let srtn = fname.sort()
+let srtnum = fnum.sort((a,b) => {return a-b})
+let finalArr = srtn.concat(srtnum)
+console.log(finalArr)
 
 
 
-
+//object
 
