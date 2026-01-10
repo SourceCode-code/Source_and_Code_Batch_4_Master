@@ -645,3 +645,180 @@ console.log(finalArr)
 
 //object
 
+let Mahindra_3x0 = {
+  //key      : value
+  modelName: "AX5",
+  exShowroomPrice: 1300000,
+  color: ["white", "yellow", "red", "black ", "green "],
+  make: 2025,
+  isAvailable: true,
+};
+
+console.log(Mahindra_3x0.make)
+
+console.log(Mahindra_3x0.isAvailable)
+console.log(Mahindra_3x0["isAvailable"])
+
+Mahindra_3x0.make = '2026'
+console.log(Mahindra_3x0)
+
+Mahindra_3x0["make"] = 2027
+console.log(Mahindra_3x0)
+
+
+delete Mahindra_3x0.isAvailable
+console.log(Mahindra_3x0)
+
+delete Mahindra_3x0["make"]
+console.log(Mahindra_3x0)
+
+Mahindra_3x0.engineWarrenty = "1 Year"
+console.log(Mahindra_3x0)
+
+Mahindra_3x0.make  = "2025"
+console.log(Mahindra_3x0)
+
+Mahindra_3x0["extendWarranty"] = "1 year";
+console.log(Mahindra_3x0);
+
+Mahindra_3x0.color[0] = "pink"
+console.log(Mahindra_3x0)
+
+Mahindra_3x0.color.pop()
+console.log(Mahindra_3x0)
+
+for (let key in Mahindra_3x0){
+  console.log(`${key} == ${Mahindra_3x0[key]}`)
+}
+
+let car1 = Object.assign({},Mahindra_3x0)
+console.log(car1)
+
+car1.modelName = "AX7"
+console.log(car1)
+console.log(Mahindra_3x0);
+
+let keyVal = Object.keys(car1)
+console.log(keyVal)
+
+let entVal = Object.entries(car1)
+console.log(entVal)
+
+let vVal = Object.values(car1)
+console.log(vVal)
+
+console.log(car1.hasOwnProperty("Mileage"))
+
+const profiles = [
+  {
+    firstName: "Vihaan",
+    lastName: "Mehta",
+    age: 28,
+    experience: 6,
+    skills: ["TypeScript", "CI/CD"],
+    position: "Automation Tester",
+  },
+  {
+    firstName: "Rohan",
+    lastName: "Joshi",
+    age: 29,
+    experience: 11,
+    skills: ["TypeScript", "JavaScript", "Cypress", "Docker"],
+    position: "Technical Lead",
+  },
+  {
+    firstName: "Vihaan",
+    lastName: "Deshmukh",
+    age: 32,
+    experience: 1,
+    skills: ["Python", "TypeScript"],
+    position: "Software Engineer",
+  },
+  {
+    firstName: "Ishaan",
+    lastName: "Pandey",
+    age: 31,
+    experience: 14,
+    skills: ["Python", "Cypress"],
+    position: "Systems Engineer",
+  },
+  {
+    firstName: "Ishaan",
+    lastName: "Deshmukh",
+    age: 25,
+    experience: 1,
+    skills: ["Java", "Playwright", "JavaScript", "SQL"],
+    position: "Systems Engineer",
+  },
+  {
+    firstName: "Rohan",
+    lastName: "Joshi",
+    age: 33,
+    experience: 3,
+    skills: ["JavaScript", "Java", "Docker", "TypeScript"],
+    position: "Full-Stack Developer",
+  },
+  {
+    firstName: "Pranav",
+    lastName: "Joshi",
+    age: 24,
+    experience: 2,
+    skills: ["JavaScript", "GitHub Actions", "Playwright", "TypeScript"],
+    position: "Data Analyst",
+  },
+  {
+    firstName: "Rohan",
+    lastName: "Nayak",
+    age: 24,
+    experience: 10,
+    skills: ["JavaScript", "GitHub Actions", "Playwright"],
+    position: "Backend Developer",
+  },
+  {
+    firstName: "Arjun",
+    lastName: "Nayak",
+    age: 36,
+    experience: 4,
+    skills: ["Java", "Playwright", "Docker"],
+    position: "Systems Engineer",
+  },
+  {
+    firstName: "Vikram",
+    lastName: "Joshi",
+    age: 34,
+    experience: 1,
+    skills: "poython",
+    position: "Full-Stack Developer",
+  },
+];
+
+profiles.forEach((el,index,arr) => {
+  if (el.skills.includes("Cypress")){
+    console.log(`${el.firstName} ${el.lastName}`)
+  }
+})
+
+let above3 = profiles.filter((el,index,arr) => {
+  return el.experience>5
+})
+console.log(above3)
+
+
+//calculator function
+
+function calculator (a,b) {
+  console.log(a+b)
+  console.log(a-b)
+  console.log(a*b)
+  console.log(a%b)
+  console.log(a**b)
+  console.log(a / b)
+
+
+}
+
+calculator(20,25)
+
+calculator(1000,2000)
+
+var name = "rupali nawale"
