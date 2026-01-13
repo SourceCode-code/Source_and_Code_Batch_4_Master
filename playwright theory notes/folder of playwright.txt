@@ -1,0 +1,15 @@
+playwright.config.js --> this is setting file for your project this used to set configraution for playwright
+
+package.json --> you can the version and the install your dependecy 
+
+package-lock.json --> this file will lock your depenency so everyone will have same version version of depenceny 
+
+.gitignore --> this file is used to ingore or make sure to not push any unwanted file 
+
+
+tests --> here your testcases are stored -->  and the file is named as 
+
+// filename.spec.js
+
+node_modules --> node package for the tools 
+
