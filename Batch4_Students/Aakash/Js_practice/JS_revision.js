@@ -821,4 +821,59 @@ calculator(20,25)
 
 calculator(1000,2000)
 
-var name = "rupali nawale"
+let arr = [1, 2, 3, 4, 5];
+
+let num1 = arr[0];
+let num2 = arr[1];
+let num6 = arr[2];
+let num4 = arr[3];
+let num5 = arr[4];
+
+console.log(num1, num2, num6, num4, num5);
+
+//example of destructuring an array
+
+let [number1, number2, number3, number4, number5] = arr;
+
+console.log(number1, number2, number3, number4, number5);
+let moreNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let [q, x, ...n] = moreNumbers;
+console.log(q, x);
+console.log(n);
+
+
+let arr5 = [1,2,3,4,5,6,7,8,9]
+
+console.log(...arr5)
+
+let numarr123 =[...arr5]
+
+console.log(numarr123)
+
+let xs = 10
+let yss=20
+xs = xs ^ yss
+yss = xs ^ yss
+xs = xs ^ yss
+
+console.log(xs)
+console.log(yss)
+
+// let pro = new Promise((resloves, rejected) => {
+//   let successful = true;
+
+//   if (successful === true) {
+//     resloves("the promise has been fullfiled");
+//   } else {
+//     rejected(" the promise has been rejected ");
+//   }
+// })
+//   .then((message) => {
+//     // if the promise is successfull
+//     console.log(message);
+//   })
+//   .catch((error) => {
+//     // if the promise is rejected
+//     console.log(error);
+//   });
