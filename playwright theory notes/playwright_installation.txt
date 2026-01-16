@@ -1,0 +1,23 @@
+what are your pre requirsted to install playwright 
+1 you need vs code
+2 node js 
+
+How To be install -->
+ step 1 crearte a folder where your install your playwright 
+ open this folder in terminal
+
+ step 2 : Initailazing playwright 
+ in the terminal run command :   npm init playwright@latest
+
+ step 3 type y in termnial and enter to confrim the process
+
+ step 4 select your programing for the tool  
+
+ step 5 hit enter 
+
+ step 6 confirm installtion  -- > once your recive the message of 
+ 
+Visit https://playwright.dev/docs/intro for more information. ✨
+
+Happy hacking! 🎭
+ your installtion is complete 
