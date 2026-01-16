@@ -168,10 +168,10 @@ let agedifference = yourage-myage
 console.log(  agedifference)
 // 24. Using ternary opertor, when birth year and calculate if they are old enough to drive.
 
-let birthYear = prompt("Enter your birth year:")
+let birthYear = 1990
 let currentYear = new Date().getFullYear()
 let age1 = currentYear - birthYear
 age1 >=18 ? console.log("You are old enough to drive") : console.log("You are not old enough to drive")
 //25  using ternary opertor check number is even or odd
-let number = prompt("Enter a number:")
-number % 2 == 0 ? console.log("Number is even") : console.log("Number is odd")
+let number = 7
+number % 2 === 0 ? console.log("Number is even") : console.log("Number is odd")
