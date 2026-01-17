@@ -1,0 +1,95 @@
+JavaScript Interview Questions for Automation Testers
+(Cypress & Playwright – 4–5 Years Experience)
+
+
+====================================================
+SECTION 1: JavaScript Basics (Automation Focused)
+====================================================
+1. What is JavaScript and why is it important for automation testing?
+2. What is the difference between var, let, and const?
+3. What are the different data types in JavaScript?
+4. What is the difference between == and ===?
+5. What is hoisting in JavaScript?
+6. What is scope? Explain global, function, and block scope.
+7. What is a closure? Give a real automation use case.
+8. What is the difference between null and undefined?
+9. What are template literals and where are they used in automation tests?
+10. What is the difference between synchronous and asynchronous code?
+
+
+====================================================
+SECTION 2: Functions & ES6 Concepts
+====================================================
+11. What is a function in JavaScript?
+12. Difference between function declaration and function expression.
+13. What are arrow functions? How are they used in automation testing?
+14. What is a callback function?
+15. What is destructuring? Give an example using test data.
+16. What is the spread operator and rest operator?
+17. What are JavaScript modules?
+18. Difference between require and import.
+19. What is export default vs named export?
+
+
+====================================================
+SECTION 3: Asynchronous JavaScript (VERY IMPORTANT)
+====================================================
+20. What is asynchronous JavaScript?
+21. What is a Promise?
+22. Explain the different states of a Promise.
+23. What is async and await?
+24. Why is async/await preferred in Playwright?
+25. How does Cypress handle asynchronous code differently?
+26. What happens if you forget to use await in Playwright?
+27. Difference between then() and async/await.
+28. How do you handle errors in async code?
+29. What is try–catch and where do you use it in automation tests?
+30. What are setTimeout and setInterval?
+31. Difference between setTimeout and setInterval.
+32. How do setTimeout and setInterval affect automation tests?
+33. How do you clear setTimeout and setInterval?
+
+
+====================================================
+SECTION 4: JavaScript for Cypress
+====================================================
+34. Why does Cypress not support async/await?
+35. How does Cypress handle promises internally?
+36. What is command chaining in Cypress?
+37. What is the Cypress command queue?
+38. Difference between cy.get() and .find()
+39. Why should you avoid using for loops with Cypress commands?
+40. What are custom commands in Cypress?
+41. How do you share data between Cypress tests?
+42. What is a fixture file and how is it used?
+43. How does Cypress retry mechanism work?
+
+
+====================================================
+SECTION 5: JavaScript for Playwright
+====================================================
+44. Why does Playwright support async/await?
+45. How does Playwright execute test steps sequentially?
+46. Difference between page.locator() and page.$().
+47. What is auto-waiting in Playwright?
+48. How do you handle multiple tabs in Playwright?
+49. How do you handle iframes using JavaScript in Playwright?
+50. How do you wait for API responses in Playwright?
+51. Difference between expect() in Playwright and JavaScript assertions.
+52. How do you reuse JavaScript utility functions in Playwright?
+53. How do you handle exceptions in Playwright tests?
+
+
+====================================================
+SECTION 6: JavaScript Arrays, Objects & Loops
+====================================================
+54. What are arrays and objects in JavaScript?
+55. Difference between map(), filter(), and reduce().
+56. What are different types of loops in JavaScript?
+57. Difference between for, forEach, for...of, and for...in loops.
+58. Which loop is best suited for automation testing and why?
+60. How do you clone an object in JavaScript?
+62. How do you read JSON test data?
+63. How do you update values inside a JSON object?
+64. What are Object.keys(), Object.values(), and Object.entries()?
+65. How do you compare two objects in JavaScript?
