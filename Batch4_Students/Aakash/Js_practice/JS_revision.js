@@ -877,3 +877,58 @@ console.log(yss)
 //     // if the promise is rejected
 //     console.log(error);
 //   });
+
+
+// 2 experssion type --> because the here the function is stored in a expression
+
+// let fullname1 = function (firstname, lastname) {
+//   return `${firstname} ${lastname}`;
+// };
+
+// console.log(fullname1("sid", "gadakh"));
+let fullName = function (firstname, lastname) {
+  return `${firstname} ${lastname}`
+}
+
+console.log(fullName("akash", "jadhav"))
+
+let fullName1 = (firstname,lastname) => {
+  return `${firstname} ${lastname}`
+}
+
+console.log(fullName1("akash","jadhav"))
+
+function fullName2(first,last){
+
+}
+
+function PrintX() {
+  let x = 100;
+  console.log(x); //100
+  x = 200;
+  console.log(x);
+}
+
+// PrintX();
+// let x = "sidhant";
+// console.log(x); 
+const pii = 3.1432;
+
+function printpi() {
+  const pii = 3.14;
+  console.log(pii);
+}
+
+console.log(pii);
+printpi();
+
+
+var xx =10
+
+console.log(xx)
+
+function printxx(){
+    console.log(xx)
+}
+
+printxx()
