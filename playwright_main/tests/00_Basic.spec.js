@@ -23,12 +23,3 @@ test("verify the basic of playwright ", async({browser})=>{
 })
 
 
-// test("verify the basic of playwright-2 ", async({browser})=>{
-
-// })
-
-
-// test("verify the basic of playwright-3", async({browser})=>{
-
-// })
-
