@@ -2,15 +2,16 @@ const{ test,expect}= require('@playwright/test')
 
 test.only("varify title", async({browser})=>{
 
-const Context= browser.newContext()
-
-const page=Context.newPage()
+const Context = await browser.newContext()
+const page = await Context.newPage()
 
 await page.goto("https://www.w3schools.com/")
 
 await expect(page).toHaveTitle("W3Schools Online Web Tutorials")
 
 })
+
+
 
 //line 1: // What it does
 // Imports Playwright’s test runner (test) and assertion library (expect)
@@ -42,7 +43,7 @@ await expect(page).toHaveTitle("W3Schools Online Web Tutorials")
 // 📌 Interview line:
 // A browser context isolates user sessions and ensures clean test state.
 
-//line 7: What it does
+//line 6: What it does
 // Opens a new browser tab inside the context
 // Page represents a single web page
 // Relationship
