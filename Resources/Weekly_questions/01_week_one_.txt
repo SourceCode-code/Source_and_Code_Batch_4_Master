@@ -1,0 +1,93 @@
+====================================================
+SECTION 1: Git 
+====================================================
+
+1. What is Git and why is it used?
+2. What is the difference between Git and GitHub?
+3. Explain the Git workflow from local to remote repository
+   (Process of pushing code from local system to GitHub)
+4. What is a repository in Git?
+5. What is the difference between a local repository and a remote repository?
+6. What is the .git folder?
+7. Explain the working directory, staging area, and local repository.
+8. What is the difference between git clone and git fork?
+9. Explain the following commands:
+   - git status
+   - git add
+   - git commit
+10. Explain the difference between git fetch and git pull origin.
+11. Explain the following commands:
+   - git checkout
+   - git checkout -b
+   - git checkout -f
+12. What does git reset do?
+13. What does git revert do and when should it be used?
+14. Difference between git revert and git reset.
+
+
+====================================================
+SECTION 2: Manual Testing
+====================================================
+
+1. What is manual testing?
+2. Why is manual testing still important even when automation exists?
+3. What is the difference between manual testing and automation testing?
+4. What are the objectives and principles of software testing?
+5. What is SDLC and STLC?
+6. What are the different levels of testing?
+7. What is unit testing?
+8. What is integration testing?
+9. What is system testing?
+10. What is user acceptance testing (UAT)?
+11. What is smoke testing?
+12. What is sanity testing?
+13. What is the difference between smoke testing and sanity testing?
+14. What is regression testing?
+15. What is retesting?
+16. When do you perform regression testing?
+17. What is exploratory testing?
+18. What is the difference between regression testing and retesting?
+
+====================================================
+SECTION 3: JavaScript (Theory)
+====================================================
+
+
+1. What is JavaScript and why is it important for automation testing?
+2. What is the difference between var, let, and const?
+3. What are the different data types in JavaScript?
+4. What is the difference between == and ===?
+5. What is scope? Explain global, function, and block scope.
+
+
+====================================================
+SECTION 4: JavaScript (Logical)
+====================================================
+
+
+1. Predict the output:
+   console.log(a);
+   var a = 10;
+
+2. Predict the output:
+   let x = 5;
+   {
+     let x = 10;
+     console.log(x);
+   }
+   console.log(x);
+
+3. Why does the below code throw an error?
+   console.log(b);
+   let b = 20;
+
+4. Write a function to demonstrate block scope using let and const.
+
+5. Predict the output:
+   console.log(null == undefined);
+   console.log(null === undefined);
+
+
+6. Find the largest number in an array.
+
+7. Remove duplicate values from an array.

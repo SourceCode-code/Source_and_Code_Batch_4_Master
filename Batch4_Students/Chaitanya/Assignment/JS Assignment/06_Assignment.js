@@ -41,8 +41,8 @@ console.log(q7[9])
 // -----------------------------------------------------
 
 // 8. Write a program to count how many characters (excluding spaces) are in a string.
-let q8 = "Chaitanya Bhausaheb Kute";
-console.log(q8.length);
+let q8 = "  Chaitanya  ";
+console.log(q8.trim().length)
 
 // -----------------------------------------------------
 

@@ -25,7 +25,7 @@ let firstname = 'Swapnil'
 let Lastname = 'Gaikwad'
 let Marital_status ='Single'
 let Country = 'India'
-let Myage = '29'
+let Myage1 = '29'
 
 // Declare variables to store your first name, last name, marital status, country and age in a single line
 let firstname_ = 'Swapnil', Lastname_ = 'Gaikwad', Marital_status_ ='Single', Country_ = 'India', Myage = '29'

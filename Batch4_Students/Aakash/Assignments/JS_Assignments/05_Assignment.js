@@ -182,3 +182,4 @@ console.log(str13.toLocaleLowerCase().trim())
 //     in the string "test your code with a test case".
 let str14 = "test your code with a test case";
 console.log(str14.replace("test" , "exam"))
+
