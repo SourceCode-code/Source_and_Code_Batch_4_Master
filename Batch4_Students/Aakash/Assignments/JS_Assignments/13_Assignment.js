@@ -269,12 +269,95 @@ function addItem(item) {
 console.log(addItem('APPLE'))
 
 // 9 Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
-let arr2 = []
+// let arr2 = ["apple", "banana", "orange"];
+// function removeItem(index) {
+// let arr1= []
+
+//     arr1.Splice(index,1)
+//     return arr1
+
+// }
+// console.log(removeItem(1))
+let arr2 = ["apple", "banana", "orange"];
+
 function removeItem(index) {
-
-
-    arr2.push(item)
-    return arr1
-
+    arr2.splice(index, 1);
+    return arr2;
 }
-console.log(removeItem('APPLE', 'BANANA', 'MANGO', 'ORANGE'))
+
+console.log("removing", removeItem(1)); // ["apple", "orange"]
+
+//10 Declare a function name sumOfNumbers. It takes a number parameter 
+//and it adds all the numbers in that range.
+
+function sumOfNumbers (num){
+    let sum = 0
+    for(let i=1;i<=num;i++){
+        sum+=i
+    }
+    return sum
+}
+console.log(sumOfNumbers(15))
+
+//11 Declare a function name sumOfOdds. 
+//It takes a number parameter and it adds all the odd numbers in that - range.
+function sumofOdds(num){
+    let sum = 0
+    for (let i = 1; i<= num; i++){
+        if (i%2){
+             sum+=i
+        }
+    }
+    return sum
+}
+console.log(sumofOdds(15))
+
+//13 Declare a function name evensAndOdds . 
+// It takes a positive integer as parameter and it 
+// counts number of evens and odds in the number.
+
+// evensAndOdds(100);
+// The number of odds are 50.
+// The number of evens are 51
+
+function evenAndOdds(num) {
+    let numOfOdds = 0
+    let numOfEven = 0
+    for (let i = 0; i <= num; i++) {
+        if (i % 2 === 0) {
+            numOfEven++
+
+        }
+        else { numOfOdds++ }
+    }
+    console.log(numOfOdds)
+    console.log(numOfEven)
+}
+console.log(evenAndOdds(100))
+
+
+//14 Write a function which takes any number of arguments and return the sum of the arguments
+
+// sum(1, 2, 3) // -> 6
+// sum(1, 2, 3, 4) // -> 10
+
+function sumOfArguments(...args){
+    let sum = 0
+    for (let num of args){
+        sum+=num
+    }
+    return sum
+}
+console.log(sumOfArguments(10,50,10,4))
+
+//15 Writ a function which generates a randomUserIp.
+function randomuserIP (){
+    let n1 = Math.floor(Math.random()*256)
+    let n2 = Math.floor(Math.random()*256)
+    let n3 = Math.floor(Math.random()*256)
+    let n4 = Math.floor(Math.random()*256)
+    console.log(`${n1}.${n2}.${n3}.${n4}`)
+}
+randomuserIP()
+
+//16 Write a function which generates a randomMacAddress

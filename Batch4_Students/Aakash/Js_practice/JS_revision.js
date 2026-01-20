@@ -932,3 +932,15 @@ function printxx(){
 }
 
 printxx()
+
+// Create a program called “Diwali Countdown”.
+// It should print today’s date and how many days left until Diwali.
+// Then display “🪔 Get Ready to Celebrate!” if less than 10 days remain.
+
+let diwaliDate = new Date("2026-11-5")
+let todayDate = new Date()
+let theDiff = diwaliDate-todayDate
+console.log(theDiff)
+
+let theDifference = Math.round(theDiff/(1000*60*60*24))
+console.log(theDifference)

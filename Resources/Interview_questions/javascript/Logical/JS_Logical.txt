@@ -1,0 +1,197 @@
+JavaScript Logical & Coding Questions for Automation Testers
+(Cypress & Playwright – 4–5 Years Experience)
+
+
+====================================================
+SECTION 1: Variables, Scope & Hoisting
+====================================================
+1. Predict the output:
+   console.log(a);
+   var a = 10;
+
+2. Predict the output:
+   let x = 5;
+   {
+     let x = 10;
+     console.log(x);
+   }
+   console.log(x);
+
+3. Why does the below code throw an error?
+   console.log(b);
+   let b = 20;
+
+4. Write a function to demonstrate block scope using let and const.
+
+5. Explain how hoisting works in function declarations vs function expressions.
+
+
+====================================================
+SECTION 2: Data Types & Equality
+====================================================
+6. Predict the output:
+   console.log(null == undefined);
+   console.log(null === undefined);
+
+7. Write a function to check the data type of a variable.
+
+8. Explain why NaN !== NaN and write a function to check NaN.
+
+9. Predict the output:
+   console.log(typeof []);
+   console.log(typeof {});
+
+10. Write a function to compare two values using strict equality.
+
+
+====================================================
+SECTION 3: Functions & Closures
+====================================================
+11. Write a function that returns another function and maintains a counter.
+
+12. What will be the output?
+    function test() {
+      let count = 0;
+      return function () {
+        count++;
+        console.log(count);
+      };
+    }
+
+13. How can closures help in maintaining test data state?
+
+14. Convert the below function into an arrow function.
+    function add(a, b) {
+      return a + b;
+    }
+
+15. Write a reusable utility function for test automation.
+
+
+====================================================
+SECTION 4: Asynchronous JavaScript
+====================================================
+16. Predict the output:
+    console.log("Start");
+    setTimeout(() => console.log("Timeout"), 0);
+    console.log("End");
+
+17. Convert a Promise-based function into async/await.
+
+18. Write a function that waits for 2 seconds using Promise.
+
+19. What happens if await is missed in Playwright code?
+
+20. Write a try–catch block to handle an API failure.
+
+
+====================================================
+SECTION 5: setTimeout & setInterval
+====================================================
+21. Write a function that prints "Hello" after 3 seconds.
+
+22. Write a function that prints numbers from 1 to 5 at 1-second intervals.
+
+23. How do you stop setInterval after 5 executions?
+
+24. Why should setTimeout not be used for waiting in automation tests?
+
+25. Convert setTimeout logic into a Promise-based solution.
+
+
+====================================================
+SECTION 6: Arrays & Loops
+====================================================
+26. Find the largest number in an array.
+
+27. Remove duplicate values from an array.
+
+28. Loop through an array of objects and print a specific key.
+
+29. Difference between for, forEach, and for...of with examples.
+
+30. Write a function to flatten a nested array.
+
+31. Write a function using map() to transform test data.
+
+32. Filter all failed test results from an array.
+
+
+====================================================
+SECTION 7: Objects & JSON
+====================================================
+33. Merge two objects without mutating them.
+
+34. Access nested object values safely.
+
+35. Convert a JSON string into an object and read values.
+
+36. Write a function to compare two objects.
+
+37. Add a new key to an object dynamically.
+
+
+====================================================
+SECTION 8: String Manipulation (Commonly Asked)
+====================================================
+38. Reverse a string without using reverse().
+
+39. Check if a string is a palindrome.
+
+40. Count the occurrence of characters in a string.
+
+41. Convert a string to title case.
+
+42. Find the longest word in a sentence.
+
+
+====================================================
+SECTION 9: Automation-Specific Logical Questions
+====================================================
+43. Write a function to retry a failed operation.
+
+44. Write a function to wait for an element condition logically.
+
+45. How would you debounce a function in automation?
+
+46. Write a throttle function and explain its use.
+
+47. How do you handle dynamic test data using JavaScript?
+
+
+====================================================
+SECTION 10: Debugging & Output-Based Questions
+====================================================
+48. Predict the output:
+    console.log(1 + "2" + "2");
+
+49. Predict the output:
+    console.log(true + false);
+
+50. Predict the output:
+    console.log([] + []);
+
+51. Predict the output:
+    console.log({} + {});
+
+52. Debug why the below code fails in Cypress.
+
+53. Debug async issues in Playwright test execution.
+
+
+====================================================
+SECTION 11: Interview Favorite Logical Problems
+====================================================
+54. Swap two variables without using a third variable.
+
+55. Find the second largest number in an array.
+
+56. Check if a number is prime.
+
+57. Find factorial of a number.
+
+58. Find missing numbers in an array.
+
+59. Write a custom debounce utility.
+
+60. Write a reusable JavaScript wait utility for automation tests.
