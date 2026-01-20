@@ -1,6 +1,6 @@
 const{ test,expect}= require('@playwright/test')
 
-test.only("varify title", async({browser})=>{
+test("verify title", async({browser})=>{
 
 const Context = await browser.newContext()
 const page = await Context.newPage()
