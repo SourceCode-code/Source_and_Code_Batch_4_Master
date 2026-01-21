@@ -1,106 +1,119 @@
-
 // // Assignment Questions on JavaScript Objects
 
 // // Question 1: Skills and Points Analysis
 // // Given the following users object:
 
-let users = {  
+let users = {
   Alex: {
-    email: 'alex@alex.com',
-    skills: ['HTML', 'CSS', 'JavaScript'],
+    email: "alex@alex.com",
+    skills: ["HTML", "CSS", "JavaScript"],
     age: 20,
     isLoggedIn: false,
-    points: 30
+    points: 30,
   },
   Asab: {
-    email: 'asab@asab.com',
-    skills: ['HTML', 'CSS', 'JavaScript', 'Redux', 'MongoDB', 'Express', 'React', 'Node'],
+    email: "asab@asab.com",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Redux",
+      "MongoDB",
+      "Express",
+      "React",
+      "Node",
+    ],
     age: 25,
     isLoggedIn: false,
-    points: 50
+    points: 50,
   },
   Brook: {
-    email: 'daniel@daniel.com',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
+    email: "daniel@daniel.com",
+    skills: ["HTML", "CSS", "JavaScript", "React", "Redux"],
     age: 30,
     isLoggedIn: true,
-    points: 50
+    points: 50,
   },
   Daniel: {
-    email: 'daniel@alex.com',
-    skills: ['HTML', 'CSS', 'JavaScript', 'Python'],
+    email: "daniel@alex.com",
+    skills: ["HTML", "CSS", "JavaScript", "Python"],
     age: 20,
     isLoggedIn: false,
-    points: 40
+    points: 40,
   },
   John: {
-    email: 'john@john.com',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node.js'],
+    email: "john@john.com",
+    skills: ["HTML", "CSS", "JavaScript", "React", "Redux", "Node.js"],
     age: 20,
     isLoggedIn: true,
-    points: 50
+    points: 50,
   },
   Thomas: {
-    email: 'thomas@thomas.com',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React'],
+    email: "thomas@thomas.com",
+    skills: ["HTML", "CSS", "JavaScript", "React"],
     age: 20,
     isLoggedIn: false,
-    points: 40
+    points: 40,
   },
   Paul: {
-    email: 'paul@paul.com',
-    skills: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node'],
+    email: "paul@paul.com",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "MongoDB",
+      "Express",
+      "React",
+      "Node",
+    ],
     age: 20,
     isLoggedIn: false,
-    points: 40
-  }
+    points: 40,
+  },
 };
 
 // // Tasks:
 // // 1. Find the person with the most skills.
-let maxSkills = 0
-let mostSkills = " "
-for (let key in users){
-if (users[key].skills.length > maxSkills){
-  maxSkills = users[key].skills.length
-mostSkills = key
+let maxSkills = 0;
+let mostSkills = " ";
+for (let key in users) {
+  if (users[key].skills.length > maxSkills) {
+    maxSkills = users[key].skills.length;
+    mostSkills = key;
+  }
 }
-}
-console.log(mostSkills)
+console.log(mostSkills);
 
 // // 2. Count the number of users who are logged in.
-let login = 0
-for (let key in users){
-  if (users[key].isLoggedIn===true){
-    login++
+let login = 0;
+for (let key in users) {
+  if (users[key].isLoggedIn === true) {
+    login++;
   }
- 
 }
- console.log(login)
-
+console.log(login);
 
 // // 3. Count the number of users with points greater than or equal to 50.
-let point = 0
-for (let key in users){
-  if(users[key].points>=50){
-    point++
+let point = 0;
+for (let key in users) {
+  if (users[key].points >= 50) {
+    point++;
   }
 }
-console.log(point)
+console.log(point);
 
 // // 4. Identify the MERN stack developers in the users object.
 // //'MongoDB', 'Express', 'React', 'Node'
 
 //   // console.log(el)
-  // let mern = 0
-  // for (let key in users)
-  //   {if (skills.includes("MongoDB")){
-  //     mern++
-  //   }
-  //   console.log("hhh",mern)
-  // }
+// let mern = 0
+// for (let key in users)
+//   {if (skills.includes("MongoDB")){
+//     mern++
+//   }
+//   console.log("hhh",mern)
+// }
 
-  
 // //  (el.users.includes("MongoDB")
 //   // // &el.users.includes("Express")
 //   //   &&el.users.includes("React")
@@ -116,12 +129,12 @@ console.log(point)
 // console.log(users)
 // // 6. Retrieve all keys (properties) in the users object.
 
-let allKeys = Object.keys(users)
-console.log(allKeys)
+let allKeys = Object.keys(users);
+console.log(allKeys);
 
 // // 7. Retrieve all values in the users object.
-let allValues = Object.values(users)
-console.log(allValues)
+let allValues = Object.values(users);
+console.log(allValues);
 
 // // Question 2: Working with a Countries Object
 // // Using a countries object, write a program that prints:
@@ -134,46 +147,45 @@ const countries = {
   Japan: {
     capital: "Tokyo",
     population: 125.7, // in millions
-    languages: ["Japanese"]
+    languages: ["Japanese"],
   },
   Germany: {
     capital: "Berlin",
     population: 83.2,
-    languages: ["German"]
+    languages: ["German"],
   },
   India: {
     capital: "New Delhi",
     population: 1393, // in millions
-    languages: ["Hindi", "English", "Various regional languages"]
+    languages: ["Hindi", "English", "Various regional languages"],
   },
   Canada: {
     capital: "Ottawa",
     population: 38,
-    languages: ["English", "French"]
+    languages: ["English", "French"],
   },
   Brazil: {
     capital: "Brasília",
     population: 213,
-    languages: ["Portuguese"]
-  }
+    languages: ["Portuguese"],
+  },
 };
 // - Country name
-let countryNames = Object.keys(countries)
-console.log(countryNames)
+let countryNames = Object.keys(countries);
+console.log(countryNames);
 // - Capital city
-for (let key in countries){
-  console.log(countries[key].capital)
+for (let key in countries) {
+  console.log(countries[key].capital);
 }
 
 // - Population count
-for (let key in countries){
-  console.log(countries[key].population)
+for (let key in countries) {
+  console.log(countries[key].population);
 }
 // - Languages spoken
-for (let key in countries){
-  console.log(countries[key].languages)
+for (let key in countries) {
+  console.log(countries[key].languages);
 }
-
 
 // Question 3: Creating a personAccount Object
 // Create an object literal named personAccount with the following properties and methods:
@@ -217,3 +229,23 @@ for (let key in countries){
 //    b. Create a function averageRating to calculate the average rating of a product.
 // 4. Product Likes:
 //    Create a function likeProduct to like a product if it’s not already liked, or to remove the like if it was already liked.
+
+//5 form given data
+let data = {
+  Data: {
+    Country: "India",
+    States: [
+      {
+        Name: "Maharashtra",
+        Population: "128256452",
+      },
+      {
+        Name: "Gujarat",
+        Population: "731000000",
+      },
+    ],
+  },
+};
+
+// 1 check if maharastra is presnt
+//2 get the the total population of both states

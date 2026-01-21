@@ -1,0 +1,5 @@
+sample questions 
+https://devinterview.io/questions/web-and-mobile-development/testing-interview-questions
+
+mannual sample 
+https://github.com/Devinterview-io/testing-interview-questions

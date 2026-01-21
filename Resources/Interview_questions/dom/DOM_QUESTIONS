@@ -1,0 +1,57 @@
+DOM Interview Questions for Automation Testers (4–5 Years Experience)
+
+
+====================================================
+SECTION 1: DOM Basics
+====================================================
+1. What is the DOM?
+2. What does DOM stand for?
+3. Is the DOM part of HTML or JavaScript?
+4. How does a browser create the DOM?
+5. What is the difference between HTML and DOM?
+
+
+====================================================
+SECTION 2: DOM Structure & Nodes
+====================================================
+6. What is the difference between element nodes, text nodes, and attribute nodes?
+7. What is the root node of an HTML document?
+8. What is the parent, child, and sibling relationship in the DOM?
+
+
+====================================================
+SECTION 3: DOM Selectors (Very Important for Automation)
+====================================================
+9. What are DOM selectors?
+10. How do CSS selectors work with the DOM?
+11. Give examples of commonly used CSS selectors in automation testing.
+
+
+====================================================
+SECTION 4: DOM & Automation Testing
+====================================================
+12. Why is DOM knowledge important for automation testers?
+13. How do Playwright and Cypress interact with the DOM?
+14. What happens in the DOM when a button is clicked?
+15. How do you verify an element is present in the DOM?
+16. What is the difference between an element existing in the DOM
+    and being visible on the UI?
+17. How do you handle dynamically changing DOM elements?
+18. What is DOM re-rendering and how does it affect automation tests?
+19. What causes stale element issues in automation testing?
+20. How do you handle stale elements in Playwright or Cypress?
+
+
+====================================================
+SECTION 5: Shadow DOM (Advanced – Very Important)
+====================================================
+21. What is Shadow DOM?
+22. Why is Shadow DOM used?
+23. How do Playwright and Cypress handle Shadow DOM?
+24. What challenges have you faced while automating Shadow DOM elements?
+
+
+====================================================
+SECTION 6: DOM Attributes & Properties
+====================================================
+25. What is the difference between attributes and properties in the DOM?
