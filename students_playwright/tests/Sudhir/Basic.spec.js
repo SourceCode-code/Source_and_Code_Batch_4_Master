@@ -2,8 +2,8 @@ const{ test,expect}= require("@playwright/test")
 
 test.only("varify title", async({browser})=>{
 
-const Context = await browser.newContext()
-const page = await Context.newPage()
+const context = await browser.newContext()
+const page = await context.newPage()
 
 await page.goto("https://www.w3schools.com/")
 
