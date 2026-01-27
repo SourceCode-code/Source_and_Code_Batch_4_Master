@@ -17,7 +17,7 @@ await page.locator('[type="submit"]').click();
 //click on admin
   await page.locator('[href="/web/index.php/admin/viewAdminModule"]').click();
   
-// Select option form dropdown
+// Select option form user dropdown
   await page.locator('[class="oxd-select-wrapper"]').first().click();
 
 //select admin 
@@ -25,10 +25,10 @@ await page.locator('[role="option"]').nth(1).click();
 await expect(page.locator('[class="oxd-select-text-input"]').first()).toHaveText("Admin")
 
 
-// Select option form dropdown
+// Select option form status dropdown
   await page.locator('[class="oxd-select-wrapper"]').last().click()
 
-//select admin 
+//select status 
 await page.locator('[role="option"]').nth(1).click()
 await expect(page.locator('[class="oxd-select-text-input"]').last()).toHaveText("Enabled")
 
