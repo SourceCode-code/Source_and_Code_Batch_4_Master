@@ -23,7 +23,7 @@ test("verify dynamic dropdowns", async({browser})=>{
      //for loop for select searched option
 
     for (let i = 0; i < option; i++) {
-        
+
         let text = await page.locator('[class="ui-menu-item"] div').nth(i).textContent()
          console.log(text)
 
@@ -38,3 +38,33 @@ test("verify dynamic dropdowns", async({browser})=>{
     await expect(page.locator('[id="autocomplete"]')).toHaveValue("Germany")
 
 });
+
+test("flipkartDropdown",async({page})=>{
+
+await page.goto("https://www.flipkart.com/")
+
+await page.locator('[class="lNPl8b"]').fill("iph")
+
+await page.waitForSelector('[class="URRkKz RzamwD"]')
+await page.waitForTimeout(2000)
+let options= await page.locator('[class="GZVzXz GFxnd4 zWhq_n"] a').count()
+
+console.log(options)
+
+for(let j=0; j<options;j++){
+
+    let searchedResult=await page.locator('li[class="Sc1DCn"] a').nth(j).textContent()
+    console.log(searchedResult)
+
+    if(searchedResult==="iphone 16"){
+
+        await page.locator('li[class="Sc1DCn"] a').nth(j).click()
+        break;
+    }
+
+   
+}
+ await page.waitForTimeout(4000)
+await expect(page.locator('input[class="Vy9RSP"]')).toHaveValue("iphone 16")
+
+})
