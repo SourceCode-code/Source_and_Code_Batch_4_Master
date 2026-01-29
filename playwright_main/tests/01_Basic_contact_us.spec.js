@@ -24,7 +24,7 @@ test("01_Batch_4_verify the successful submission of details ", async ({
   //verify the value of lastname
   await expect(page.locator('[name="last_name"]')).toHaveValue("data1");
   // filling the details
-  await page.locator('[name="email"]').fill("data1@gmail.com");
+  await page.locator('[name="email"]').fill("data@gmail.com");
   //verify the value of lastname
   await expect(page.locator('[name="email"]')).toHaveValue("data1@gmail.com");
 
