@@ -11,5 +11,11 @@ page
     await expect(page.locator('[alt="company-branding"]')).toHaveText("OrangeHRM")
 
     //select option from dropdown
+    await page.locator('[class="oxd-icon bi-dash oxd-checkbox-input-icon"]').click()
+    // verify selected option
+    await expect(page.locator('[class="oxd-icon bi-dash oxd-checkbox-input-icon"]')).toBeChecked()
+
+    //check user role dropdown
     await page.locator()
 
+    
