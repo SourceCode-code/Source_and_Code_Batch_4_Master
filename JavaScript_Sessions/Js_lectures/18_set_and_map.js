@@ -97,7 +97,7 @@ console.log(setx); //Set(6) { 1, 2, 3, 4, 5, 6 }
 console.log(sety); //Set(6) { 5, 6, 7, 8, 9, 10 }
 
 let intersection = x.filter((el) => sety.has(el));
-let setinter = new Set(intersection);
+let setinter = new Se(intersection);
 console.log(setinter); //Set(2) { 5, 6 }
 
 //Difference

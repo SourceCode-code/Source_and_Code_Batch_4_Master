@@ -38,7 +38,7 @@
  // multiple sleector that has same parent and same property are call sibling selectors
 
 
-//practial selectors
+//prtial selectors
 // this are used in attribute and value  & class
 
 // starting selector --> [attr= value valuechange]  --> [attr ^=  "value"]
