@@ -164,7 +164,7 @@ console.log(Mahindra_3x0);
 }
  */
 
-// LOOP OF OBJECT
+ // LOOP OF OBJECT
 
 for (let key in Mahindra_3x0) {
   console.log(`${key} == ${Mahindra_3x0[key]}`);

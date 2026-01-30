@@ -30,7 +30,7 @@ console.log(str3.join(""));
 
 //apporach 2 without using spilt -->
 
-// let str_2 = "tomorrow"
+let str_2 = "tomorrow"
 console.log("approach 2");
 let final_str = "";
 let hcount = 0;
