@@ -208,7 +208,7 @@ console.log(entryobj);
 /**
  * [
   [ 'modelName', 'AX7' ],
-  [ 'exShowroomPrice', 1200000 ],
+  [ 'exShowroomPrice', 51200000 ],
   [
     'color',
     [

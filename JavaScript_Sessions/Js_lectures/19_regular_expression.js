@@ -97,7 +97,7 @@ console.log(str3.replace(/Javascript/gi, "python"));
 $ --> Ends with
 * --> occurance 
 + --> one or more time ( character should be more than once )
-? --> zero or one time 
+? --> zero \or one time 
 {3}  --> it will only exactally 3 character 
 {3,} --> it will atleast 3 character
  |    --> either or 
@@ -114,7 +114,7 @@ $ --> Ends with
 
  */
 
-// verify if a pan number is vaild or not 
+// verify if a pan number is vaild o\\not 
 
 let vaild_pan = "SSSSP9922F"
 let invaild_PAN = "SSSS1PPP5"

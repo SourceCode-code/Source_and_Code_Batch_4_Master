@@ -143,7 +143,7 @@ console.log(--predecr)//9
 console.log(--predecr)//8
 console.log(predecr)//8
 
-// postdecrement--  --> it first use the value and then decrease by 1
+// postdecrement----> it first use the value and then decrease by 1
 
 let postdecr =10
 

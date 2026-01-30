@@ -43,9 +43,8 @@ console.log(Math.floor)// 5
 // 5. Write program  `rollDice` that simulates rolling two dice and returns their combined result.
 // Hint: Each dice roll should return a number between 1 and 6.
 
-//Ans:
 let dice1= Math.floor(Math.random()*6)+1;
-let dice2= Math.floor(Math,random()*6)+1;
+let dice2= Math.floor(Math.random()*6)+1;
 let total=dice1+dice2;
 console.log(total);
 

@@ -90,9 +90,7 @@ class book {
 
   showdate() {
     let date = new Date();
-    let cuurentdate = `${date.getDate()}/ ${
-      date.getMonth() + 1
-    }/${date.getFullYear()}`;
+    let cuurentdate = `${date.getDate()}/ ${date.getMonth() + 1}/${date.getFullYear()}`;
     return cuurentdate;
   }
 }

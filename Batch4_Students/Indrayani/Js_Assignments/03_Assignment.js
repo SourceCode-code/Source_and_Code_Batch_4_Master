@@ -19,6 +19,7 @@ console.log(Math.ceil(price));
 let fullname1 = "Indrayani Prataprao Suryawanshi";
 console.log(fullname.length);
 
+
 // 4. Write a program that concatenates three string variables `firstName`, `middleName`, and `lastName` using both the `+` operator and template literals, then log the full name.
 
 //Ans:

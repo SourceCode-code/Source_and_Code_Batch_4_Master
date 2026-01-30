@@ -196,11 +196,10 @@ console.log(otp);
 
 //Ans:
 
-let An1 = Math.floor(Math.random() * (9999-1000)) + 1000;
-let An2 = Math.floor(Math.random() * (9999-1000)) + 1000;
-let An3 = Math.floor(Math.random() * (9999-1000)) + 1000;
-let An4 = Math.floor(Math.random() * (9999-1000)) + 1000;
-console.log(An1, An2, An3, An4)
+let An1 = Math.floor(Math.random() * (9999-1000+1)) + 1000;
+let An2 = Math.floor(Math.random() * (9999-1000+1)) + 1000;
+let An3 = Math.floor(Math.random() * (9999-1000+1)) + 1000;
+console.log(An1, An2, An3)
 
 
 

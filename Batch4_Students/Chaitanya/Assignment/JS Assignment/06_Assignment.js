@@ -171,7 +171,7 @@ console.log(str6.substring(0,6))
 
 // 7. Split the string "Cypress is fun" by spaces and print each word on a new line.
 let str7 = "Cypress is fun";
-console.log(str7.split(""))
+console.log(str7.split(" "))
 
 // 8. Replace all occurrences of 'banana' with 'pineapple' in the string "banana apple".
 let str8 = "banana apple";
