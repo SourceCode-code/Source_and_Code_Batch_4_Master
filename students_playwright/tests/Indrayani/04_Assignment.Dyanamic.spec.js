@@ -13,11 +13,11 @@ test("verify dynamic dropdowns", async({page})=>{
     for(let i=0;i<option;i++){
         let text = await page.locator('[class="ui-menu-item"] div').nth(i).textContent()
         console.log(text);
-        if(text==="Australia"){
+        if(text==="Austria"){
             await page.locator('[class="ui-menu-item"] div').nth(i).click()
             break;
         }
     }
     await page.waitForTimeout(3000) 
-    await expect(page.locator('[id="autocomplete"]')).toHaveValue("Australia")
+    await expect(page.locator('[id="autocomplete"]')).toHaveValue("Austria")
 })
