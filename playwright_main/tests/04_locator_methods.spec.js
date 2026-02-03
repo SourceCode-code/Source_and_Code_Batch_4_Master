@@ -91,4 +91,3 @@ test("verify the locator method getByText()", async ({ page }) => {
 
   await expect(header).toBeVisible();
 });
-
