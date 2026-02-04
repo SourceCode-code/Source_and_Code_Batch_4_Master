@@ -52,9 +52,9 @@ console.log(str.match(/js/gi).length);
 
 //
 let arrstr = str.split(" ");
-let count = 0;
+let count = 0
 
-for (let i = 0; i < arrstr.length; i++) {
+   for (let i = 0; i < arrstr.length; i++) {
   // console.log(arrstr[i])
   if (arrstr[i].includes("js")) {
     count++;
