@@ -27,7 +27,7 @@ test("verify dynamic dropdowns", async ({ browser }) => {
 });
 
 //waitForSelector("slector")--> smartly waits for element to be visvible in ui and dom
-//. count --> return the number of avaiable selector
+//.count --> return the number of avaiable selector
 // textContent()--> this retrun the text of the elements
 //.nth(indexstarting)--> gets to given number elements
 //.waitForTimeout(ms)--> hardcoded wait
