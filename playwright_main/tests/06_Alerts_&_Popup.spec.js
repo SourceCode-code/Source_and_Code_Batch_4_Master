@@ -43,7 +43,6 @@ test("verify js confrim alerts popup", async ({ page }) => {
 
 
   page.on("dialog",async(simplealert)=>{
-    await simplealert.message()
     await expect(simplealert.message()).toContain("Press a button!")
     await simplealert.dismiss()
     console.log(simplealert.message())
