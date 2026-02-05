@@ -7,7 +7,7 @@ test("verify flipcarts dynamic dropdowns", async ({ browser }) => {
     await page.goto("https://www.flipkart.com");
 
     let serch = await page.locator('input[name="q"]')
-    serch.fill("iph");
+    await serch.fill("iph");
     //let options =serch.count();
     //console.log(options);
 
@@ -15,18 +15,28 @@ test("verify flipcarts dynamic dropdowns", async ({ browser }) => {
     //class="lNPl8b"
      await page.waitForSelector('[class="GZVzXz GFxnd4 zWhq_n"]');
      
-     let option = page.locator('[class="GZVzXz GFxnd4 zWhq_n"]').count();
+     //let option = page.locator('[class="GZVzXz GFxnd4 zWhq_n"]').count();
+     let option = await page.locator('[class="GZVzXz GFxnd4 zWhq_n"]').count();
+
+
      console.log(option)
 
 
     for (let i = 0; i < option; i++) {
-        let text = await page.locator('class="GZVzXz GFxnd4 zWhq_n"]').nth(i).textContent();
+        let text = await page.locator('[class="GZVzXz GFxnd4 zWhq_n"]').nth(i).textContent();
         console.log(text);
-        if (text === "iphone 13") {
-            await page.locator('class="GZVzXz GFxnd4 zWhq_n"]').nth(i).click();
+        //if (text === "iphone 13")
+            if (text.trim().toLowerCase() === "iphone 17 pro")
+ {
+            //await page.locator('class="GZVzXz GFxnd4 zWhq_n"]').nth(i).click();
+            await page.locator('[class="GZVzXz GFxnd4 zWhq_n"]').nth(i).click();
+
+            await page.waitForTimeout(2000)
             break;
         }
     }
+    //await page.waitForTimeout(5000)
+   // await expect(page.locator('[class="GZVzXz GFxnd4 zWhq_n"]')).toHaveValue("iphone 17 pro")
 
 });
 
