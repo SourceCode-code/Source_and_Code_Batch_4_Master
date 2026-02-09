@@ -31,7 +31,7 @@ let pro = new Promise((resloves, rejected) => {
 
 function userRegistration(user) {
   return new Promise((resloves) => {
-    setTimeout(() => {
+    setTimeout(() => {v
       console.log(`the ${user} has been registor now`);
       resloves(user);
     }, 8000);

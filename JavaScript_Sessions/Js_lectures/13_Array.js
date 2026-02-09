@@ -318,7 +318,7 @@ let num3 = [2, 8, 7, 3, 35, 58, 69, 34567, 367, 2, 3, 4, 5, 67, 8, 9, 0];
 let add5 = num3.map((el, index, arr) => {
   return el + 5;
 });
-
+ 
 console.log(add5); //[7,13,12,8,40,63,74,34572,372,7,8,9,10, 72, 13,14,5]
 
 let snames = strnames.map((el, index, arr) => {
