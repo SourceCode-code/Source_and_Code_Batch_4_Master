@@ -24,3 +24,14 @@ test("way 2", async ({ page }) => {
   await farme.locator('[name="fname"]').fill("siddhant");
   await farme.locator('[name="lname"]').fill("gadakh");
 });
+
+
+
+test("verify i frames",async({page})=>{
+  await page.goto("https://webdriveruniversity.com/IFrame/index.html")
+
+  let frame1 = await page.frameLocator('[id="frame"]')
+  await frame1.locator('[href="../Contact-Us/contactus.html"]').click()
+  await frame1.locator('[name="first_name"]').fill("qwertyu")
+  await frame1.locator('[name="last_name"]').fill("fbvcxz")
+})
