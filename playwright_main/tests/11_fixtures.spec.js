@@ -84,3 +84,12 @@ test("04_Batch_4_verify the successful submission of details for multiple data i
   await page.locator('[type="submit"]').click();
   await expect(page.locator('[id="contact_reply"] h1')).toHaveText(data2.Testdata[1].success_message);
 });
+
+
+
+
+
+// assignemnt --- > find away to use multiple data set for one code 
+//2 automate ornage hrm login flow using real time dymainc data 
+
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
