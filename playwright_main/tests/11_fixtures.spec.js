@@ -2,7 +2,7 @@ const { test, expect } = require("@playwright/test");
 const data = require("../Fixture/TestData/form.json")
 const data2 = require("../Fixture/TestData/MultiTestdata.json")
 
-test("01_Batch_4_verify the successful submission of details ", async ({browser}) => {
+test("01_Batch_4_verify the successful submission of details ", async ({ browser }) => {
   let Context = await browser.newContext();
   let page = await Context.newPage();
 
@@ -52,7 +52,7 @@ test("01_Batch_4_verify the successful submission of details ", async ({browser}
 // multiple data file 
 
 
-test("04_Batch_4_verify the successful submission of details for multiple data in single file ", async ({browser}) => {
+test("04_Batch_4_verify the successful submission of details for multiple data in single file ", async ({ browser }) => {
   let Context = await browser.newContext();
   let page = await Context.newPage();
 
@@ -92,4 +92,49 @@ test("04_Batch_4_verify the successful submission of details for multiple data i
 // assignemnt --- > find away to use multiple data set for one code 
 //2 automate ornage hrm login flow using real time dymainc data 
 
-https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+// https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+data2.Testdata.forEach((el)=>{
+
+
+test(` ${el.firstName} `, async ({ browser }) => {
+  let Context = await browser.newContext();
+  let page = await Context.newPage();
+
+  //visit the url
+  await page.goto("https://webdriveruniversity.com/Contact-Us/contactus.html");
+  // verify the title of the page
+  await expect(page).toHaveTitle(el.Page_title);
+  // verify the header
+  await expect(page.locator('[class="section_header"]')).toHaveText(el.section_header);
+  // filling the details
+  await page.locator('[name="first_name"]').fill(el.firstName);
+  //verify the value of firstname
+  await expect(page.locator('[name="first_name"]')).toHaveValue(el.firstName);
+  // filling the details
+  await page.locator('[name="last_name"]').fill(el.lastName);
+  //verify the value of lastname
+  await expect(page.locator('[name="last_name"]')).toHaveValue(el.lastName);
+  // filling the details
+  await page.locator('[name="email"]').fill(el.email);
+  //verify the value of lastname
+  await expect(page.locator('[name="email"]')).toHaveValue(el.email);
+
+  // filling the details
+  await page.locator('[name="message"]').fill(el.comment);
+  //verify the value of lastname
+  await expect(page.locator('[name="message"]')).toHaveValue(el.comment);
+
+  // click on submit button
+  await page.locator('[type="submit"]').click();
+  await expect(page.locator('[id="contact_reply"] h1')).toHaveText(el.success_message);
+});
+
+
+
+
+
+
+})
+
+
