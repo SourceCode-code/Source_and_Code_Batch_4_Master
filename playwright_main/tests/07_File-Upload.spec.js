@@ -17,6 +17,16 @@ test("Verify the fileUpload in playwright", async ({ page }) => {
   await expect(page.url()).toContain("https://webdriveruniversity.com/File-Upload/index.html?filename=readme.txt")
 });
 
+
+
+test("verify upload of file ",async({page})=>{
+
+await page.goto("https://letcode.in/file")
+
+await page.locator('[class="file-cta"]').setInputFiles('../Fixture/readme.txt')
+await page.waitForTimeout(8000)
+await expect(page.locator('[class="label ng-star-inserted"]')).toContainText("readme.txt")
+})
 // setInputFiles(file path )
 
 // // ../  --> inddates out of the folder
