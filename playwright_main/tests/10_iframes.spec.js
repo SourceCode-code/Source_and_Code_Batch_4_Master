@@ -35,3 +35,4 @@ test("verify i frames",async({page})=>{
   await frame1.locator('[name="first_name"]').fill("qwertyu")
   await frame1.locator('[name="last_name"]').fill("fbvcxz")
 })
+
