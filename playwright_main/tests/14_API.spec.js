@@ -96,3 +96,23 @@
                               // PATH PARAMTER
 
 //https://reqres.in           /api/test-suite/collections/users/records
+
+
+const { test, expect,request } = require("@playwright/test")
+
+test("verify GET API",async({request})=>{
+
+  let req = await request.get("https://jsonplaceholder.typicode.com/posts")
+
+
+  console.log(await req.status())//200
+  console.log(await req.json()) // this wil convert your response  into json 
+
+  let response = await req.json()
+
+   expect( req.status()).toBe(200)
+
+   expect(response[0].title).toEqual("sunt aut facere repellat provident occaecati excepturi optio reprehenderit")
+
+
+})
