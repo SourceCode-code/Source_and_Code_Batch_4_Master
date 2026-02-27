@@ -16,8 +16,8 @@ console.log(Math.ceil(price));
 // 3. Create a string `name` with your full name and log the length of the string using the `.length` property.
 
 //Ans:
-let fullname1 = "Indrayani Prataprao Suryawanshi";
-console.log(fullname.length);
+let fullName1 = "Indrayani Prataprao Suryawanshi";
+console.log(fullName1.length);
 
 
 // 4. Write a program that concatenates three string variables `firstName`, `middleName`, and `lastName` using both the `+` operator and template literals, then log the full name.
@@ -29,7 +29,7 @@ let lastname = "Suryawanshi"
  
 console.log(firstname+" "+middlename+" "+lastname);
 let fullname2= `${firstname} ${middlename} ${lastname}`;
-console.log(fullname);
+console.log(fullname2);
 
 // 5. Given a string `language = 'JavaScript'`, log the character at the 4th index in the string.
 
@@ -49,9 +49,9 @@ console.log(num1);
 
 //Ans:
 let longstring = "hi my name is"
-Indrayani
-Prataprao
-Suryawanshi
+"Indrayani"
+"Prataprao"
+"Suryawanshi"
 console.log(longstring);
 
 // 8. Write a program that uses escape characters to display the following:
@@ -116,8 +116,12 @@ console.log(str4);
 
 //Ans:
 let str5 = "qwertyuiopasdfghjklzxcvbnm";
+let randomIndex = Math.floor(Math.random() * str5.length);
+let randomElement = str5[randomIndex];
+console.log(randomElement);
 
 
 //15 write a program to generate a random odd number form 15-150
+let randomOddNumber = Math.floor(Math.random() * 75) * 2 + 15;
+console.log(randomOddNumber);
 
- 
