@@ -15,6 +15,7 @@ test("verify locator method getByAltText()", async ({ page }) => {
   // checks if image is visble
   await expect(element).toBeVisible();
   //verify attribute and value of element
+                                        //
   await expect(element).toHaveAttribute("src", "../../assets/logo.png");
 });
 
