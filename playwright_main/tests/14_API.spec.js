@@ -144,8 +144,8 @@ test("verify PUT API ", async ({ request }) => {
       "ID": "01000",
       "title": "demo POST QUERTY",
       "body": "THIS IS DEMO API TO CREATE A POST DATA ",
-      "number":"987456"
-     
+      "number": "987456"
+
     }
   })
   let responsepost = await req.json()
@@ -155,3 +155,28 @@ test("verify PUT API ", async ({ request }) => {
 })
 
 
+test("verify PATCH API ", async ({ request }) => {
+  let req = await request.patch("https://jsonplaceholder.typicode.com/posts/1", {
+    data: {
+      "ID": "01001",
+      "title": "demo POST QUERTY",
+      "body": "THIS IS DEMO API TO CREATE A POST DATA ",
+      "number": "987456"
+
+    }
+  })
+  let responsepost = await req.json()
+  console.log(responsepost)
+  expect(req.status()).toBe(200)
+  expect(responsepost.number).toEqual("987456")
+})
+
+
+test("verify delete api ", async ({ request }) => {
+
+  let req = await request.delete("https://jsonplaceholder.typicode.com/posts/1")
+
+  let res = await req.json()
+
+  expect(await req.status()).toBe(200)
+})
