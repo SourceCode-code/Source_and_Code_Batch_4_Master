@@ -16,11 +16,8 @@ test("verify login in orange hrm ", async ({ page }) => {
     await expect(dashboardele).toHaveText("Dashboard")
 
     // to save the data form user
-
     await page.context().storageState({ path: "../fixture/Cookies/user.json" })
-
 })
-
 
 
 test("verify user login by insterting storage state", async ({ browser }) => {
