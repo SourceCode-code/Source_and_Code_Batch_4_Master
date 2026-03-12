@@ -22,3 +22,5 @@ test("verify successful login by api ", async ({ page }) => {
     await expect(page.locator('[class="left mt-1"] p')).toHaveText("Automation Practice")
 
 })
+
+/// changes added for the demo of pr 
