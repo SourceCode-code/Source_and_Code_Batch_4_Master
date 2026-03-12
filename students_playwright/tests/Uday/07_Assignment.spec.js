@@ -9,7 +9,7 @@ test("verify Multiwindow handling", async function({browser}){
 
     const [newwindow] = await Promise.all([
         context.waitForEvent("page"),
-        page.locator('[name="newbrowserwindow123"]').click
+        page.locator('[name="newbrowserwindow123"]').click()
     ]);
 
     await newwindow.locator('[placeholder="Name"]').fill("Uday");
