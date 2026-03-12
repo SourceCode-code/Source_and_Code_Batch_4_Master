@@ -6,12 +6,15 @@
 // If user is 18 or older, give feedback: 'You are old enough to drive'. 
 // If not 18, give feedback stating how many years are left to turn 18.
 
-let age = 15
-if (age >= 18) {
+let myage = 30
+let yourage = 15
+
+if (myage >= 18) {
     console.log("you are old enough to drive")
 }
 else {
-    console.log(`you are left with ${18 - age} years to drive`)
+    let yearleft = 18 - yourage
+    console.log(`you are left with ${yearleft} years to drive`)
 }
 /**
  * Enter your age: 30
@@ -168,25 +171,28 @@ switch (formatday) {
 
 // 1. Write a program that tells the number of days in a month.
 
-let monthName = "January"
-switch (monthName) {
-    case"January":
-    case"March":
-    case"May":
-    case"July":
-        console.log("January has 31 days.")
+let monthname = "January"
+switch (monthname) {
+    case "January":
+    case "March":
+    case "May":
+    case "July":
+    case "August":
+    case "October":
+    case "December":
+        console.log("January has 31 days")
         break
-    case"April":
-    case"June":
-    case"September":
-    case"November":
-        console.log("January has 30 days.")
+    case "April":
+    case "June":
+    case "September":
+    case "November":
+        console.log("January has 30 days")
         break
-    case"February":
-        console.log("January has 28 days.")
+    case "Feburary":
+        console.log("January has 28 days")
         break
     default:
-        console.log("Invalid month name.")
+        console.log("Invalid month name")
 }
 
 /**

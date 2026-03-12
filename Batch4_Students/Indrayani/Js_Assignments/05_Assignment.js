@@ -195,7 +195,7 @@ console.log(str5.trim())
 
 // 6. Extract the first 5 characters from the string "PlaywrightAutomation".
 let str6 = "PlaywrightAutomation";
-console.log(str6.substring(0 ,6))
+console.log(str6.substring(0 ,5))
 
 // 7. Split the string "Cypress is fun" by spaces and print each word on a new line.
 
