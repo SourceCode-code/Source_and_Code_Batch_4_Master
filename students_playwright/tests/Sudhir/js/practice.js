@@ -20,12 +20,12 @@ for (let i = 0; i < wordArray.length; i++) {
 
         newword.push(transform)
 
+        
 
     }
 
 
 }
 console.log(newword.join(' '))
-
 
 
