@@ -3,7 +3,8 @@
         {
             "index":1,
             "testid":"002",
-            "page_title":"Swag Labs"
+            "page_title":"Swag Labs",
+            "User":"standard_user"
         }
     ]
 }
