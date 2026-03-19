@@ -1,0 +1,11 @@
+{
+    "TestData":[
+        {
+            "index":4,
+            "testid":"004",
+            "page_title":"Swag Labs",
+            "User":"standard_user",
+            "Product_title":"Products"
+        }
+    ]
+}

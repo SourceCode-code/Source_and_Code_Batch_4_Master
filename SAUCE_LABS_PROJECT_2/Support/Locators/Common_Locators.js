@@ -10,7 +10,8 @@ class Common_Locators {
     }
 
     static Product_page_locators ={
-        HOME_LOGO:'[class="app_logo"]'
+        HOME_LOGO:'[class="app_logo"]',
+        Product_page_title:'[class="title"]'
     }
 
 
