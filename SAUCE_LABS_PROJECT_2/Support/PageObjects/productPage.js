@@ -18,9 +18,9 @@ class productPage {
             let Product_Name = await page.locator(Common_Locators.Product_page_locators.ProductName).nth(i).textContent()
             console.log(`The Product Names are ${ProductName}`)
             if (Product_Name === ProductName.trim()) {
-                await page.locator(Common_Locators.Product_page_locators.AddToCartBtn).click()
+                await page.locator(Common_Locators.Product_page_locators.AddToCartBtn).nth(i).click()
                 console.log(`The Product selected is ${Product_Name}`)
-                 let Remove_BTN =await page.locator(Common_Locators.Product_page_locators.RemoveBtn)
+                 let Remove_BTN =await page.locator(Common_Locators.Product_page_locators.RemoveBtn).nth(i)
                  await Remove_BTN.waitFor({state:"visible"})
                  await expect(Remove_BTN).toHaveText(Common_Locators.Labels.Remove)
                  console.log(` Remove Button is Visible for ${Product_Name}`)
