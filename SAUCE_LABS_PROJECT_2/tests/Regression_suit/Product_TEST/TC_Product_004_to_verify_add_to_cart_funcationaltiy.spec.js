@@ -18,9 +18,5 @@ test("TC_Product_004_to_verify_add_to_cart_funcationaltiy", async ({ browser }) 
     await NavigationPage.loginWithCredetials(page, User)
     await Productpage.verifyProductPageTitle(page, Product_title)
     await Productpage.verifyAddedItemToCart(page,["Sauce Labs Backpack","Sauce Labs Fleece Jacket","Test.allTheThings() T-Shirt (Red)"])
-    await page.pause()
-
-
-
 
 })
