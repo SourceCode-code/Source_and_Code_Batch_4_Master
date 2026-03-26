@@ -20,3 +20,21 @@ test("TC_Product_004_to_verify_add_to_cart_funcationaltiy", async ({ browser }) 
     await Productpage.verifyAddedItemToCart(page,["Sauce Labs Backpack","Sauce Labs Fleece Jacket","Test.allTheThings() T-Shirt (Red)"])
 
 })
+
+/**
+ * 
+ * 
+ * npm install playwright-mochawesome-reporter mochawesome mochawesome-merge mochawesome-report-generator --save-dev
+ * 
+ * 
+ *  reporter: [
+    ['list'], 
+    ['playwright-mochawesome-reporter', {
+      reportDir: 'mochawesome-report',
+      overwrite: false,
+      html: true,
+      json: true
+    }]
+  ]
+    start mochawesome-report/mochawesome.html
+ */

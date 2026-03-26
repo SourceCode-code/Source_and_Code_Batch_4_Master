@@ -10,10 +10,10 @@
     "RUN_REGRESSION": "npx playwright test \"SAUCE_LABS_PROJECT_2/tests/Regression_suit\"",
     "RUN_REGRESSION_LOGIN": "npx playwright test \"SAUCE_LABS_PROJECT_2/tests/Regression_suit/Login_TEST\"",
     "RUN_REGRESSION_LOGIN_CHROME": "npx playwright test \"SAUCE_LABS_PROJECT_2/tests/Regression_suit/Login_TEST\" --project=chromium",
-    "RUN_PW_DEBUG_MODE":"npx playwright test --debug",
-    "RUN_TEST_IN_SERAIL_CHORME":"npx playwright test \"SAUCE_LABS_PROJECT_2/tests/Regression_suit/Login_TEST\" --workers=1 --project=chromium",
-    "RUN_MOBILE_IPHONE_CHROME":"npx playwright test \"SAUCE_LABS_PROJECT_2/tests/Regression_suit/Login_TEST\" --project=iPhone 12",
-    "OPEN_RUNNER_UI":"npx playwright test --ui"
+    "RUN_PW_DEBUG_MODE": "npx playwright test --debug",
+    "RUN_TEST_IN_SERAIL_CHORME": "npx playwright test \"SAUCE_LABS_PROJECT_2/tests/Regression_suit/Login_TEST\" --workers=1 --project=chromium",
+    "RUN_MOBILE_IPHONE_CHROME": "npx playwright test \"SAUCE_LABS_PROJECT_2/tests/Regression_suit/Login_TEST\" --project=iPhone 12",
+    "OPEN_RUNNER_UI": "npx playwright test --ui"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +21,7 @@
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
-    "@types/node": "^25.3.5"
+    "@types/node": "^25.3.5",
+    "pwmochawesome": "^2.0.2"
   }
 }
