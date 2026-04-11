@@ -10,17 +10,25 @@ Comments can make code readable,easy to reuse and infomative
 */
 
 // Declare four variables without assigning values
- let age;
- let firstName;
- var lastName;
+ let a;
+ let x;
+ var y;
  var companyName;
 
 
 // Declare four variables with assigned value
 
+let num1 = 10;
+let name = "Anurag"
+const gender = "Male"
+var empId = "anurarra"
 // Declare variables to store your first name, last name, marital status, country and age in multiple lines
 
-
+let firstName = "Anurag"
+let lastName = "Rasane"
+let maritial_status = "Signle"
+const country = "India"
+var age = 27
 // Declare variables to store your first name, last name, marital status, country and age in a single line
 
 
