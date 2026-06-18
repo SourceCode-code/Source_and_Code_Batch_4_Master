@@ -103,16 +103,34 @@ console.log(year)// 2025
 let cDay = new Date().getDay()
 console.log(cDay)// 2
 */
-//Display the date in DD/MM/YYYY format
-let date1 = new Date()
-let DD = date1.getDate()
-console.log(DD)
+// //Display the date in DD/MM/YYYY format
+// let date1 = new Date()
+// let DD = date1.getDate()
+// console.log(DD)
 
-let MM = date1.getMonth()
-console.log(MM)
+// let MM = date1.getMonth()
+// console.log(MM)
 
-let YYYY = date1.getFullYear()
-console.log(YYYY)
+// let YYYY = date1.getFullYear()
+// console.log(YYYY)
 
-console.log(`DD/MM/YYYY Format:${DD}/${MM}/${YYYY}`)
+// console.log(`DD/MM/YYYY Format:${DD}/${MM}/${YYYY}`)
+
+class Details {
+    constructor(fn, ln, ag) {
+        this.fn = fn,
+            this.ln = ln,
+            this.ag = ag
+    }
+}
+
+let user_1 = new Details("jhon", "doe", 34)
+let user = {
+    f: "siddhant",
+    l: "gadakh",
+    age: 26  
+}
+console.log(user)
+console.log(typeof user);
+
 

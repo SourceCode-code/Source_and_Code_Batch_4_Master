@@ -1,8 +1,8 @@
 {
-  "name": "sauce_labs_project_2",
+  "name": "smoke_suit",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "TC_001_Login_verify_that_application_URL_is_working_and_redirecting_user_on_login_page.spec.js",
   "scripts": {},
   "keywords": [],
   "author": "",
@@ -10,7 +10,7 @@
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
-    "@types/node": "^25.3.5",
-    "mochawesome": "^7.1.4"
+    "@types/node": "^25.5.0",
+    "pwmochawesome": "^2.0.2"
   }
 }
