@@ -1,0 +1,73 @@
+ADVANCE XPATH -->
+
+
+XPath Functions
+
+1 Find element using visible text -->
+
+example 
+//button[text()='Login']
+
+ELEMENT 
+<h2 name="contactme" class="section_header">CONTACT US</h2>
+
+a   //h2[text()="CONTACT US"] --> extact text to be placed 
+
+b   //div[contains(text(),'Welcome')] --> partial text 
+
+//h2[contains(text(),"CONTACT")] example 
+
+
+Used when value changes dynamically.
+
+//input[contains(@id,'user')]
+
+
+
+user123
+user456
+user789
+
+example 
+
+<input name="first_name" type="text" class="feedback-input" placeholder="First Name" fdprocessedid="pg2yh">
+
+//input[contains(@name,"first")]
+
+
+
+
+3. starts-with()
+//input[starts-with(@id,'user')]
+
+Matches
+
+user001
+userABC
+
+4. not()
+//input[not(@disabled)]
+
+
+XPath Operators ⭐⭐⭐⭐⭐
+AND
+
+//input[@type='text' and @name='username']
+
+element 
+<input name="first_name" type="text" class="feedback-input" placeholder="First Name" fdprocessedid="pg2yh">
+
+//input[@name="first_name" and @placeholder="First Name"]
+
+OR
+//button[@name='Save' or @name='Submit']
+
+
+element 
+<input class="contact_button" type="submit" value="SUBMIT" fdprocessedid="g1mv1o">
+
+selector 
+//input[@type="submit"or  @name='Save']
+
+
+XPath Axes

@@ -1,0 +1,74 @@
+What is XPath?
+XPath stands for XML Path Language.
+
+//Absolute vs Relative XPath (15 mins)
+
+| Absolute XPath                                                      | Relative XPath                                         |
+| ------------------------------------------------------------------- | ------------------------------------------------------ |
+| Starts from the root element (`/html`)                              | Starts from anywhere in the document (`//`)            |
+| Uses the complete path from the root to the target element          | Uses attributes or relationships to locate the element |
+| More fragile because any change in the page structure can break it  | More robust and flexible                               |
+| Usually longer and harder to maintain                               | Shorter and easier to read                             |
+| Slightly faster in theory, but the difference is usually negligible | Preferred in real-world automation                     |
+
+
+
+Always prefer Relative XPath.
+
+
+HOW TO FIND ELEMENT :- 
+
+
+basics :-
+AT START -->
+
+/ -> indicates select fornm root 
+// -> indicates select anywhere form the root
+
+IN MIDDLE --> 
+
+/  -> select direct child 
+// -> select any decendanat of element 
+
+element     -> Selects all elements with the given name.
+@attribute  -> Selects the value of the specified attribute.
+*           -> Selects all child elements.
+text()      -> Selects the text within an element.
+
+
+
+
+
+Find by tag 
+
+//button
+
+//input
+
+//a
+
+
+<title>WebDriver | Contact Us</title>
+
+//title
+
+XPath Formula (Most Important)
+General formula
+// ATTRIBUTE AND VALUE 
+
+example -->
+//--> select --> form any node 
+input -> tagname 
+@ --> Selects the value of the specified attribute.
+id --> attribute name 
+= -->  Equal to.
+"value" --> value of attribute 
+
+example 
+//input[@id='username']
+
+
+<input name="first_name" type="text" class="feedback-input" placeholder="First Name" fdprocessedid="pg2yh">
+
+//input[@name = "first_name"]
+

@@ -1,0 +1,111 @@
+XPath Axes
+
+parent
+
+Go to parent element.
+
+//input/parent::div
+
+
+child
+//div/child::input
+
+following-sibling
+//label/following-sibling::input
+
+Very common for forms.
+
+preceding-sibling
+//input/preceding-sibling::label
+ancestor
+
+Find any parent/grandparent.
+
+//input/ancestor::form
+descendant
+
+Find any child at any level.
+
+//div/descendant::button
+
+
+
+
+Position & Index
+
+Index
+
+First element
+
+(//input)[1]
+
+Second element
+
+(//input)[2]
+
+Last element
+
+(//input)[last()]
+
+Second last
+
+(//input)[last()-1]
+Position Function
+//li[position()=3]
+
+Greater than
+
+//li[position()>3]
+
+Less than
+
+//li[position()<5]
+Wildcards
+
+Select any tag with class
+
+//*[@class='btn']
+
+Any element with id
+
+//*[@id]
+
+Any element having attribute
+
+//*[@*]
+Relative XPath Between Elements
+
+Example
+
+<div id="row1">
+    <input>
+</div>
+
+XPath
+
+//div[@id='row1']/input
+
+or
+
+//div[@id='row1']//input
+
+Real Selenium Examples
+Login Button
+
+//button[text()='Login']
+
+Username Field
+
+//input[@placeholder='Username']
+
+Password Field
+
+//input[@type='password']
+
+Dynamic User
+
+//div[contains(@class,'user')]
+
+Checkbox Next to Label
+
+//label[text()='Remember me']/following-sibling::input
