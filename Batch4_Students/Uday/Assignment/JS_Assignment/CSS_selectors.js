@@ -105,4 +105,80 @@ p[class= "oxd-userdropdown-name"]
 [role="rowgroup"]:nth-child(3) [role="row"]:nth-child(4)
 
 
-git add .
+//https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewPersonalDetails/empNumber/7
+
+//1. Selector for My Info >> Marital Status field
+
+[class="oxd-grid-item oxd-grid-item--gutters"]:nth-child(2) [class="oxd-select-wrapper"]
+
+
+//2. Selector for My Info >> Contact Details >> Country Dropdown field
+
+[class="oxd-grid-item oxd-grid-item--gutters"] [class="oxd-select-wrapper"]
+
+
+//3. Selector for Performance >> Employee Review >> Job Title Dropdown field
+
+[class="oxd-grid-item oxd-grid-item--gutters"]:nth-child(2) [class="oxd-select-wrapper"] 
+
+
+///////////////////////////////////EXPATH////////////////////////////////////////////////////////
+
+//1. Xpath for Serch element
+// Element: <input data-v-1f99f73c="" data-v-636d6b87="" class="oxd-input oxd-input--active" placeholder="Search">
+// Expath: //input[@placeholder='Search']
+
+//2. Amazon
+/*/ Element: <a href="/ref=nav_logo" id="nav-logo-sprites" class="nav-logo-link nav-progressive-attribute" aria-label="Amazon.in" lang="en">
+      <span class="nav-sprite nav-logo-base"></span>
+      <span id="logo-ext" class="nav-sprite nav-logo-ext nav-progressive-content"></span>
+      <span class="nav-logo-locale">.in</span>
+    </a>
+    */
+
+    // Expath:- //a[@id="nav-logo-sprites"]
+
+    //3. Return and Order
+    /* Element: <a href="/gp/css/order-history?ref_=nav_orders_first" class="nav-a nav-a-2   nav-progressive-attribute" id="nav-orders" tabindex="0">
+  <span class="nav-line-1">Returns</span>
+  <span class="nav-line-2">&amp; Orders<span class="nav-icon nav-arrow"></span></span>
+</a>*/
+    //Expath: //a[@id="nav-orders"]
+
+    //4. Cart
+    /*
+    <a href="/gp/cart/view.html?ref_=nav_cart" class="nav-a nav-a-2 nav-progressive-attribute" id="nav-cart" tabindex="0">
+  <span id="nav-cart-count" class="nav-cart-count nav-cart-0 nav-progressive-attribute nav-progressive-content" aria-hidden="true">0</span>
+  <span class="nav-cart-icon nav-sprite"></span>  */
+
+  // Xpath: //a[@id="nav-cart"]
+
+  //URL: https://webdriveruniversity.com/Contact-Us/contactus.html
+//5. First Name field
+  // Element: <input name="first_name" type="text" class="feedback-input" placeholder="First Name">
+
+  //input[@name="first_name"]
+
+  //6. Last Name field
+  // Element: <input name="last_name" type="text" class="feedback-input" placeholder="Last Name"> 
+  //input[@name="last_name"]
+
+  //7. Email field
+  // Element: <input name="email" type="text" class="feedback-input" placeholder="Email">
+  //input[@placeholder="Email Address"]
+
+  //8. Reset button
+  // Element: <input type="reset" value="RESET" id="form_buttons" class="reset">
+  //input[@type="reset"]  
+
+
+  //9. Submit button
+
+  // Element: <input type="submit" value="SUBMIT" id="form_buttons" class="button">
+  //input[@type="submit"]
+
+  //10. Flipkart Login Button
+
+  //a[@title="Login"]
+
+  
